@@ -90,7 +90,7 @@ const translations = {
     'p13.title': 'Lote 7/8 · Portimão',
     'p13.desc':  'Edifício residencial de 36 habitações — sistemas hidráulicos e coletores. Em colaboração com <em>Ordem Geométrica</em>.',
     'p14.title': 'Alvor Ria Residence · Alvor',
-    'p14.desc':  'Empreendimento residencial frente à Ria de Alvor — instalações hidráulicas e solar térmico. Em colaboração com <em>Ordem Geométrica</em>.',
+    'p14.desc':  'Empreendimento residencial de 30 apartamentos frente à Ria de Alvor — instalações hidráulicas e solar térmico. Em colaboração com <em>Ordem Geométrica</em>.',
     'p15.title': 'Moradia emohb I · Portimão',
     'p15.desc':  'Conjunto de 3 moradias — canalização completa, bomba de calor, chão radiante e painéis solares térmicos. Em colaboração com <em>emohb</em>.',
     'p16.title': 'Moradia emohb II · Portimão',
@@ -295,7 +295,7 @@ const translations = {
     'p13.title': 'Lote 7/8 · Portimão',
     'p13.desc':  '36-unit residential building — hydraulic systems and collectors. In collaboration with <em>Ordem Geométrica</em>.',
     'p14.title': 'Alvor Ria Residence · Alvor',
-    'p14.desc':  'Residential development facing the Ria de Alvor — hydraulic installations and solar thermal. In collaboration with <em>Ordem Geométrica</em>.',
+    'p14.desc':  '30-apartment residential development facing the Ria de Alvor — hydraulic installations and solar thermal. In collaboration with <em>Ordem Geométrica</em>.',
     'p15.title': 'emohb Villa I · Portimão',
     'p15.desc':  'Group of 3 villas — full plumbing, heat pump, radiant floor heating and solar thermal panels. In collaboration with <em>emohb</em>.',
     'p16.title': 'emohb Villa II · Portimão',
@@ -969,10 +969,10 @@ const projectData = {
     location: 'Alvor, Algarve',
     type:     { pt: 'Empreendimento Residencial', en: 'Residential Development' },
     year:     '2022–',
-    units:    null,
+    units:    30,
     desc: {
-      pt: 'Empreendimento residencial frente à Ria de Alvor — instalações hidráulicas completas e solar térmico. Em colaboração com Ordem Geométrica.',
-      en: 'Residential development facing the Ria de Alvor — full hydraulic installations and solar thermal. In collaboration with Ordem Geométrica.'
+      pt: 'Empreendimento residencial de 30 apartamentos frente à Ria de Alvor — instalações hidráulicas completas e solar térmico. Em colaboração com Ordem Geométrica.',
+      en: '30-apartment residential development facing the Ria de Alvor — full hydraulic installations and solar thermal. In collaboration with Ordem Geométrica.'
     },
     services: {
       pt: ['Canalização', 'Solar Térmico', 'Bomba de Calor', 'Sistema de Esgotos'],
