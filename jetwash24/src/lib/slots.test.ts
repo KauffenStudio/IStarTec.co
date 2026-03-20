@@ -210,8 +210,11 @@ describe('computeAvailableSlots', () => {
       // 09:00 is in booking 1 occupied window — blocked
       expect(times).not.toContain('09:00');
 
-      // 10:00 + 30 = 10:30 < 11:15 — NOT blocked
-      expect(times).toContain('10:00');
+      // 10:00 is within occupied [09:00, 10:15) — blocked
+      expect(times).not.toContain('10:00');
+
+      // 10:15 + 30 = 10:45 < 11:15 — NOT blocked (first available after buffer)
+      expect(times).toContain('10:15');
 
       // 10:30 + 30 = 11:00 < 11:15 — NOT blocked
       expect(times).toContain('10:30');
