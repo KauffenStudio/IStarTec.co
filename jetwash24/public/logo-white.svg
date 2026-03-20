@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" aria-label="Jetwash24">
+  <!-- Background: none (transparent — placed on dark navy) -->
+
+  <!-- Water spray motif: stylized arc drops on the left -->
+  <g>
+    <!-- Large water drop arc -->
+    <path d="M18 38 Q10 22 22 14 Q28 10 30 18 Q32 26 24 34 Z"
+          fill="#00C8E0" opacity="0.9"/>
+    <!-- Small droplet top-right of arc -->
+    <circle cx="33" cy="10" r="3" fill="#00C8E0" opacity="0.7"/>
+    <!-- Tiny spray dots -->
+    <circle cx="37" cy="16" r="1.8" fill="#00C8E0" opacity="0.5"/>
+    <circle cx="34" cy="22" r="1.3" fill="#00C8E0" opacity="0.4"/>
+  </g>
+
+  <!-- Wordmark: JETWASH in white -->
+  <text x="44" y="38"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="900"
+        font-size="24"
+        letter-spacing="2"
+        fill="#FFFFFF">JETWASH</text>
+
+  <!-- "24" accent in cyan -->
+  <text x="156" y="38"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="900"
+        font-size="24"
+        letter-spacing="0"
+        fill="#00C8E0">24</text>
+
+  <!-- Thin cyan underline accent -->
+  <rect x="44" y="42" width="142" height="2.5" rx="1.25" fill="#00C8E0" opacity="0.4"/>
+
+  <!-- Tagline in white -->
+  <text x="44" y="54"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="400"
+        font-size="8"
+        letter-spacing="3.5"
+        fill="#FFFFFF"
+        opacity="0.7">LAVAGEM MANUAL</text>
+</svg>
