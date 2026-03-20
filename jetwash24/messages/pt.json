@@ -1,0 +1,18 @@
+{
+  "HomePage": {
+    "title": "Lavagem de carros profissional no Algarve",
+    "subtitle": "Marcacao online em menos de 2 minutos",
+    "cta": "Marcar agora"
+  },
+  "Navigation": {
+    "home": "Inicio",
+    "services": "Servicos",
+    "booking": "Marcar",
+    "contact": "Contacto"
+  },
+  "Common": {
+    "loading": "A carregar...",
+    "error": "Ocorreu um erro",
+    "locale_switch": "EN"
+  }
+}
