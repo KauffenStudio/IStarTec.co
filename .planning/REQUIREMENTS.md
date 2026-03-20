@@ -9,8 +9,8 @@
 
 - [ ] **BOOK-01**: Cliente pode selecionar um serviço e extras opcionais num fluxo multi-step
 - [ ] **BOOK-02**: Cliente vê resumo de preço (serviço + extras + tipo de veículo) antes de confirmar
-- [ ] **BOOK-03**: Cliente pode ver slots de tempo disponíveis em tempo real para a data escolhida
-- [ ] **BOOK-04**: Sistema bloqueia automaticamente slots indisponíveis (1 carro por vez + 15min buffer)
+- [x] **BOOK-03**: Cliente pode ver slots de tempo disponíveis em tempo real para a data escolhida
+- [x] **BOOK-04**: Sistema bloqueia automaticamente slots indisponíveis (1 carro por vez + 15min buffer)
 - [ ] **BOOK-05**: Cliente preenche nome, email, telefone e tipo de veículo para completar reserva
 - [ ] **BOOK-06**: Cliente aceita consentimento GDPR para poder submeter a reserva
 - [ ] **BOOK-07**: Cliente recebe email de confirmação automático após reserva confirmada
@@ -79,8 +79,8 @@
 |-------------|-------|--------|
 | BOOK-01 | Phase 4 | Pending |
 | BOOK-02 | Phase 4 | Pending |
-| BOOK-03 | Phase 2 | Pending |
-| BOOK-04 | Phase 2 | Pending |
+| BOOK-03 | Phase 2 | Complete |
+| BOOK-04 | Phase 2 | Complete |
 | BOOK-05 | Phase 4 | Pending |
 | BOOK-06 | Phase 4 | Pending |
 | BOOK-07 | Phase 5 | Pending |

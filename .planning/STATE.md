@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-20T22:00:59.565Z"
+stopped_at: Completed 02-01-PLAN.md
+last_updated: "2026-03-20T22:25:09.597Z"
 progress:
   total_phases: 6
   completed_phases: 1
-  total_plans: 3
-  completed_plans: 3
+  total_plans: 5
+  completed_plans: 4
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Customer books a car wash online in under 2 minutes, sees real-time slot availability, and receives immediate confirmation — no phone call needed
-**Current focus:** Phase 01 — foundation
+**Current focus:** Phase 02 — slot-engine-booking-api
 
 ## Current Position
 
-Phase: 01 (foundation) — COMPLETE
-Plan: 3 of 3
+Phase: 02 (slot-engine-booking-api) — EXECUTING
+Plan: 1 of 2
 
 ## Performance Metrics
 
@@ -49,6 +49,7 @@ Plan: 3 of 3
 | Phase 01-foundation P01 | 13min | 4 tasks | 17 files |
 | Phase 01-foundation P02 | 2min | 2 tasks | 3 files |
 | Phase 01-foundation P03 | 3min | 2 tasks | 5 files |
+| Phase 02-slot-engine-booking-api P01 | 4min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -72,6 +73,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation P03]: Logo uses SVG text elements with system fonts (not path letterforms) — faster to produce and editable
 - [Phase 01-foundation P03]: White logo is a separate SVG file (not CSS filter) — avoids hue artifacts on cyan elements
 - [Phase 01-foundation P03]: globals.css preserves shadcn/tailwind.css import structure; only brand tokens updated with direct hex
+- [Phase 02-slot-engine-booking-api]: Candidate grid uses 15-minute intervals internally so edge slots like 17:15 are reachable — SLOT_INTERVAL_MIN=30 exported per spec but doesn't drive generation
+- [Phase 02-slot-engine-booking-api]: DST handled via explicit Portugal UTC+0/+1 offset logic (last Sunday March/October rule) — avoids date-fns-tz dependency
 
 ### Pending Todos
 
@@ -85,6 +88,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-20T22:00:59.555Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-slot-engine-booking-api/02-CONTEXT.md
+Last session: 2026-03-20T22:25:09.595Z
+Stopped at: Completed 02-01-PLAN.md
+Resume file: None
