@@ -11,12 +11,13 @@
   --color-brand-white: #FFFFFF;
   --color-brand-navy-light: #142E54;
   --color-brand-cyan-dark: #009BB0;
+  --color-brand-gray: #94A3B8;
 
   /* Shadcn/ui semantic tokens */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: #00C8E0;
+  --color-primary-foreground: #0B1F3A;
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
