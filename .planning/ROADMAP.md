@@ -47,11 +47,11 @@ Plans:
   2. Two simultaneous POST requests to `/api/bookings` for the same slot result in exactly one success (HTTP 200) and one conflict (HTTP 409) — no double booking under concurrent load
   3. A slot that would cause a booking to end after 18:00 is never returned as available
   4. Cancelling a booking via the signed cancellation token frees its slot so it appears available again in subsequent slot queries
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: Slot engine pure function (lib/slots.ts) with overlap logic and buffer
-- [ ] 02-02: Booking API routes (GET /api/slots, POST /api/bookings, POST /api/cancel)
+- [ ] 02-01-PLAN.md — Pure slot engine function (lib/slots.ts) with TDD: overlap logic, 30-min grid, 15-min buffer, end-time constraint
+- [ ] 02-02-PLAN.md — RLS migration + API routes (GET /api/slots, POST /api/bookings, POST /api/cancel)
 
 ### Phase 3: Landing Page + Service Catalog
 **Goal**: Visitors can discover Jetwash24's services, pricing, and contact details in both Portuguese and English on a visually polished, brand-consistent site
