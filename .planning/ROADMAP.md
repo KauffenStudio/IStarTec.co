@@ -31,12 +31,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The atomic booking constraint (Postgres exclusion constraint on tstzrange with btree_gist) is in place and verified to reject overlapping inserts
   4. The Jetwash24 logo asset exists and the Tailwind v4 + shadcn/ui design system is configured with the dark blue / white / cyan color scheme
   5. A developer can run the project locally and see a placeholder home page served in both PT and EN
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Project scaffolding (Next.js 15.5 + TypeScript + Tailwind v4 + shadcn/ui + next-intl)
-- [ ] 01-02: Supabase schema, migrations, and service catalog seed data
-- [ ] 01-03: Logo creation and design system configuration
+- [ ] 01-01-PLAN.md — Project scaffolding (Next.js 16 + TypeScript + Tailwind v4 + shadcn/ui + next-intl + Vitest)
+- [ ] 01-02-PLAN.md — Supabase schema, migrations, exclusion constraint, and service catalog seed data
+- [ ] 01-03-PLAN.md — Logo creation and design system configuration
 
 ### Phase 2: Slot Engine + Booking API
 **Goal**: The server-side slot availability and booking creation logic is correct, atomic, and independently testable before any UI depends on it
