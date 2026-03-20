@@ -12,7 +12,10 @@ O cliente deve conseguir marcar uma lavagem online em menos de 2 minutos, ver os
 
 ### Validated
 
-(None yet — ship to validate)
+*Validated in Phase 1: Foundation (2026-03-20)*
+- [x] Website bilingue PT + EN — next-intl routing via `/pt` e `/en`, zero strings hardcoded
+- [x] Logo criado de raiz para o Jetwash24 — SVG wordmark + variante branca + favicon
+- [x] Design azul escuro + branco + ciano — 37 tokens CSS `@theme` em `globals.css`, shadcn/ui configurado
 
 ### Active
 
@@ -23,9 +26,6 @@ O cliente deve conseguir marcar uma lavagem online em menos de 2 minutos, ver os
 - [ ] Email de notificação ao negócio para cada nova marcação
 - [ ] Variação de preços por tipo de veículo (citadino, berlina, SUV, carrinha)
 - [ ] Validação de disponibilidade em tempo real (slots cheios não são reserváveis)
-- [ ] Website bilingue PT + EN
-- [ ] Logo criado de raiz para o Jetwash24
-- [ ] Design azul escuro + branco + ciano, estilo profissional e dinâmico
 - [ ] Secção de contacto com morada, telefone, email e Instagram
 - [ ] Website responsivo (mobile + desktop)
 
