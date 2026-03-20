@@ -42,7 +42,7 @@
 
 ### Technical (TECH)
 
-- [ ] **TECH-01**: Motor de slots previne double-booking com verificação atómica a nível de base de dados (sem race conditions)
+- [x] **TECH-01**: Motor de slots previne double-booking com verificação atómica a nível de base de dados (sem race conditions)
 - [ ] **TECH-02**: Entregabilidade de email garantida com SPF/DKIM/DMARC configurados num domínio próprio
 
 ## v2 Requirements
@@ -97,7 +97,7 @@
 | DSGN-02 | Phase 1 | Complete |
 | DSGN-03 | Phase 4 | Pending |
 | DSGN-04 | Phase 3 | Pending |
-| TECH-01 | Phase 1 | Pending |
+| TECH-01 | Phase 1 | Complete |
 | TECH-02 | Phase 5 | Pending |
 
 **Coverage:**
