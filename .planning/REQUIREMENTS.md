@@ -35,7 +35,7 @@
 
 ### Design (DSGN)
 
-- [ ] **DSGN-01**: Logo personalizado criado de raiz para a marca Jetwash24
+- [x] **DSGN-01**: Logo personalizado criado de raiz para a marca Jetwash24
 - [x] **DSGN-02**: Design system com esquema de cores azul escuro + branco + ciano, estilo profissional e dinâmico
 - [ ] **DSGN-03**: Website totalmente responsivo em dispositivos mobile e desktop
 - [ ] **DSGN-04**: Placeholders visuais para fotografias de serviços (a substituir quando o cliente fornecer fotos reais)
@@ -93,7 +93,7 @@
 | CONT-01 | Phase 3 | Pending |
 | CONT-02 | Phase 3 | Pending |
 | CONT-03 | Phase 1 | Complete |
-| DSGN-01 | Phase 1 | Pending |
+| DSGN-01 | Phase 1 | Complete |
 | DSGN-02 | Phase 1 | Complete |
 | DSGN-03 | Phase 4 | Pending |
 | DSGN-04 | Phase 3 | Pending |

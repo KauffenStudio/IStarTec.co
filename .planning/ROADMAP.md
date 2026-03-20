@@ -12,7 +12,7 @@ Jetwash24 is built database-outward: the schema and slot engine are established 
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Next.js + Supabase + Tailwind + shadcn/ui + next-intl scaffolding, database schema, logo, design system
+- [x] **Phase 1: Foundation** - Next.js + Supabase + Tailwind + shadcn/ui + next-intl scaffolding, database schema, logo, design system (completed 2026-03-20)
 - [ ] **Phase 2: Slot Engine + Booking API** - Server-side availability logic, atomic booking with 15min buffer, cancellation token endpoint
 - [ ] **Phase 3: Landing Page + Service Catalog** - Homepage hero, service catalog UI, package display, contact section, bilingual content
 - [ ] **Phase 4: Booking Flow UI** - Multi-step booking wizard wired to API, price summary, GDPR consent, mobile-responsive
@@ -124,7 +124,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/3 | In Progress|  |
+| 1. Foundation | 3/3 | Complete   | 2026-03-20 |
 | 2. Slot Engine + Booking API | 0/2 | Not started | - |
 | 3. Landing Page + Service Catalog | 0/3 | Not started | - |
 | 4. Booking Flow UI | 0/2 | Not started | - |
