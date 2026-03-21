@@ -2,7 +2,46 @@
   "HomePage": {
     "title": "Lavagem de carros profissional no Algarve",
     "subtitle": "Marcacao online em menos de 2 minutos",
-    "cta": "Marcar agora"
+    "cta": "Marcar agora",
+    "tagline": "Detailing profissional, precos honestos.",
+    "about": "A Jetwash24 nasce da paixao pelo detalhe automovel. Sediados em Guia, Portugal, acreditamos que cada veiculo merece um tratamento profissional a precos justos. Venha conhecer-nos.",
+    "catalogCta": "Conhecer os Servicos",
+    "badge_interior": "Lavagem Interior",
+    "badge_exterior": "Lavagem Exterior",
+    "badge_pacotes": "Pacotes"
+  },
+  "Services": {
+    "tab_interior": "Interior",
+    "tab_exterior": "Exterior",
+    "tab_pacotes": "Pacotes",
+    "vehicle_citadino": "Citadino",
+    "vehicle_berlina": "Berlina",
+    "vehicle_suv": "SUV",
+    "vehicle_carrinha": "Carrinha",
+    "saving": "Poupa {amount}\u20ac",
+    "duration": "{min} min",
+    "emptyState": "Nenhum servico disponivel.",
+    "errorState": "Nao foi possivel carregar os servicos. Tente novamente mais tarde.",
+    "extras_deepClean": "Limpeza Profunda Estofos",
+    "extras_petHair": "Remocao de Pelos de Animais",
+    "extras_windows": "Limpeza de Vidros Interiores",
+    "extras_ozone": "Ozonizacao",
+    "extras_addMin": "+{min} min",
+    "extras_addPrice": "+{price}\u20ac",
+    "extras_total": "+{price}\u20ac / +{min} min"
+  },
+  "Contact": {
+    "title": "Contacto",
+    "phone": "+351 928 380 478",
+    "email": "jetwash24detailing@gmail.com",
+    "address": "Guia, Portugal",
+    "instagram": "@jetwash24detailing",
+    "mapLink": "Ver no Google Maps"
+  },
+  "Nav": {
+    "services": "Servicos",
+    "contact": "Contacto",
+    "openMenu": "Abrir menu de navegacao"
   },
   "Navigation": {
     "home": "Inicio",

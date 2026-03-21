@@ -2,7 +2,46 @@
   "HomePage": {
     "title": "Professional car wash in the Algarve",
     "subtitle": "Book online in under 2 minutes",
-    "cta": "Book now"
+    "cta": "Book now",
+    "tagline": "Professional detailing, honest prices.",
+    "about": "Jetwash24 was born from a passion for automotive detailing. Based in Guia, Portugal, we believe every vehicle deserves professional care at honest prices. Come find us.",
+    "catalogCta": "See Services",
+    "badge_interior": "Interior Wash",
+    "badge_exterior": "Exterior Wash",
+    "badge_pacotes": "Packages"
+  },
+  "Services": {
+    "tab_interior": "Interior",
+    "tab_exterior": "Exterior",
+    "tab_pacotes": "Packages",
+    "vehicle_citadino": "City Car",
+    "vehicle_berlina": "Saloon",
+    "vehicle_suv": "SUV",
+    "vehicle_carrinha": "Estate / Van",
+    "saving": "Save {amount}\u20ac",
+    "duration": "{min} min",
+    "emptyState": "No services available.",
+    "errorState": "Could not load services. Please try again later.",
+    "extras_deepClean": "Deep Upholstery Clean",
+    "extras_petHair": "Pet Hair Removal",
+    "extras_windows": "Interior Glass Cleaning",
+    "extras_ozone": "Ozone Treatment",
+    "extras_addMin": "+{min} min",
+    "extras_addPrice": "+{price}\u20ac",
+    "extras_total": "+{price}\u20ac / +{min} min"
+  },
+  "Contact": {
+    "title": "Contact",
+    "phone": "+351 928 380 478",
+    "email": "jetwash24detailing@gmail.com",
+    "address": "Guia, Portugal",
+    "instagram": "@jetwash24detailing",
+    "mapLink": "View on Google Maps"
+  },
+  "Nav": {
+    "services": "Services",
+    "contact": "Contact",
+    "openMenu": "Open navigation menu"
   },
   "Navigation": {
     "home": "Home",
