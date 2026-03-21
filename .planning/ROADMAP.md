@@ -63,12 +63,12 @@ Plans:
   3. Add-on extras for interior services are visible in the catalog with their individual prices and duration additions
   4. Package deals are presented with the bundle price and the saving compared to purchasing services individually
   5. The contact section shows phone number (click-to-call), email, address with a Google Maps link, and Instagram handle — all accurate
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: Homepage hero, CTA, and page layout in PT + EN
-- [ ] 03-02: Service catalog component (read from Supabase, vehicle surcharges, extras, packages)
-- [ ] 03-03: Contact section with map link, social link, and placeholder photo gallery
+- [ ] 03-01-PLAN.md — Foundation: shadcn components, catalog.ts pure functions + tests, i18n translations, smooth scroll
+- [ ] 03-02-PLAN.md — All page components (NavBar, Hero, About, ServiceCatalog, Contact) + page.tsx Supabase wiring
+- [ ] 03-03-PLAN.md — Visual and functional verification checkpoint (both locales, vehicle pricing, extras, packages)
 
 ### Phase 4: Booking Flow UI
 **Goal**: A customer can complete a booking from service selection to confirmation in under 2 minutes on any device
