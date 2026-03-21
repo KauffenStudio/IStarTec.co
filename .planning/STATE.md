@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 03-01-PLAN.md
-last_updated: "2026-03-21T10:45:37.906Z"
+stopped_at: Completed 03-02-PLAN.md
+last_updated: "2026-03-21T15:29:47.253Z"
 progress:
   total_phases: 6
   completed_phases: 2
   total_plans: 8
-  completed_plans: 6
+  completed_plans: 7
 ---
 
 # Project State
@@ -52,6 +52,7 @@ Plan: 1 of 3
 | Phase 02-slot-engine-booking-api P01 | 4min | 2 tasks | 2 files |
 | Phase 02-slot-engine-booking-api P02 | 5min | 2 tasks | 4 files |
 | Phase 03-landing-page-service-catalog P01 | 2min | 2 tasks | 9 files |
+| Phase 03-landing-page-service-catalog P02 | 5min | 3 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -82,6 +83,8 @@ Recent decisions affecting current work:
 - [Phase 03-landing-page-service-catalog]: calculateSavings clamps to 0 for negative savings (Math.max(0,...)) — never show negative price badge
 - [Phase 03-landing-page-service-catalog]: SLUG_CATEGORY and PACKAGE_COMPONENTS as plain record constants (not functions) — simpler lookup, tree-shakeable
 - [Phase 03-landing-page-service-catalog]: Translation keys use flat structure within namespace (Services.tab_interior) consistent with next-intl useTranslations pattern
+- [Phase 03-landing-page-service-catalog]: ExtrasPanel is display-only in Phase 3 — Phase 4 booking flow will consume selected extras
+- [Phase 03-landing-page-service-catalog]: Server component data flow: fetch in page.tsx, pass as props to client components — no client-side Supabase calls for catalog data
 
 ### Pending Todos
 
@@ -95,6 +98,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T10:45:37.904Z
-Stopped at: Completed 03-01-PLAN.md
+Last session: 2026-03-21T15:29:38.975Z
+Stopped at: Completed 03-02-PLAN.md
 Resume file: None
