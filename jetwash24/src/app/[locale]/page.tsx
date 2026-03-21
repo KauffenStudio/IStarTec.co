@@ -1,20 +1,52 @@
-import {getTranslations} from 'next-intl/server';
-import {setRequestLocale} from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
+import { createSupabaseServerClient } from '@/lib/supabase';
+import { NavBar } from '@/components/NavBar';
+import { HeroSection } from '@/components/HeroSection';
+import { AboutSection } from '@/components/AboutSection';
+import { ServiceCatalog } from '@/components/ServiceCatalog';
+import { ContactSection } from '@/components/ContactSection';
+import type { Service, VehicleSurcharge } from '@/types/database';
 
-type Props = {params: Promise<{locale: string}>};
+type Props = { params: Promise<{ locale: string }> };
 
-export default async function HomePage({params}: Props) {
-  const {locale} = await params;
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations('HomePage');
+
+  const supabase = await createSupabaseServerClient();
+
+  const { data: services, error: servicesError } = await supabase
+    .from('services')
+    .select('*')
+    .eq('is_active', true)
+    .order('sort_order');
+
+  const { data: surcharges, error: surchargesError } = await supabase
+    .from('vehicle_surcharges')
+    .select('*');
+
+  // Log errors server-side but render page with empty arrays (graceful degradation)
+  if (servicesError) {
+    console.error('[HomePage] Failed to fetch services:', servicesError.message);
+  }
+  if (surchargesError) {
+    console.error('[HomePage] Failed to fetch surcharges:', surchargesError.message);
+  }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8">
-      <h1 className="text-4xl font-bold text-brand-cyan mb-4">{t('title')}</h1>
-      <p className="text-xl text-brand-white/80 mb-8">{t('subtitle')}</p>
-      <button className="bg-brand-cyan text-brand-navy font-semibold px-8 py-3 rounded-lg hover:bg-brand-cyan-dark transition-colors">
-        {t('cta')}
-      </button>
-    </main>
+    <>
+      <NavBar />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ServiceCatalog
+          services={(services as Service[]) ?? []}
+          surcharges={(surcharges as VehicleSurcharge[]) ?? []}
+          locale={locale}
+          id="services"
+        />
+        <ContactSection />
+      </main>
+    </>
   );
 }
