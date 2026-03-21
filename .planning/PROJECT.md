@@ -17,6 +17,10 @@ O cliente deve conseguir marcar uma lavagem online em menos de 2 minutos, ver os
 - [x] Logo criado de raiz para o Jetwash24 — SVG wordmark + variante branca + favicon
 - [x] Design azul escuro + branco + ciano — 37 tokens CSS `@theme` em `globals.css`, shadcn/ui configurado
 
+*Validated in Phase 2: Slot Engine + Booking API (2026-03-21)*
+- [x] Validação de disponibilidade em tempo real (slots cheios não são reserváveis) — `GET /api/slots` com slot engine puro, 17 testes unitários
+- [x] Variação de preços por tipo de veículo (citadino, berlina, SUV, carrinha) — input validado na API; lógica de preço na fase de UI
+
 ### Active
 
 - [ ] Página principal com apresentação do negócio, serviços e chamada à ação
@@ -24,8 +28,6 @@ O cliente deve conseguir marcar uma lavagem online em menos de 2 minutos, ver os
 - [ ] Catálogo de serviços com preços, descrições e duração estimada
 - [ ] Email automático de confirmação ao cliente após marcação
 - [ ] Email de notificação ao negócio para cada nova marcação
-- [ ] Variação de preços por tipo de veículo (citadino, berlina, SUV, carrinha)
-- [ ] Validação de disponibilidade em tempo real (slots cheios não são reserváveis)
 - [ ] Secção de contacto com morada, telefone, email e Instagram
 - [ ] Website responsivo (mobile + desktop)
 
