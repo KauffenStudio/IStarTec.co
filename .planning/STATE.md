@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Completed 02-01-PLAN.md
-last_updated: "2026-03-20T22:25:09.597Z"
+stopped_at: Completed 02-02-PLAN.md
+last_updated: "2026-03-21T09:59:26.351Z"
 progress:
   total_phases: 6
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 5
-  completed_plans: 4
+  completed_plans: 5
 ---
 
 # Project State
@@ -50,6 +50,7 @@ Plan: 1 of 2
 | Phase 01-foundation P02 | 2min | 2 tasks | 3 files |
 | Phase 01-foundation P03 | 3min | 2 tasks | 5 files |
 | Phase 02-slot-engine-booking-api P01 | 4min | 2 tasks | 2 files |
+| Phase 02-slot-engine-booking-api P02 | 5min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -75,6 +76,8 @@ Recent decisions affecting current work:
 - [Phase 01-foundation P03]: globals.css preserves shadcn/tailwind.css import structure; only brand tokens updated with direct hex
 - [Phase 02-slot-engine-booking-api]: Candidate grid uses 15-minute intervals internally so edge slots like 17:15 are reachable — SLOT_INTERVAL_MIN=30 exported per spec but doesn't drive generation
 - [Phase 02-slot-engine-booking-api]: DST handled via explicit Portugal UTC+0/+1 offset logic (last Sunday March/October rule) — avoids date-fns-tz dependency
+- [Phase 02-slot-engine-booking-api]: RLS policies added for bookings (SELECT + UPDATE) — anon key client sufficient, no service-role key needed
+- [Phase 02-slot-engine-booking-api]: cancel route fetches by cancel_token then updates by id for idempotency check before UPDATE
 
 ### Pending Todos
 
@@ -88,6 +91,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-20T22:25:09.595Z
-Stopped at: Completed 02-01-PLAN.md
+Last session: 2026-03-21T09:59:26.349Z
+Stopped at: Completed 02-02-PLAN.md
 Resume file: None
