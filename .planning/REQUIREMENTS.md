@@ -18,9 +18,9 @@
 ### Services (SERV)
 
 - [ ] **SERV-01**: Utilizador pode ver catálogo completo de serviços com descrições, preços e duração estimada
-- [ ] **SERV-02**: Preços variam automaticamente por tipo de veículo (citadino, berlina, SUV, carrinha)
+- [x] **SERV-02**: Preços variam automaticamente por tipo de veículo (citadino, berlina, SUV, carrinha)
 - [ ] **SERV-03**: Extras opcionais (limpeza profunda de estofos, remoção de pelos, vidros interiores, ozonização) são selecionáveis na reserva de serviços interiores
-- [ ] **SERV-04**: Pacotes são apresentados com a poupança em relação aos serviços individuais
+- [x] **SERV-04**: Pacotes são apresentados com a poupança em relação aos serviços individuais
 
 ### Notifications (NOTF)
 
@@ -85,9 +85,9 @@
 | BOOK-06 | Phase 4 | Pending |
 | BOOK-07 | Phase 5 | Pending |
 | SERV-01 | Phase 3 | Pending |
-| SERV-02 | Phase 3 | Pending |
+| SERV-02 | Phase 3 | Complete |
 | SERV-03 | Phase 3 | Pending |
-| SERV-04 | Phase 3 | Pending |
+| SERV-04 | Phase 3 | Complete |
 | NOTF-01 | Phase 5 | Pending |
 | NOTF-02 | Phase 5 | Pending |
 | CONT-01 | Phase 3 | Pending |

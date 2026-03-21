@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-stopped_at: Phase 3 UI-SPEC approved
-last_updated: "2026-03-21T10:24:12.618Z"
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-21T10:45:37.906Z"
 progress:
   total_phases: 6
   completed_phases: 2
-  total_plans: 5
-  completed_plans: 5
+  total_plans: 8
+  completed_plans: 6
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-20)
 
 **Core value:** Customer books a car wash online in under 2 minutes, sees real-time slot availability, and receives immediate confirmation — no phone call needed
-**Current focus:** Phase 02 — slot-engine-booking-api
+**Current focus:** Phase 03 — landing-page-service-catalog
 
 ## Current Position
 
-Phase: 02 (slot-engine-booking-api) — EXECUTING
-Plan: 1 of 2
+Phase: 03 (landing-page-service-catalog) — EXECUTING
+Plan: 1 of 3
 
 ## Performance Metrics
 
@@ -51,6 +51,7 @@ Plan: 1 of 2
 | Phase 01-foundation P03 | 3min | 2 tasks | 5 files |
 | Phase 02-slot-engine-booking-api P01 | 4min | 2 tasks | 2 files |
 | Phase 02-slot-engine-booking-api P02 | 5min | 2 tasks | 4 files |
+| Phase 03-landing-page-service-catalog P01 | 2min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -78,6 +79,9 @@ Recent decisions affecting current work:
 - [Phase 02-slot-engine-booking-api]: DST handled via explicit Portugal UTC+0/+1 offset logic (last Sunday March/October rule) — avoids date-fns-tz dependency
 - [Phase 02-slot-engine-booking-api]: RLS policies added for bookings (SELECT + UPDATE) — anon key client sufficient, no service-role key needed
 - [Phase 02-slot-engine-booking-api]: cancel route fetches by cancel_token then updates by id for idempotency check before UPDATE
+- [Phase 03-landing-page-service-catalog]: calculateSavings clamps to 0 for negative savings (Math.max(0,...)) — never show negative price badge
+- [Phase 03-landing-page-service-catalog]: SLUG_CATEGORY and PACKAGE_COMPONENTS as plain record constants (not functions) — simpler lookup, tree-shakeable
+- [Phase 03-landing-page-service-catalog]: Translation keys use flat structure within namespace (Services.tab_interior) consistent with next-intl useTranslations pattern
 
 ### Pending Todos
 
@@ -91,6 +95,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-21T10:24:12.573Z
-Stopped at: Phase 3 UI-SPEC approved
-Resume file: .planning/phases/03-landing-page-service-catalog/03-UI-SPEC.md
+Last session: 2026-03-21T10:45:37.904Z
+Stopped at: Completed 03-01-PLAN.md
+Resume file: None

@@ -126,7 +126,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6
 |-------|----------------|--------|-----------|
 | 1. Foundation | 3/3 | Complete   | 2026-03-20 |
 | 2. Slot Engine + Booking API | 2/2 | Complete   | 2026-03-21 |
-| 3. Landing Page + Service Catalog | 0/3 | Not started | - |
+| 3. Landing Page + Service Catalog | 1/3 | In Progress|  |
 | 4. Booking Flow UI | 0/2 | Not started | - |
 | 5. Email Notification Pipeline | 0/2 | Not started | - |
 | 6. Polish + Launch | 0/2 | Not started | - |
