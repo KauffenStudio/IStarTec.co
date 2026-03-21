@@ -52,15 +52,17 @@ Exceptions:
 
 | Role | Size | Weight | Line Height | Usage |
 |------|------|--------|-------------|-------|
-| Display | 48px (text-5xl) | 700 (bold) | 1.1 | Hero headline only |
-| Heading | 28px (text-3xl) | 600 (semibold) | 1.2 | Section titles (Services, Contact) |
+| Display | 48px (text-5xl) | 600 (semibold) | 1.1 | Hero headline only |
+| Heading | 28px (text-3xl) | 600 (semibold) | 1.2 | Section titles (Services, Contact), service card names |
 | Body | 16px (text-base) | 400 (regular) | 1.5 | Descriptions, about text, contact details |
-| Label | 14px (text-sm) | 600 (semibold) | 1.4 | Price labels, duration badges, tab labels, surcharge amounts |
+| Label | 14px (text-sm) | 400 (regular) | 1.4 | Price labels, duration badges, tab labels, surcharge amounts |
 
 Notes:
-- Hero tagline "Detailing profissional, preços honestos." uses Display (48px, bold)
-- Service card names use Heading weight (semibold 600) at 20px (text-xl) — fits within the 2-weight rule as a size variant of Heading
-- Struck-through prices use Label (14px) with `line-through` decoration
+- Display and Heading share weight (semibold 600) — differentiated by size alone (48px vs 28px)
+- Hero tagline "Detailing profissional, preços honestos." uses Display (48px, semibold)
+- Service card names use Heading (28px, semibold)
+- Label items that require visual emphasis (e.g. "Poupa Xé" badge text, struck-through prices) use Label (14px) with `line-through` or `font-semibold` utility — no additional weight introduced
+- Two weights in use across the entire spec: 400 (regular) and 600 (semibold)
 
 ---
 
@@ -129,7 +131,7 @@ Custom components to create (no shadcn equivalent needed):
 - Background: `bg-brand-navy/95` with `backdrop-blur-sm`
 - Left: `<Logo variant="white" width={120} height={36} />`
 - Right: anchor links to `#services` and `#contact` — 14px semibold, white, hover turns cyan
-- Mobile (< 768px): hamburger menu (Lucide `Menu` icon) reveals full-width dropdown nav
+- Mobile (< 768px): hamburger button uses Lucide `Menu` icon with `aria-label="Abrir menu de navegação"` (PT) / `aria-label="Open navigation menu"` (EN) — reveals full-width dropdown nav
 - No separate route — anchor scrolling only
 
 ### Hero section
@@ -138,7 +140,7 @@ Custom components to create (no shadcn equivalent needed):
 - Content centered: `flex flex-col items-center justify-center text-center`
 - Stack: Logo → Display tagline → CTA button → 3 badge icons
 - Logo: `<Logo variant="white" width={200} height={60} />`, margin-bottom 32px
-- Tagline: 48px bold white, margin-bottom 16px
+- Tagline: 48px semibold white, margin-bottom 16px
 - CTA button: shadcn `<Button>` with `bg-brand-cyan text-brand-navy hover:bg-brand-cyan-dark`, `px-8 py-3`, links to `#services`
 - Below CTA (margin-top 32px): 3 horizontal badges — Lucide icon + label — "Lavagem Interior", "Lavagem Exterior", "Pacotes" — white text, cyan icon
 
@@ -208,6 +210,7 @@ Custom components to create (no shadcn equivalent needed):
 | Contact nav label: instagram | "@jetwash24detailing" | "@jetwash24detailing" | CONTEXT.md |
 | Empty catalog state | "Nenhum serviço disponível." | "No services available." | default — shown if Supabase returns empty array |
 | Error: catalog fetch failed | "Não foi possível carregar os serviços. Tente novamente mais tarde." | "Could not load services. Please try again later." | default |
+| Mobile nav aria-label | "Abrir menu de navegação" | "Open navigation menu" | accessibility requirement |
 
 No destructive actions in this phase. Destructive confirmation: not applicable.
 
