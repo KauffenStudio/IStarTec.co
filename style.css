@@ -274,40 +274,30 @@ input, select, textarea { font: inherit; }
 .nav__logo {
   display: flex;
   align-items: center;
-  gap: .25rem;
+  gap: .5rem;
   flex-shrink: 0;
 }
 .nav__logo-mark {
   width: 36px;
   height: 36px;
   background: var(--blue);
-  color: var(--white);
-  font-family: var(--font-head);
-  font-weight: 900;
-  font-size: 1.35rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 6px;
   flex-shrink: 0;
-  letter-spacing: 0;
 }
 .nav__logo-text {
   font-family: var(--font-head);
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: .02em;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .01em;
   color: var(--grey-900);
-  position: relative;
   line-height: 1;
 }
-.nav__logo-smile {
-  position: absolute;
-  bottom: -22px;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  display: block;
+.nav__logo-star {
+  color: var(--blue);
+  font-weight: 700;
 }
 .nav__links {
   display: flex;
