@@ -43,7 +43,7 @@ const translations = {
     'svc.sanitary.title':    'Instalações Sanitárias',
     'svc.sanitary.desc':     'Instalação completa de equipamentos sanitários — bases de duche, banheiras, sanitas e bidés suspensos, torneiras e ligações de esgotos em obra nova e remodelação.',
     // Why
-    'why.label':       'Porquê a Kauffen',
+    'why.label':       'Porquê a iStarTec',
     'why.title':       'Pensado para Construtores e Promotores',
     'why.1.title':     'Competência Técnica',
     'why.1.desc':      'Especificação e execução de grau de engenharia em cada sistema que instalamos. As nossas equipas trabalham diretamente a partir de desenhos arquitetónicos e esquemas MEP.',
@@ -153,9 +153,9 @@ const translations = {
     'og.li2':   'Projetos de luxo na Praia da Rocha',
     'og.li3':   'Construtor de referência no Algarve',
     // About
-    'about.label':   'Sobre a Kauffen',
+    'about.label':   'Sobre a iStarTec',
     'about.title':   'Especialistas em Instalações Técnicas',
-    'about.p1':      'A Kauffen é uma empresa especializada em instalações técnicas sediada no Algarve, focada exclusivamente em sistemas hidráulicos e de canalização para construção residencial. Trabalhamos com construtoras, promotores, arquitetos e construtores de moradias em toda a região.',
+    'about.p1':      'A iStarTec é uma empresa especializada em instalações técnicas sediada no Algarve, focada exclusivamente em sistemas hidráulicos e de canalização para construção residencial. Trabalhamos com construtoras, promotores, arquitetos e construtores de moradias em toda a região.',
     'about.p2':      'Ao contrário de um empreiteiro de canalização genérico, o nosso foco é inteiramente na nova construção — integrando sistemas na fase certa da obra, trabalhando a partir de projetos técnicos e entregando documentação de comissionamento na conclusão.',
     'about.p3':      'O nosso trabalho abrange desde residências privadas a empreendimentos multi-fração, com um forte historial em Portimão, Albufeira e na costa do Algarve. Somos parceiros orgulhosos da <strong>Ordem Geométrica</strong>, <strong>Tacu Bacaliuc</strong> e <strong>emohb</strong>, colaborando em muitos dos seus projetos de construção residencial.',
     'about.badge1':  'Empreiteiro Certificado',
@@ -202,11 +202,11 @@ const translations = {
     'footer.nav':     'Navegação',
     'footer.bosch':   'Parceiro Bosch',
     'footer.uponor':  'Certificado Uponor',
-    'footer.copy':    '© 2025 Kauffen. Todos os direitos reservados.',
+    'footer.copy':    '© 2025 iStarTec. Todos os direitos reservados.',
     'footer.tagline': 'Instalações Técnicas · Algarve, Portugal',
     // Success message
     'success.title': 'Pedido de Orçamento Enviado',
-    'success.desc':  'Obrigado pelo seu contacto. Um membro da equipa Kauffen entrará em contacto em 24 horas úteis.',
+    'success.desc':  'Obrigado pelo seu contacto. Um membro da equipa iStarTec entrará em contacto em 24 horas úteis.',
     'form.sending':  'A enviar…',
   },
   en: {
@@ -248,7 +248,7 @@ const translations = {
     'svc.sanitary.title':    'Sanitary Installations',
     'svc.sanitary.desc':     'Complete sanitary equipment installation — shower trays, baths, wall-hung toilets and bidets, taps and waste connections for new builds and renovations.',
     // Why
-    'why.label':       'Why Kauffen',
+    'why.label':       'Why iStarTec',
     'why.title':       'Built for Contractors & Developers',
     'why.1.title':     'Technical Expertise',
     'why.1.desc':      'Engineering-grade specification and execution across every system we install. Our teams work directly from architectural drawings and MEP schematics.',
@@ -354,9 +354,9 @@ const translations = {
     'og.li2':   'Luxury projects at Praia da Rocha',
     'og.li3':   'Reference builder in the Algarve',
     // About
-    'about.label':   'About Kauffen',
+    'about.label':   'About iStarTec',
     'about.title':   'Technical Installation Specialists',
-    'about.p1':      'Kauffen is a technical installation contractor based in the Algarve, specialising exclusively in hydraulic and plumbing systems for residential construction. We work with construction companies, developers, architects and villa builders throughout the region.',
+    'about.p1':      'iStarTec is a technical installation contractor based in the Algarve, specialising exclusively in hydraulic and plumbing systems for residential construction. We work with construction companies, developers, architects and villa builders throughout the region.',
     'about.p2':      'Unlike a general plumbing contractor, our focus is entirely on new construction — integrating systems at the right phase of a build, working from professional drawings, and delivering commissioning documentation at handover.',
     'about.p3':      'Our work spans single private residences to multi-unit developments, with a strong track record in Portimão, Albufeira and the wider Algarve coast. We are proud partners of <strong>Ordem Geométrica</strong>, <strong>Tacu Bacaliuc</strong> and <strong>emohb</strong>, collaborating on many of their residential construction projects.',
     'about.badge1':  'Certified Contractor',
@@ -403,11 +403,11 @@ const translations = {
     'footer.nav':     'Navigation',
     'footer.bosch':   'Bosch Partner',
     'footer.uponor':  'Uponor Certified',
-    'footer.copy':    '© 2025 Kauffen. All rights reserved.',
+    'footer.copy':    '© 2025 iStarTec. All rights reserved.',
     'footer.tagline': 'Technical Installations · Algarve, Portugal',
     // Success message
     'success.title': 'Quote Request Sent',
-    'success.desc':  'Thank you for your enquiry. A member of the Kauffen team will be in touch within 24 business hours.',
+    'success.desc':  'Thank you for your enquiry. A member of the iStarTec team will be in touch within 24 business hours.',
     'form.sending':  'Sending…',
   }
 };
