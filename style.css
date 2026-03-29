@@ -1432,7 +1432,7 @@ input, select, textarea { font: inherit; }
   .service-card--featured { grid-column: 1; flex-direction: column; }
   .service-card--featured .service-card__gallery { width: 100%; height: 260px; }
   .service-card--featured .service-card__slides { min-height: 260px; }
-  .service-card--featured .service-card__slides img { height: 260px; object-position: left center; }
+  .service-card--featured .service-card__slides img { height: 260px; object-position: center center; }
   .service-card__list { grid-template-columns: 1fr; }
 
   .portfolio__grid { grid-template-columns: 1fr; }
