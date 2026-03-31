@@ -138,3 +138,6 @@
     scroll-behavior: smooth;
   }
 }
+
+@keyframes craftedSpinA { to { transform: rotate(360deg); } }
+@keyframes craftedSpinB { to { transform: rotate(360deg); } }
