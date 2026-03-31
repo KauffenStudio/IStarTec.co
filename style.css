@@ -1359,6 +1359,42 @@ input, select, textarea { font: inherit; }
   color: var(--grey-600, #4b5563);
 }
 
+/* Crafted by Kauffen Studios */
+.footer__crafted {
+  text-align: center;
+  padding: 1rem 0 0;
+}
+.footer__crafted .crafted-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: .75rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey-600, #4b5563);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__crafted .crafted-link:hover { color: var(--grey-300, #d1d5db); }
+.crafted-logo {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-shrink: 0;
+}
+.crafted-logo svg { width: 100%; height: 100%; }
+.crafted-ring-a {
+  animation: craftedSpinA 12s linear infinite;
+  transform-origin: center;
+}
+.crafted-ring-b {
+  animation: craftedSpinB 8s linear infinite reverse;
+  transform-origin: center;
+}
+@keyframes craftedSpinA { to { transform: rotate(360deg); } }
+@keyframes craftedSpinB { to { transform: rotate(360deg); } }
+
 /* ─────────────────────────────────────────────────────────
    SCROLL REVEAL
    ───────────────────────────────────────────────────────── */
