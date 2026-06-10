@@ -6,6 +6,8 @@
   <title>iStarTec — Instalações Técnicas Algarve</title>
   <meta name="description" content="iStarTec especializa-se em instalações de canalização e hidráulica para construção residencial no Algarve, Portugal. Ao serviço de arquitetos, promotores e construtoras." />
   <meta name="google-site-verification" content="auPRILeo-oYTgveaFeF3aOdUljHphDOH-5jXC1GaYx0" />
+  <link rel="preload" as="image" href="assets/hero-bg.webp" type="image/webp" fetchpriority="high" />
+  <link rel="preconnect" href="https://ordemgeometrica.pt" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -64,7 +66,10 @@
   <section id="home" class="hero">
     <!-- Subtle technical photo background -->
     <div class="hero__bg-photo">
-      <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1600&q=80" alt="" aria-hidden="true" />
+      <picture>
+        <source srcset="assets/hero-bg.webp" type="image/webp" />
+        <img src="assets/hero-bg.jpg" alt="" aria-hidden="true" width="1600" height="1067" fetchpriority="high" decoding="async" />
+      </picture>
     </div>
     <!-- Engineering grid overlay -->
     <div class="hero__bg-grid"></div>
@@ -158,7 +163,7 @@
           </div>
           <div class="service-card__gallery" data-gallery="plumbing">
             <div class="service-card__slides">
-              <img src="assets/services/svc-plumbing-4.jpg" alt="Grupo de pressurização com bombas E-SPO+" loading="lazy" />
+              <picture><source srcset="assets/services/svc-plumbing-4.webp" type="image/webp" /><img src="assets/services/svc-plumbing-4.jpg" alt="Grupo de pressurização com bombas E-SPO+" width="1186" height="1599" loading="lazy" decoding="async" /></picture>
             </div>
             <div class="service-card__gallery-nav">
               <button class="svc-gallery-prev" aria-label="Anterior">
@@ -175,12 +180,12 @@
         <div class="service-card">
           <div class="service-card__gallery" data-gallery="sanitary">
             <div class="service-card__slides">
-              <img src="assets/services/svc-sanitary-3.jpg" alt="Casa de banho de luxo — moradia em Portugal" loading="lazy" />
-              <img src="assets/services/svc-sanitary-1.jpg" alt="Casa de banho de luxo — moradia em Portugal" loading="lazy" />
-              <img src="assets/services/svc-sanitary-2.jpg" alt="Casa de banho de luxo — moradia em Portugal" loading="lazy" />
-              <img src="assets/services/svc-sanitary-4.jpg" alt="Casa de banho de luxo — moradia em Portugal" loading="lazy" />
-              <img src="assets/services/svc-sanitary-5.jpg" alt="Casa de banho de luxo — moradia em Portugal" loading="lazy" />
-              <img src="assets/services/svc-sanitary-6.jpg" alt="Casa de banho de luxo — moradia em Portugal" loading="lazy" />
+              <picture><source srcset="assets/services/svc-sanitary-3.webp" type="image/webp" /><img src="assets/services/svc-sanitary-3.jpg" alt="Casa de banho de luxo — moradia em Portugal" width="1206" height="878" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-sanitary-1.webp" type="image/webp" /><img src="assets/services/svc-sanitary-1.jpg" alt="Casa de banho de luxo — moradia em Portugal" width="1045" height="793" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-sanitary-2.webp" type="image/webp" /><img src="assets/services/svc-sanitary-2.jpg" alt="Casa de banho de luxo — moradia em Portugal" width="1030" height="786" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-sanitary-4.webp" type="image/webp" /><img src="assets/services/svc-sanitary-4.jpg" alt="Casa de banho de luxo — moradia em Portugal" width="1206" height="869" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-sanitary-5.webp" type="image/webp" /><img src="assets/services/svc-sanitary-5.jpg" alt="Casa de banho de luxo — moradia em Portugal" width="1116" height="1769" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-sanitary-6.webp" type="image/webp" /><img src="assets/services/svc-sanitary-6.jpg" alt="Casa de banho de luxo — moradia em Portugal" width="1206" height="1753" loading="lazy" decoding="async" /></picture>
             </div>
             <div class="service-card__gallery-nav">
               <button class="svc-gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -207,14 +212,14 @@
         <div class="service-card">
           <div class="service-card__gallery" data-gallery="solar">
             <div class="service-card__slides">
-              <img src="assets/services/svc-solar-2.jpg" alt="Instalação solar BAXI em edifício urbano" loading="lazy" />
-              <img src="assets/services/svc-solar-3.jpg" alt="Múltiplos coletores solares em cobertura" loading="lazy" />
-              <img src="assets/services/svc-solar-4.jpg" alt="Coletor solar BAXI, paisagem algarvia" loading="lazy" />
-              <img src="assets/services/svc-solar-6.jpg" alt="Bateria de coletores solares Bosch em cobertura" loading="lazy" />
-              <img src="assets/services/svc-solar-7.jpg" alt="Coletores BAXI com grua de obra ao fundo" loading="lazy" />
-              <img src="assets/services/svc-solar-8.jpg" alt="Coletores solares BOSCH em cobertura" loading="lazy" />
-              <img src="assets/services/svc-solar-13.jpg" alt="Edifício Jupiter com coletores solares" loading="lazy" />
-              <img src="assets/services/svc-solar-15.jpg" alt="Coletores BAXI — vista de detalhe" loading="lazy" />
+              <picture><source srcset="assets/services/svc-solar-2.webp" type="image/webp" /><img src="assets/services/svc-solar-2.jpg" alt="Instalação solar BAXI em edifício urbano" width="1600" height="1200" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-solar-3.webp" type="image/webp" /><img src="assets/services/svc-solar-3.jpg" alt="Múltiplos coletores solares em cobertura" width="1600" height="2133" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-solar-4.webp" type="image/webp" /><img src="assets/services/svc-solar-4.jpg" alt="Coletor solar BAXI, paisagem algarvia" width="1600" height="1200" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-solar-6.webp" type="image/webp" /><img src="assets/services/svc-solar-6.jpg" alt="Bateria de coletores solares Bosch em cobertura" width="1599" height="717" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-solar-7.webp" type="image/webp" /><img src="assets/services/svc-solar-7.jpg" alt="Coletores BAXI com grua de obra ao fundo" width="1600" height="1200" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-solar-8.webp" type="image/webp" /><img src="assets/services/svc-solar-8.jpg" alt="Coletores solares BOSCH em cobertura" width="1600" height="715" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-solar-13.webp" type="image/webp" /><img src="assets/services/svc-solar-13.jpg" alt="Edifício Jupiter com coletores solares" width="1600" height="1200" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-solar-15.webp" type="image/webp" /><img src="assets/services/svc-solar-15.jpg" alt="Coletores BAXI — vista de detalhe" width="1600" height="1200" loading="lazy" decoding="async" /></picture>
             </div>
             <div class="service-card__gallery-nav">
               <button class="svc-gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -238,16 +243,16 @@
         <div class="service-card">
           <div class="service-card__gallery" data-gallery="radiant">
             <div class="service-card__slides">
-              <img src="assets/services/svc-radiant-new-1.jpg" alt="Caixa de coletores com válvulas de zona" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-2.jpg" alt="Acumulador com filtro de água" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-3.jpg" alt="Esquentador e sistema de AQS" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-4.jpg" alt="Tubagem e coletor em parede técnica" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-5.jpg" alt="Acumulador Videira com bomba de circulação" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-6.jpg" alt="Bomba de calor Carrier AquaSnap" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-7.jpg" alt="Tubagem de chão radiante em fase de instalação" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-8.jpg" alt="Tubagem de chão radiante — detalhe" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-9.jpg" alt="Chão radiante Uponor concluído" loading="lazy" />
-              <img src="assets/services/svc-radiant-new-10.jpg" alt="Sistema de chão radiante em obra" loading="lazy" />
+              <picture><source srcset="assets/services/svc-radiant-new-1.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-1.jpg" alt="Caixa de coletores com válvulas de zona" width="1600" height="1200" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-2.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-2.jpg" alt="Acumulador com filtro de água" width="1456" height="3264" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-3.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-3.jpg" alt="Esquentador e sistema de AQS" width="1600" height="2133" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-4.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-4.jpg" alt="Tubagem e coletor em parede técnica" width="1600" height="1200" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-5.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-5.jpg" alt="Acumulador Videira com bomba de circulação" width="1600" height="2836" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-6.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-6.jpg" alt="Bomba de calor Carrier AquaSnap" width="1600" height="2133" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-7.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-7.jpg" alt="Tubagem de chão radiante em fase de instalação" width="1154" height="642" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-8.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-8.jpg" alt="Tubagem de chão radiante — detalhe" width="1136" height="642" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-9.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-9.jpg" alt="Chão radiante Uponor concluído" width="1197" height="637" loading="lazy" decoding="async" /></picture>
+              <picture><source srcset="assets/services/svc-radiant-new-10.webp" type="image/webp" /><img src="assets/services/svc-radiant-new-10.jpg" alt="Sistema de chão radiante em obra" width="1189" height="851" loading="lazy" decoding="async" /></picture>
             </div>
             <div class="service-card__gallery-nav">
               <button class="svc-gallery-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M15 18l-6-6 6-6"/></svg></button>
@@ -329,7 +334,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="bellevue">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-2-3-thegem-gallery-sidebar.png" alt="Edifício Bellevue Lote 13 — Praia da Rocha" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-2-3-thegem-gallery-sidebar.png" alt="Edifício Bellevue Lote 13 — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -352,7 +357,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="elite">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-7-2-thegem-gallery-sidebar.png" alt="Edifício Elite Residence — Praia da Rocha" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-7-2-thegem-gallery-sidebar.png" alt="Edifício Elite Residence — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -374,7 +379,7 @@
 
         <div class="portfolio-card" data-location="albufeira" data-project="albufeira-garden">
           <div class="portfolio-card__img">
-            <img src="https://images.egorealestate.com/Z1280x1024/S5/C332/P23672660/Tphoto/ID54376901-0000-0500-0000-0000111e086c.jpg" alt="Albufeira Garden — Albufeira" loading="lazy" />
+            <img src="https://images.egorealestate.com/Z1280x1024/S5/C332/P23672660/Tphoto/ID54376901-0000-0500-0000-0000111e086c.jpg" alt="Albufeira Garden — Albufeira" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Albufeira</span>
             </div>
@@ -396,7 +401,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="fojo-47">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/12/image-0023-thegem-gallery-sidebar.jpeg" alt="Fojo Lote 47 — Portimão" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/12/image-0023-thegem-gallery-sidebar.jpeg" alt="Fojo Lote 47 — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -418,7 +423,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="urbigal">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-32-1-thegem-gallery-sidebar.png" alt="Edifício Urbigal — Praia da Rocha" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-32-1-thegem-gallery-sidebar.png" alt="Edifício Urbigal — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -440,7 +445,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="iate-residence">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2023/02/Fotos-orgem-geometrica-marca-de-agua-7-thegem-gallery-sidebar.png" alt="Edifício Iate Residence — Praia da Rocha" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2023/02/Fotos-orgem-geometrica-marca-de-agua-7-thegem-gallery-sidebar.png" alt="Edifício Iate Residence — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -462,7 +467,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="sesmarias">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/10/Lote5_Sesmarias_entrada-scaled-thegem-gallery-sidebar.jpg" alt="Sesmarias — Portimão" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/10/Lote5_Sesmarias_entrada-scaled-thegem-gallery-sidebar.jpg" alt="Sesmarias — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -484,7 +489,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="garden-city">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/12/6085a96a-d24f-427f-b2b5-716248eeb4f5-thegem-gallery-sidebar.jpg" alt="Garden City 16/17 — Portimão" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/12/6085a96a-d24f-427f-b2b5-716248eeb4f5-thegem-gallery-sidebar.jpg" alt="Garden City 16/17 — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -506,7 +511,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="lote-7-8">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/09/IMG_6614-scaled-thegem-product-justified-square-m.jpg" alt="Lote 7/8 — Portimão" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/09/IMG_6614-scaled-thegem-product-justified-square-m.jpg" alt="Lote 7/8 — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -528,7 +533,7 @@
 
         <div class="portfolio-card" data-location="alvor" data-project="alvor-ria-residence">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/10/photo-output-3-thegem-gallery-sidebar.jpg" alt="Alvor Ria Residence — Alvor" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/10/photo-output-3-thegem-gallery-sidebar.jpg" alt="Alvor Ria Residence — Alvor" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Alvor</span>
             </div>
@@ -550,7 +555,7 @@
 
         <div class="portfolio-card" data-location="alvor" data-project="casa-alvor">
           <div class="portfolio-card__img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/2020/01/Casa-10-thegem-gallery-sidebar.jpg" alt="Residência Privada — Alvor" loading="lazy" />
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2020/01/Casa-10-thegem-gallery-sidebar.jpg" alt="Residência Privada — Alvor" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Alvor</span>
             </div>
@@ -572,7 +577,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="emohb-moradia-1">
           <div class="portfolio-card__img">
-            <img src="assets/portfolio/emohb-m1-img_3376.jpg" alt="Moradia emohb 1 — Portimão" loading="lazy" />
+            <picture><source srcset="assets/portfolio/emohb-m1-img_3376.webp" type="image/webp" /><img src="assets/portfolio/emohb-m1-img_3376.jpg" alt="Moradia emohb 1 — Portimão" width="1058" height="785" loading="lazy" decoding="async" /></picture>
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -594,7 +599,7 @@
 
         <div class="portfolio-card" data-location="portimao" data-project="emohb-moradia-2">
           <div class="portfolio-card__img">
-            <img src="assets/portfolio/emohb-m2-img_3370.jpg" alt="Moradia emohb 2 — Portimão" loading="lazy" />
+            <picture><source srcset="assets/portfolio/emohb-m2-img_3370.webp" type="image/webp" /><img src="assets/portfolio/emohb-m2-img_3370.jpg" alt="Moradia emohb 2 — Portimão" width="1055" height="789" loading="lazy" decoding="async" /></picture>
             <div class="portfolio-card__overlay">
               <span class="portfolio-card__tag">Portimão</span>
             </div>
@@ -854,7 +859,7 @@
       </div>
       <div class="about__visual">
         <div class="about__img-wrapper">
-          <img src="assets/about-hero.jpg" alt="Instalações técnicas — iStarTec" loading="lazy" />
+          <picture><source srcset="assets/about-hero.webp" type="image/webp" /><img src="assets/about-hero.jpg" alt="Instalações técnicas — iStarTec" width="1205" height="796" loading="lazy" decoding="async" /></picture>
           <div class="about__img-card">
             <span class="about__img-card-num">25+</span>
             <span class="about__img-card-label" data-i18n="about.years">Anos de Experiência</span>
@@ -1063,6 +1068,6 @@
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
