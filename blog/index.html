@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog iStarTec — Guias Técnicos de Instalações Hidráulicas no Algarve</title>
+  <meta name="description" content="Guias técnicos sobre canalização, chão radiante, solar térmico, bomba de calor e instalações sanitárias para construção residencial no Algarve. Para construtoras, promotores e arquitetos." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://istartec.co/blog/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="iStarTec" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:url" content="https://istartec.co/blog/" />
+  <meta property="og:title" content="Blog iStarTec — Guias Técnicos de Instalações Hidráulicas no Algarve" />
+  <meta property="og:description" content="Guias técnicos sobre canalização, chão radiante, solar térmico, bomba de calor e instalações sanitárias no Algarve." />
+  <meta property="og:image" content="https://istartec.co/assets/istartec-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Blog iStarTec — Guias Técnicos de Instalações Hidráulicas" />
+  <meta name="twitter:description" content="Guias técnicos sobre instalações hidráulicas no Algarve." />
+  <meta name="twitter:image" content="https://istartec.co/assets/istartec-cover.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18074242840"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18074242840');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": "https://istartec.co/blog/#blog",
+    "name": "Blog iStarTec",
+    "description": "Guias técnicos sobre instalações hidráulicas para construção residencial no Algarve.",
+    "url": "https://istartec.co/blog/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "iStarTec",
+      "logo": "https://istartec.co/assets/istartec-logo.png"
+    },
+    "inLanguage": "pt-PT"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://istartec.co/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://istartec.co/blog/" }
+    ]
+  }
+  </script>
+
+  <style>
+    .blog-hero { padding: 140px 0 60px; background: linear-gradient(180deg, #f7f8fa 0%, #ffffff 100%); text-align: center; }
+    .blog-hero h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -.02em; margin: .5rem 0 1rem; line-height: 1.1; }
+    .blog-hero p { max-width: 720px; margin: 0 auto; color: #475569; font-size: 1.1rem; }
+    .breadcrumbs { font-size: .85rem; color: #64748b; margin-bottom: 1rem; }
+    .breadcrumbs a { color: #2563eb; text-decoration: none; }
+    .breadcrumbs a:hover { text-decoration: underline; }
+    .blog-clusters { padding: 3rem 0; }
+    .cluster-pills { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-bottom: 3rem; }
+    .cluster-pill { padding: .5rem 1rem; background: white; border: 1px solid #e2e8f0; border-radius: 999px; font-size: .9rem; font-weight: 500; color: #475569; cursor: pointer; transition: all .15s ease; }
+    .cluster-pill.is-active, .cluster-pill:hover { background: #2563eb; color: white; border-color: #2563eb; }
+    .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+    .article-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 2rem; transition: all .2s ease; text-decoration: none; color: inherit; display: flex; flex-direction: column; }
+    .article-card:hover { border-color: #2563eb; transform: translateY(-2px); box-shadow: 0 12px 24px -10px rgba(37, 99, 235, .15); }
+    .article-card .article-cluster { display: inline-block; padding: .25rem .65rem; background: #f1f5f9; color: #2563eb; border-radius: 999px; font-size: .72rem; font-weight: 600; margin-bottom: .75rem; align-self: flex-start; text-transform: uppercase; letter-spacing: .03em; }
+    .article-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700; line-height: 1.35; margin: 0 0 .75rem; color: #0f172a; }
+    .article-card p { color: #475569; font-size: .95rem; line-height: 1.55; margin: 0 0 1rem; }
+    .article-card .meta { display: flex; gap: 1rem; font-size: .8rem; color: #64748b; margin-top: auto; padding-top: 1rem; border-top: 1px solid #f1f5f9; }
+    .article-card .meta span:before { content: "·"; margin-right: 1rem; color: #cbd5e1; }
+    .article-card .meta span:first-child:before { content: ""; margin: 0; }
+    .coming-soon { background: #f7f8fa; border-style: dashed; }
+    .coming-soon .article-cluster { background: #fef3c7; color: #92400e; }
+    .coming-soon h2 { color: #64748b; }
+    .empty-msg { text-align: center; color: #64748b; padding: 3rem 0; font-size: 1.05rem; }
+    .cta-newsletter { padding: 4rem 0; text-align: center; background: #f7f8fa; margin-top: 4rem; }
+    .cta-newsletter h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.75rem; font-weight: 700; margin: 0 0 1rem; }
+    .cta-newsletter p { color: #475569; margin: 0 0 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .lang-pill { display: inline-flex; align-items: center; gap: .35rem; padding: .4rem .85rem; border-radius: 999px; background: #f1f5f9; color: #0f172a; text-decoration: none; font-size: .82rem; font-weight: 600; transition: background .15s ease; }
+    .lang-pill:hover { background: #e2e8f0; }
+    .nav__lang-item { display: flex; align-items: center; }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <nav class="nav container">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-mark">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M11 1 L13.5 8.5 L21 11 L13.5 13.5 L11 21 L8.5 13.5 L1 11 L8.5 8.5 Z" fill="white"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/" class="nav__link">Início</a></li>
+        <li><a href="/services/" class="nav__link">Serviços</a></li>
+        <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
+        <li><a href="/about/" class="nav__link">Sobre Nós</a></li>
+        <li><a href="/blog/" class="nav__link" aria-current="page">Blog</a></li>
+        <li><a href="/contact/" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Navegação">
+        <a href="/">Início</a> › <span>Blog</span>
+      </nav>
+      <div class="section__label">Guias Técnicos</div>
+      <h1>Conhecimento Técnico para Quem Constrói no Algarve</h1>
+      <p>Artigos para construtoras, promotores e arquitetos sobre canalização, chão radiante, solar térmico, bomba de calor e regulamentação técnica aplicada a obra residencial no Algarve.</p>
+    </div>
+  </section>
+
+  <section class="blog-clusters">
+    <div class="container">
+
+      <div class="cluster-pills">
+        <span class="cluster-pill is-active">Todos</span>
+        <span class="cluster-pill">Sistemas Hidráulicos</span>
+        <span class="cluster-pill">Eficiência &amp; AQS</span>
+        <span class="cluster-pill">Algarve Técnico</span>
+      </div>
+
+      <div class="articles-grid">
+
+        <a href="/blog/chao-radiante-preco-m2-algarve/" class="article-card">
+          <span class="article-cluster">Eficiência &amp; AQS</span>
+          <h2>Chão Radiante no Algarve: Quanto Custa por m² em 2026 (com Números Reais)</h2>
+          <p>Guia completo de preços de chão radiante hidráulico e elétrico em moradias do Algarve. Custos por dimensão, fatores que mudam o orçamento, marcas (Uponor, REHAU) e ROI vs aquecimento tradicional.</p>
+          <div class="meta">
+            <span>10 jun 2026</span>
+            <span>12 min de leitura</span>
+            <span>iStarTec</span>
+          </div>
+        </a>
+
+        <div class="article-card coming-soon" aria-disabled="true">
+          <span class="article-cluster">Em breve</span>
+          <h2>Multicamada vs PEX vs Cobre: qual escolher para a sua obra</h2>
+          <p>Comparação técnica e prática dos três materiais de tubagem mais usados em moradias no Algarve. Quando faz sentido cada um, custos relativos, e a opção que recomendamos.</p>
+          <div class="meta">
+            <span>Próximo</span>
+            <span>Sistemas Hidráulicos</span>
+          </div>
+        </div>
+
+        <div class="article-card coming-soon" aria-disabled="true">
+          <span class="article-cluster">Em breve</span>
+          <h2>Bomba de Calor vs Solar Térmico para AQS: comparação real (custos, COP, payback)</h2>
+          <p>Análise de custos, eficiência e retorno para AQS em moradias do Algarve. Quando faz sentido cada solução, custos de operação e a abordagem híbrida.</p>
+          <div class="meta">
+            <span>Próximo</span>
+            <span>Eficiência &amp; AQS</span>
+          </div>
+        </div>
+
+        <div class="article-card coming-soon" aria-disabled="true">
+          <span class="article-cluster">Em breve</span>
+          <h2>Maresia no Algarve: que materiais de tubagem resistem ao ambiente costeiro</h2>
+          <p>O efeito da maresia em moradias na costa algarvia e como escolher materiais de tubagem que duram décadas. Foco em cobre, multicamada e proteções.</p>
+          <div class="meta">
+            <span>Próximo</span>
+            <span>Algarve Técnico</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-newsletter">
+    <div class="container">
+      <h2>Tem um projeto em fase de planeamento?</h2>
+      <p>Antes de fechar a obra, vale a pena ter uma conversa técnica. Apresentamos as opções, calculamos custos e damos orçamento sem compromisso.</p>
+      <a href="/contact/" class="btn btn--primary">Pedir Orçamento</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="nav__logo footer__logo">
+          <span class="nav__logo-mark">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <path d="M11 1 L13.5 8.5 L21 11 L13.5 13.5 L11 21 L8.5 13.5 L1 11 L8.5 8.5 Z" fill="white"/>
+            </svg>
+          </span>
+          <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
+        </a>
+        <p>Especialistas em instalações de canalização e hidráulica para construção residencial no Algarve, Portugal.</p>
+      </div>
+      <div class="footer__nav">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/services/">Serviços</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/about/">Sobre Nós</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/contact/">Pedir Orçamento</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h4>Onde Trabalhamos</h4>
+        <ul>
+          <li><a href="/portimao/">Portimão</a></li>
+          <li><a href="/albufeira/">Albufeira</a></li>
+          <li><a href="/lagos/">Lagos</a></li>
+          <li><a href="/faro/">Faro</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <p>geral@kauffen.com</p>
+        <p>+351 965 445 801</p>
+        <p>Algarve, Portugal</p>
+        <div class="footer__brands">
+          <span class="footer__brand-pill">Parceiro Bosch</span>
+          <span class="footer__brand-pill">Certificado Uponor</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2025 iStarTec. Todos os direitos reservados.</p>
+        <p>Instalações Técnicas · Algarve, Portugal · Alvará IMPIC 4ª classe 3</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
