@@ -413,7 +413,7 @@ const translations = {
 };
 
 /* ── Language engine ─────────────────────────────────────── */
-let currentLang = 'pt';
+let currentLang = window.location.pathname.startsWith('/en/') ? 'en' : 'pt';
 
 function setLanguage(lang) {
   currentLang = lang;
@@ -474,9 +474,20 @@ function updateLangSlider() {
 
 document.querySelectorAll('.lang-toggle__btn').forEach(btn => {
   btn.addEventListener('click', () => {
+    const targetLang = btn.dataset.lang;
+    const onEn = window.location.pathname.startsWith('/en/') || window.location.pathname === '/en';
+    // Cross-page navigation when toggling language (preserves URL hierarchy & SEO)
+    if (targetLang === 'en' && !onEn) {
+      window.location.href = '/en/';
+      return;
+    }
+    if (targetLang === 'pt' && onEn) {
+      window.location.href = '/';
+      return;
+    }
     document.querySelectorAll('.lang-toggle__btn').forEach(b => b.classList.remove('lang-toggle__btn--active'));
     btn.classList.add('lang-toggle__btn--active');
-    setLanguage(btn.dataset.lang);
+    setLanguage(targetLang);
     updateLangSlider();
   });
 });
@@ -1348,7 +1359,7 @@ function initServiceGalleries() {
 }
 
 /* ── Init ────────────────────────────────────────────────── */
-setLanguage('pt');
+setLanguage(currentLang);
 initServiceGalleries();
 // Run slider positioning after fonts/layout settle
 requestAnimationFrame(() => setTimeout(updateLangSlider, 60));

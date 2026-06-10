@@ -1,39 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://istartec.co/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/" />
   </url>
   <url>
     <loc>https://istartec.co/services/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/services/" />
   </url>
   <url>
     <loc>https://istartec.co/portfolio/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/portfolio/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/portfolio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/portfolio/" />
   </url>
   <url>
     <loc>https://istartec.co/about/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/about/" />
   </url>
   <url>
     <loc>https://istartec.co/contact/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/contact/" />
   </url>
   <url>
     <loc>https://istartec.co/portimao/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/portimao/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/portimao/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/portimao/" />
   </url>
   <url>
     <loc>https://istartec.co/albufeira/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/albufeira/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/albufeira/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/albufeira/" />
   </url>
   <url>
     <loc>https://istartec.co/lagos/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/lagos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/lagos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/lagos/" />
   </url>
   <url>
     <loc>https://istartec.co/faro/</loc>
-    <lastmod>2026-06-10T18:00:00+00:00</lastmod>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/faro/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/faro/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/faro/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/services/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/portfolio/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/about/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/contact/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/portimao/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/albufeira/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/lagos/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://istartec.co/en/faro/</loc>
+    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
   </url>
 </urlset>
