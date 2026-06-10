@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block dev/build artifacts
+Disallow: /assets/create_ad_variants.py
+Disallow: /assets/create_ad_video.py
+
+Sitemap: https://istartec.co/sitemap.xml

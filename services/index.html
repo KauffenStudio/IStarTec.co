@@ -1,13 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Serviços — iStarTec</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços de Canalização, Chão Radiante e Solar Térmico no Algarve — iStarTec</title>
+  <meta name="description" content="Serviços completos de instalações hidráulicas no Algarve: canalização, chão radiante Uponor, solar térmico Bosch/BAXI, instalações sanitárias. Para construtoras, promotores e arquitetos." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://istartec.co/services/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="iStarTec" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:url" content="https://istartec.co/services/" />
+  <meta property="og:title" content="Serviços iStarTec — Canalização, Chão Radiante, Solar Térmico no Algarve" />
+  <meta property="og:description" content="Instalações hidráulicas completas para construção residencial no Algarve. Alvará IMPIC 4ª. Parceiro Bosch e Uponor." />
+  <meta property="og:image" content="https://istartec.co/assets/istartec-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Serviços iStarTec — Canalização, Chão Radiante, Solar Térmico no Algarve" />
+  <meta name="twitter:description" content="Instalações hidráulicas completas para construção residencial no Algarve." />
+  <meta name="twitter:image" content="https://istartec.co/assets/istartec-cover.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <meta http-equiv="refresh" content="0;url=https://istartec.co/#services">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://istartec.co/" },
+      { "@type": "ListItem", "position": 2, "name": "Serviços", "item": "https://istartec.co/services/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Serviços iStarTec",
+    "itemListElement": [
+      { "@type": "Service", "position": 1, "name": "Instalações de Canalização", "description": "Sistemas hidráulicos completos para edifícios residenciais e moradias: redes de abastecimento de água, sistemas de esgotos, drenagem pluvial e ventilação.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
+      { "@type": "Service", "position": 2, "name": "Instalações Sanitárias", "description": "Fornecimento e instalação de equipamento sanitário premium para casas de banho de moradias e empreendimentos no Algarve.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
+      { "@type": "Service", "position": 3, "name": "Sistemas Solares Térmicos", "description": "Projeto e instalação de coletores solares térmicos para AQS. Marcas Bosch e BAXI.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
+      { "@type": "Service", "position": 4, "name": "Sistema de Chão Radiante", "description": "Instalação de chão radiante com tubagem Uponor e coletores de zona, combinado com bombas de calor e solar térmico.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" }
+    ]
+  }
+  </script>
+
+  <style>
+    .subpage-hero { padding: 140px 0 60px; background: linear-gradient(180deg, #f7f8fa 0%, #ffffff 100%); text-align: center; }
+    .subpage-hero h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -.02em; margin: .5rem 0 1rem; line-height: 1.1; }
+    .subpage-hero p { max-width: 720px; margin: 0 auto; color: #475569; font-size: 1.1rem; }
+    .breadcrumbs { font-size: .85rem; color: #64748b; margin-bottom: 1rem; }
+    .breadcrumbs a { color: #2563eb; text-decoration: none; }
+    .breadcrumbs a:hover { text-decoration: underline; }
+    .svc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; padding: 4rem 0; }
+    .svc-detail { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 2rem; }
+    .svc-detail h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 700; margin: 0 0 .75rem; color: #0f172a; }
+    .svc-detail p { color: #475569; font-size: .98rem; margin: 0 0 1rem; }
+    .svc-detail ul { padding-left: 1.2rem; color: #475569; font-size: .95rem; }
+    .svc-detail li { margin-bottom: .35rem; }
+    .svc-detail .brands { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+    .svc-detail .brand-pill { display: inline-block; padding: .3rem .7rem; background: #f1f5f9; color: #2563eb; border-radius: 999px; font-size: .78rem; font-weight: 600; }
+    .faq { padding: 4rem 0; background: #f7f8fa; }
+    .faq h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; text-align: center; margin: 0 0 2rem; }
+    .faq-item { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1rem; border: 1px solid #e2e8f0; }
+    .faq-item h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .5rem; color: #0f172a; }
+    .faq-item p { color: #475569; margin: 0; font-size: .98rem; }
+    .cta-strip { padding: 4rem 0; text-align: center; }
+    .cta-strip h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; margin: 0 0 1rem; }
+    .cta-strip p { color: #475569; margin: 0 0 2rem; }
+  </style>
 </head>
 <body>
-  <p>A redirecionar para os nossos serviços...</p>
+
+  <header id="header">
+    <nav class="nav container">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-mark">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M11 1 L13.5 8.5 L21 11 L13.5 13.5 L11 21 L8.5 13.5 L1 11 L8.5 8.5 Z" fill="white"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/" class="nav__link">Início</a></li>
+        <li><a href="/services/" class="nav__link" aria-current="page">Serviços</a></li>
+        <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
+        <li><a href="/about/" class="nav__link">Sobre Nós</a></li>
+        <li><a href="/contact/" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="subpage-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Navegação">
+        <a href="/">Início</a> › <span>Serviços</span>
+      </nav>
+      <div class="section__label">O Que Fazemos</div>
+      <h1>Instalações Hidráulicas Completas no Algarve</h1>
+      <p>Desde o planeamento ao comissionamento — entregamos sistemas técnicos chave-na-mão para construção residencial, moradias de luxo e empreendimentos. Alvará IMPIC 4ª classe 3. 25+ anos de experiência.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="svc-grid">
+
+      <article class="svc-detail">
+        <h2>Instalações de Canalização</h2>
+        <p>Sistemas hidráulicos completos para edifícios residenciais e moradias de luxo — projetados, fornecidos e instalados segundo os mais elevados padrões técnicos.</p>
+        <ul>
+          <li>Redes de abastecimento de água (multicamada, PEX, cobre)</li>
+          <li>Sistemas de esgotos e drenagem residual</li>
+          <li>Drenagem pluvial interior</li>
+          <li>Sistemas de ventilação</li>
+          <li>Drenagem de condensados de AC</li>
+          <li>Coletores hidráulicos</li>
+        </ul>
+        <div class="brands">
+          <span class="brand-pill">Uponor</span>
+          <span class="brand-pill">Multicamada</span>
+          <span class="brand-pill">PEX</span>
+        </div>
+      </article>
+
+      <article class="svc-detail">
+        <h2>Instalações Sanitárias</h2>
+        <p>Fornecimento e instalação de equipamento sanitário premium em casas de banho de moradias e empreendimentos no Algarve — para arquitetos e construtoras que exigem acabamentos finos.</p>
+        <ul>
+          <li>Loiças sanitárias premium</li>
+          <li>Misturadoras e válvulas</li>
+          <li>Duches e banheiras</li>
+          <li>Águas quentes e frias</li>
+          <li>Acessórios e ferragens</li>
+          <li>Coordenação com gabinete de arquitetura</li>
+        </ul>
+        <div class="brands">
+          <span class="brand-pill">Hansgrohe</span>
+          <span class="brand-pill">Roca</span>
+          <span class="brand-pill">Geberit</span>
+        </div>
+      </article>
+
+      <article class="svc-detail">
+        <h2>Sistemas Solares Térmicos</h2>
+        <p>Projeto e instalação de coletores solares térmicos para Águas Quentes Sanitárias (AQS), adaptados à elevada irradiância solar do Algarve. Cumprimento das exigências regulamentares de eficiência energética.</p>
+        <ul>
+          <li>Coletores solares planos e tubos de vácuo</li>
+          <li>Depósitos AQS com permutadores</li>
+          <li>Sistemas termossifão e circulação forçada</li>
+          <li>Bomba de calor aerotérmica complementar</li>
+          <li>Cálculo energético e dimensionamento</li>
+        </ul>
+        <div class="brands">
+          <span class="brand-pill">Bosch</span>
+          <span class="brand-pill">BAXI</span>
+        </div>
+      </article>
+
+      <article class="svc-detail">
+        <h2>Sistema de Chão Radiante</h2>
+        <p>Instalação de chão radiante hidráulico para moradias e edifícios — conforto térmico superior, eficiência energética e integração com bomba de calor ou solar térmico.</p>
+        <ul>
+          <li>Tubagem PEX Uponor para piso radiante</li>
+          <li>Caixas de coletores com válvulas de zona</li>
+          <li>Controlo termostático multi-zona</li>
+          <li>Integração com bomba de calor aerotérmica</li>
+          <li>Apoio na fase de projeto</li>
+        </ul>
+        <div class="brands">
+          <span class="brand-pill">Uponor</span>
+          <span class="brand-pill">Carrier</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <h2>Perguntas Frequentes</h2>
+
+      <div class="faq-item">
+        <h3>A iStarTec trabalha em obras de gás natural?</h3>
+        <p>Não diretamente. Para instalações de gás natural subcontratamos empresas certificadas com Alvará 9ª categoria e certificação ITG/Floene, garantindo o cumprimento integral das exigências regulamentares.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>A iStarTec faz arruamentos e infraestruturas urbanas?</h3>
+        <p>Não. O nosso âmbito é canalização interior de edifícios e ligações ao ramal público. Não executamos coletores públicos, redes urbanas de gás ou reposição de pavimentos em via pública.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Qual é o alvará da iStarTec?</h3>
+        <p>iStarTec opera com Alvará IMPIC 4ª categoria classe 3 (instalações elétricas e mecânicas até ~664 000 € por contrato). Estamos qualificados para concorrer a qualquer lote isoladamente dentro deste limite.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Em que zonas do Algarve trabalham?</h3>
+        <p>Servimos todo o Algarve — Portimão, Albufeira, Lagos, Lagoa, Silves, Faro e Loulé. Temos forte experiência em obras residenciais em Praia da Rocha, Alvor e Albufeira Garden.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Trabalham com construtoras ou apenas com particulares?</h3>
+        <p>O nosso cliente principal são construtoras, promotores imobiliários, arquitetos e gabinetes de engenharia. Também executamos obras em moradias particulares de luxo e remodelações de elevada exigência.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Pronto para começar?</h2>
+      <p>Envie-nos os detalhes do seu projeto e respondemos em 24 horas úteis.</p>
+      <a href="/contact/" class="btn btn--primary">Pedir Orçamento</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="nav__logo footer__logo">
+          <span class="nav__logo-mark">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <path d="M11 1 L13.5 8.5 L21 11 L13.5 13.5 L11 21 L8.5 13.5 L1 11 L8.5 8.5 Z" fill="white"/>
+            </svg>
+          </span>
+          <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
+        </a>
+        <p>Especialistas em instalações de canalização e hidráulica para construção residencial no Algarve, Portugal.</p>
+      </div>
+      <div class="footer__nav">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/services/">Serviços</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/about/">Sobre Nós</a></li>
+          <li><a href="/contact/">Pedir Orçamento</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="/services/">Instalações de Canalização</a></li>
+          <li><a href="/services/">Sistema de Chão Radiante</a></li>
+          <li><a href="/services/">Sistemas Solares Térmicos</a></li>
+          <li><a href="/services/">Instalações Sanitárias</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <p>geral@kauffen.com</p>
+        <p>+351 965 445 801</p>
+        <p>Algarve, Portugal</p>
+        <div class="footer__brands">
+          <span class="footer__brand-pill">Parceiro Bosch</span>
+          <span class="footer__brand-pill">Certificado Uponor</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2025 iStarTec. Todos os direitos reservados.</p>
+        <p>Instalações Técnicas · Algarve, Portugal · Alvará IMPIC 4ª classe 3</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

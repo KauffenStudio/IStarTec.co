@@ -1,13 +1,263 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio — iStarTec</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio de Obras — iStarTec Algarve | Instalações Hidráulicas</title>
+  <meta name="description" content="Obras de instalações hidráulicas concluídas pela iStarTec no Algarve — empreendimentos residenciais em Portimão, Albufeira, Alvor, Praia da Rocha. Com Ordem Geométrica, Grupo Libertas e emohb." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://istartec.co/portfolio/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="iStarTec" />
+  <meta property="og:locale" content="pt_PT" />
+  <meta property="og:url" content="https://istartec.co/portfolio/" />
+  <meta property="og:title" content="Portfolio de Obras — iStarTec Algarve | Instalações Hidráulicas" />
+  <meta property="og:description" content="Obras de instalações hidráulicas concluídas pela iStarTec no Algarve — empreendimentos residenciais em Portimão, Albufeira, Alvor, Praia da Rocha. Com Ordem Geométrica, Grupo Libertas e emohb." />
+  <meta property="og:image" content="https://istartec.co/assets/istartec-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio de Obras — iStarTec Algarve | Instalações Hidráulicas" />
+  <meta name="twitter:description" content="Obras de instalações hidráulicas concluídas pela iStarTec no Algarve — empreendimentos residenciais em Portimão, Albufeira, Alvor, Praia da Rocha. Com Ordem Geométrica, Grupo Libertas e emohb." />
+  <meta name="twitter:image" content="https://istartec.co/assets/istartec-cover.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  <meta http-equiv="refresh" content="0;url=https://istartec.co/#portfolio">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Início", "item": "https://istartec.co/" },
+      { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://istartec.co/portfolio/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Portfolio iStarTec — Obras no Algarve",
+    "url": "https://istartec.co/portfolio/",
+    "isPartOf": { "@type": "WebSite", "url": "https://istartec.co/" }
+  }
+  </script>
+
+  <style>
+    .subpage-hero { padding: 140px 0 60px; background: linear-gradient(180deg, #f7f8fa 0%, #ffffff 100%); text-align: center; }
+    .subpage-hero h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(2rem, 5vw, 3.25rem); letter-spacing: -.02em; margin: .5rem 0 1rem; line-height: 1.1; }
+    .subpage-hero p { max-width: 720px; margin: 0 auto; color: #475569; font-size: 1.1rem; }
+    .breadcrumbs { font-size: .85rem; color: #64748b; margin-bottom: 1rem; }
+    .breadcrumbs a { color: #2563eb; text-decoration: none; }
+    .breadcrumbs a:hover { text-decoration: underline; }
+    .content-section { padding: 4rem 0; }
+    .content-section h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin: 0 0 1rem; letter-spacing: -.01em; }
+    .content-section p { color: #475569; font-size: 1.05rem; line-height: 1.7; margin: 0 0 1rem; }
+    .content-section--grey { background: #f7f8fa; }
+    .prose { max-width: 760px; margin: 0 auto; }
+    .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+    .info-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 1.75rem; }
+    .info-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.15rem; font-weight: 700; margin: 0 0 .5rem; }
+    .info-card p { font-size: .98rem; margin: 0; }
+    .badge-strip { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-top: 1.5rem; }
+    .badge-strip span { padding: .4rem .9rem; background: #f1f5f9; color: #2563eb; border-radius: 999px; font-size: .85rem; font-weight: 600; }
+    .cta-strip { padding: 4rem 0; text-align: center; }
+    .cta-strip h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; margin: 0 0 1rem; }
+    .cta-strip p { color: #475569; margin: 0 0 2rem; }
+    .contact-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 720px; margin: 0 auto; }
+    .contact-item { display: flex; gap: 1rem; align-items: flex-start; padding: 1.5rem; background: white; border: 1px solid #e2e8f0; border-radius: 16px; }
+    .contact-item svg { width: 28px; height: 28px; flex-shrink: 0; color: #2563eb; }
+    .contact-item strong { display: block; font-family: 'Space Grotesk', sans-serif; font-size: 1.05rem; margin-bottom: .3rem; }
+    .contact-item a { color: #2563eb; text-decoration: none; font-weight: 600; }
+    .contact-item a:hover { text-decoration: underline; }
+    .service-area { text-align: center; padding: 3rem 0; }
+    .service-area h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; font-weight: 700; margin: 0 0 1rem; }
+    .city-tags { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; }
+    .city-tags span { padding: .5rem 1rem; background: white; border: 1px solid #e2e8f0; border-radius: 999px; font-size: .9rem; font-weight: 500; }
+    .portfolio-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .portfolio-list-item { padding: 1.25rem; background: white; border: 1px solid #e2e8f0; border-radius: 12px; }
+    .portfolio-list-item h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 700; margin: 0 0 .35rem; color: #0f172a; }
+    .portfolio-list-item .loc { color: #64748b; font-size: .85rem; margin: 0 0 .5rem; }
+    .portfolio-list-item .tags { font-size: .75rem; color: #2563eb; font-weight: 600; }
+</style>
 </head>
 <body>
-  <p>A redirecionar para o nosso portfolio...</p>
+  <header id="header">
+    <nav class="nav container">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-mark">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M11 1 L13.5 8.5 L21 11 L13.5 13.5 L11 21 L8.5 13.5 L1 11 L8.5 8.5 Z" fill="white"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="/" class="nav__link">Início</a></li>
+        <li><a href="/services/" class="nav__link">Serviços</a></li>
+        <li><a href="/portfolio/" class="nav__link" aria-current="page">Portfolio</a></li>
+        <li><a href="/about/" class="nav__link">Sobre Nós</a></li>
+        <li><a href="/contact/" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="subpage-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Navegação">
+        <a href="/">Início</a> › <span>Portfolio</span>
+      </nav>
+      <div class="section__label">Projetos Selecionados</div>
+      <h1>Obras no Algarve — Instalações Hidráulicas Concluídas</h1>
+      <p>Empreendimentos residenciais executados em colaboração com construtoras e promotores de referência no Algarve. Selecione um projeto para ver detalhe completo na nossa galeria.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container prose">
+      <h2>Portimão</h2>
+      <p>Forte presença na Praia da Rocha e zona urbana de Portimão — empreendimentos residenciais multi-fração e moradias de luxo em colaboração com Ordem Geométrica.</p>
+      <div class="portfolio-list">
+        <div class="portfolio-list-item">
+          <h3>Edifício Bellevue Lote 13</h3>
+          <p class="loc">Praia da Rocha · Portimão</p>
+          <p class="tags">Coletores · Drenagem · Solar Térmico</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Edifício Elite Residence</h3>
+          <p class="loc">Praia da Rocha · Portimão</p>
+          <p class="tags">Uponor PEX · Bosch AQS</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Fojo Lote 47</h3>
+          <p class="loc">Portimão</p>
+          <p class="tags">Canalização · Chão Radiante · Solar Térmico</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Edifício Urbigal</h3>
+          <p class="loc">Praia da Rocha · Portimão</p>
+          <p class="tags">Sistemas Hidráulicos · Bomba de Calor</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Edifício Iate Residence</h3>
+          <p class="loc">Praia da Rocha · Portimão</p>
+          <p class="tags">Canalização · Coletores Hidráulicos</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Sesmarias</h3>
+          <p class="loc">Portimão</p>
+          <p class="tags">Canalização · Solar Térmico</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Garden City 16/17</h3>
+          <p class="loc">Portimão</p>
+          <p class="tags">Bomba de Calor · Esgotos</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Lote 7/8</h3>
+          <p class="loc">Portimão</p>
+          <p class="tags">Coletores · Solar Térmico</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Moradia emohb I + II</h3>
+          <p class="loc">Portimão</p>
+          <p class="tags">Chão Radiante Uponor · Bomba de Calor · Solar</p>
+        </div>
+      </div>
+
+      <h2 style="margin-top:3rem">Albufeira</h2>
+      <p>Empreendimentos de nova construção em colaboração com promotor Grupo Libertas.</p>
+      <div class="portfolio-list">
+        <div class="portfolio-list-item">
+          <h3>Albufeira Garden</h3>
+          <p class="loc">Albufeira</p>
+          <p class="tags">76 apartamentos · Bosch · Solar Térmico</p>
+        </div>
+      </div>
+
+      <h2 style="margin-top:3rem">Alvor</h2>
+      <p>Empreendimentos frente à Ria de Alvor e moradias privadas de elevada exigência técnica.</p>
+      <div class="portfolio-list">
+        <div class="portfolio-list-item">
+          <h3>Alvor Ria Residence</h3>
+          <p class="loc">Alvor</p>
+          <p class="tags">30 apartamentos · Solar Térmico · Bomba de Calor</p>
+        </div>
+        <div class="portfolio-list-item">
+          <h3>Residência Privada</h3>
+          <p class="loc">Alvor</p>
+          <p class="tags">Aproveitamento Pluvial · Solar Térmico · Águas Cinzentas</p>
+        </div>
+      </div>
+
+      <p style="margin-top:3rem;text-align:center;color:#64748b;font-size:.95rem">Ver galeria completa de fotos e detalhes no <a href="/#portfolio" style="color:#2563eb;font-weight:600">portfolio interativo da página inicial</a>.</p>
+    </div>
+  </section>
+
+  <section class="cta-strip content-section--grey">
+    <div class="container">
+      <h2>O próximo projeto pode ser o seu</h2>
+      <p>Trabalhamos com construtoras, promotores e arquitetos em todo o Algarve.</p>
+      <a href="/contact/" class="btn btn--primary">Pedir Orçamento</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="nav__logo footer__logo">
+          <span class="nav__logo-mark">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <path d="M11 1 L13.5 8.5 L21 11 L13.5 13.5 L11 21 L8.5 13.5 L1 11 L8.5 8.5 Z" fill="white"/>
+            </svg>
+          </span>
+          <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
+        </a>
+        <p>Especialistas em instalações de canalização e hidráulica para construção residencial no Algarve, Portugal.</p>
+      </div>
+      <div class="footer__nav">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="/">Início</a></li>
+          <li><a href="/services/">Serviços</a></li>
+          <li><a href="/portfolio/">Portfolio</a></li>
+          <li><a href="/about/">Sobre Nós</a></li>
+          <li><a href="/contact/">Pedir Orçamento</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="/services/">Instalações de Canalização</a></li>
+          <li><a href="/services/">Sistema de Chão Radiante</a></li>
+          <li><a href="/services/">Sistemas Solares Térmicos</a></li>
+          <li><a href="/services/">Instalações Sanitárias</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <p>geral@kauffen.com</p>
+        <p>+351 965 445 801</p>
+        <p>Algarve, Portugal</p>
+        <div class="footer__brands">
+          <span class="footer__brand-pill">Parceiro Bosch</span>
+          <span class="footer__brand-pill">Certificado Uponor</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; 2025 iStarTec. Todos os direitos reservados.</p>
+        <p>Instalações Técnicas · Algarve, Portugal · Alvará IMPIC 4ª classe 3</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
