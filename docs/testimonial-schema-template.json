@@ -1,0 +1,37 @@
+{
+  "_comment_purpose": "JSON-LD template for one testimonial. Copy this and adapt the values when a real testimonial is collected.",
+  "_comment_how_to_use": [
+    "1. Receive testimonial from real partner/client (email or whatsapp).",
+    "2. Save the original message somewhere private as proof (in case Google asks for verification).",
+    "3. Copy this template, paste it inside the target HTML page within a new <script type='application/ld+json'>...</script> block.",
+    "4. Replace ALL placeholder values (NOME_REAL, CARGO_REAL, etc.) with the verified values.",
+    "5. Do NOT add reviewRating UNLESS the testimonial source confirms a numeric score (or you have GBP data).",
+    "6. Also add the visible HTML using the .testimonial-card pattern in style.css and remove the 'hidden' attribute from the parent <section class='testimonials'>.",
+    "7. Update LocalBusiness Plumber schema (in /index.html) to add this Review inside a 'review' array (separate from this standalone block)."
+  ],
+  "_comment_legal": "Article 11 of Portuguese Decreto-Lei 84/2021 prohibits false testimonials. ONLY publish reviews you can prove originated from a real, identifiable person/entity. Keep the original email/whatsapp as evidence.",
+
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Plumber",
+    "@id": "https://istartec.co/#business",
+    "name": "iStarTec"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "NOME_REAL_DO_AUTOR",
+    "jobTitle": "CARGO_REAL (ex: Diretor de Obra)",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "NOME_REAL_DA_EMPRESA"
+    }
+  },
+  "reviewBody": "QUOTE LITERAL COPIADA DO EMAIL OU WHATSAPP — sem alteração. Não editar para soar melhor.",
+  "datePublished": "YYYY-MM-DD (data em que foi recebido o testemunho)",
+  "publisher": {
+    "@type": "Organization",
+    "name": "iStarTec",
+    "url": "https://istartec.co/"
+  }
+}
