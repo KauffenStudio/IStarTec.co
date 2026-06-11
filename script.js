@@ -13,8 +13,9 @@ const translations = {
     'nav.cta':         'Pedir Orçamento',
     'contact.label.short': 'Contacto',
     // Hero
-    'hero.title':      'Instalações<br>Hidráulicas<br><span class="accent">de Precisão.</span>',
-    'hero.sub':        'Sistemas técnicos de canalização e hidráulica para construção residencial, moradias de luxo e grandes empreendimentos no Algarve.',
+    'hero.label':      '25+ anos no Algarve · Alvará IMPIC 4ª',
+    'hero.title':      'Canalização e<br>Instalações Hidráulicas<br><span class="accent">no Algarve.</span>',
+    'hero.sub':        'Sistemas técnicos para construtoras, promotores e arquitetos. Obra premium em moradias e empreendimentos residenciais no Algarve.',
     'hero.btn1':       'Os Nossos Serviços',
     'hero.btn2':       'Ver Projetos',
     'hero.scroll':     'Rolar',
@@ -218,8 +219,9 @@ const translations = {
     'nav.cta':         'Request Quote',
     'contact.label.short': 'Contact',
     // Hero
-    'hero.title':      'Precision<br>Hydraulic<br><span class="accent">Installations.</span>',
-    'hero.sub':        'Technical plumbing and hydraulic systems for residential construction, luxury villas and large-scale developments across the Algarve.',
+    'hero.label':      '25+ years in the Algarve · IMPIC Cat. 4 License',
+    'hero.title':      'Plumbing &amp;<br>Hydraulic Installations<br><span class="accent">in the Algarve.</span>',
+    'hero.sub':        'Technical systems for construction companies, developers and architects. Premium work on villas and residential developments across the Algarve.',
     'hero.btn1':       'Our Services',
     'hero.btn2':       'View Projects',
     'hero.scroll':     'Scroll',
