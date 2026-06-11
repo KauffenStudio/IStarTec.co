@@ -1,119 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- HOMEPAGE -->
   <url>
     <loc>https://istartec.co/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/" />
+    <image:image>
+      <image:loc>https://istartec.co/assets/istartec-cover.png</image:loc>
+      <image:title>iStarTec — Instalações Hidráulicas no Algarve</image:title>
+    </image:image>
   </url>
+
+  <!-- CORE PAGES PT -->
   <url>
     <loc>https://istartec.co/services/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/services/" />
   </url>
   <url>
     <loc>https://istartec.co/portfolio/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/portfolio/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/portfolio/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/portfolio/" />
   </url>
   <url>
     <loc>https://istartec.co/about/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/about/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/about/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/about/" />
   </url>
   <url>
     <loc>https://istartec.co/contact/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/contact/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/contact/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/contact/" />
   </url>
+
+  <!-- LOCATION PAGES PT -->
   <url>
     <loc>https://istartec.co/portimao/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/portimao/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/portimao/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/portimao/" />
   </url>
   <url>
     <loc>https://istartec.co/albufeira/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/albufeira/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/albufeira/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/albufeira/" />
   </url>
   <url>
     <loc>https://istartec.co/lagos/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/lagos/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/lagos/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/lagos/" />
   </url>
   <url>
     <loc>https://istartec.co/faro/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/faro/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/faro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/faro/" />
   </url>
+
+  <!-- EN HOMEPAGE + CORE -->
   <url>
     <loc>https://istartec.co/en/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/" />
   </url>
   <url>
     <loc>https://istartec.co/en/services/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/services/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/services/" />
   </url>
   <url>
     <loc>https://istartec.co/en/portfolio/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/portfolio/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/portfolio/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/portfolio/" />
   </url>
   <url>
     <loc>https://istartec.co/en/about/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/about/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/about/" />
   </url>
   <url>
     <loc>https://istartec.co/en/contact/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/contact/" />
   </url>
+
+  <!-- EN LOCATIONS -->
   <url>
     <loc>https://istartec.co/en/portimao/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/portimao/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/portimao/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/portimao/" />
   </url>
   <url>
     <loc>https://istartec.co/en/albufeira/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/albufeira/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/albufeira/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/albufeira/" />
   </url>
   <url>
     <loc>https://istartec.co/en/lagos/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/lagos/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/lagos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/lagos/" />
   </url>
   <url>
     <loc>https://istartec.co/en/faro/</loc>
-    <lastmod>2026-06-10T19:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/faro/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/faro/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/faro/" />
   </url>
+
+  <!-- BLOG -->
   <url>
     <loc>https://istartec.co/blog/</loc>
-    <lastmod>2026-06-10T20:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://istartec.co/blog/chao-radiante-preco-m2-algarve/</loc>
-    <lastmod>2026-06-10T20:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://istartec.co/blog/bomba-calor-vs-solar-termico-aqs-algarve/</loc>
-    <lastmod>2026-06-10T21:00:00+00:00</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://istartec.co/blog/epbd-2026-nzeb20-nova-construcao-portugal/</loc>
-    <lastmod>2026-06-11T10:00:00+00:00</lastmod>
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
+
 </urlset>

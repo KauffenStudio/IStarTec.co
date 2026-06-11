@@ -64,8 +64,18 @@
     "image": "https://istartec.co/assets/istartec-cover.png",
     "logo": "https://istartec.co/assets/istartec-logo.png",
     "priceRange": "€€€",
-    "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressRegion": "Algarve", "addressCountry": "PT" },
-    "areaServed": { "@type": "City", "name": "Lagos" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Lagos", "addressRegion": "Algarve", "postalCode": "8600", "addressCountry": "PT" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 37.1028, "longitude": -8.6731 },
+    "areaServed": [
+      { "@type": "City", "name": "Lagos" },
+      { "@type": "City", "name": "Portimão" },
+      { "@type": "City", "name": "Vila do Bispo" },
+      { "@type": "City", "name": "Aljezur" },
+      { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 37.1028, "longitude": -8.6731 }, "geoRadius": 25000 }
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }
+    ],
     "knowsAbout": ["Canalização", "Chão radiante", "Solar térmico", "Instalações sanitárias", "Bomba de calor", "AQS"],
     "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Alvará IMPIC 4ª classe 3" }
   }
@@ -119,6 +129,29 @@
     .city-nav-list a { padding: .5rem 1rem; background: white; border: 1px solid #e2e8f0; border-radius: 999px; font-size: .9rem; font-weight: 500; color: #0f172a; text-decoration: none; transition: all .15s ease; }
     .city-nav-list a:hover { background: #2563eb; color: white; border-color: #2563eb; }
     .city-nav-list a.is-active { background: #2563eb; color: white; border-color: #2563eb; }
+
+    .cities-served { padding: 4rem 0; background: #f7f8fa; }
+    .cities-served h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; text-align: center; margin: 0 0 1rem; }
+    .cities-served .lede { max-width: 720px; margin: 0 auto 2.5rem; text-align: center; color: #475569; font-size: 1.05rem; line-height: 1.7; }
+    .cities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; max-width: 1000px; margin: 0 auto; }
+    .city-card { display: block; padding: 1.5rem; background: white; border: 1px solid #e2e8f0; border-radius: 12px; text-decoration: none; color: inherit; transition: all .15s ease; }
+    .city-card:hover { border-color: #2563eb; box-shadow: 0 8px 24px rgba(37, 99, 235, .08); transform: translateY(-2px); }
+    .city-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 700; margin: 0 0 .35rem; color: #0f172a; }
+    .city-card p { margin: 0; font-size: .9rem; color: #64748b; line-height: 1.55; }
+    .city-card.is-current { background: #eff6ff; border-color: #2563eb; }
+    .city-card.is-current h3 { color: #2563eb; }
+    .city-card--passive { cursor: default; }
+    .city-card--passive:hover { transform: none; box-shadow: none; border-color: #e2e8f0; }
+
+    .quick-cta { padding: 4rem 0; background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%); color: white; text-align: center; }
+    .quick-cta h2 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; margin: 0 0 .75rem; color: white; }
+    .quick-cta p { margin: 0 0 2rem; color: #cbd5e1; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .quick-cta__actions { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; align-items: center; }
+    .quick-cta__btn { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.5rem; border-radius: 999px; font-weight: 600; font-size: .98rem; text-decoration: none; transition: all .15s ease; }
+    .quick-cta__btn--primary { background: #2563eb; color: white; }
+    .quick-cta__btn--primary:hover { background: #1d4ed8; }
+    .quick-cta__btn--ghost { background: rgba(255,255,255,.08); color: white; border: 1px solid rgba(255,255,255,.2); }
+    .quick-cta__btn--ghost:hover { background: rgba(255,255,255,.15); }
 </style>
 </head>
 <body>
@@ -228,6 +261,35 @@
     </div>
   </section>
 
+  <section class="cities-served">
+    <div class="container">
+      <h2>Cidades que Servimos a partir de Lagos</h2>
+      <p class="lede">A partir de Lagos cobrimos toda a zona oeste do Algarve — incluindo o Barlavento mais a sul e norte. Mercado fortemente orientado para moradias unifamiliares premium e remodelações de propriedades, com clientes particulares e gabinetes de arquitetura locais.</p>
+      <div class="cities-grid">
+        <a href="/lagos/" class="city-card is-current">
+          <h3>Lagos</h3>
+          <p>Base operacional · Meia Praia, Porto de Mós, Praia da Luz</p>
+        </a>
+        <a href="/portimao/" class="city-card">
+          <h3>Portimão</h3>
+          <p>~25 km a este · Praia da Rocha · empreendimentos multi-fração</p>
+        </a>
+        <span class="city-card city-card--passive">
+          <h3>Vila do Bispo</h3>
+          <p>~20 km a sul · Sagres · moradias rurais e remodelações</p>
+        </span>
+        <span class="city-card city-card--passive">
+          <h3>Aljezur</h3>
+          <p>~35 km a norte · costa vicentina · obras isoladas</p>
+        </span>
+        <a href="/albufeira/" class="city-card">
+          <h3>Albufeira</h3>
+          <p>~55 km a este · Grandes empreendimentos residenciais</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!--
     Testimonials slot for Lagos — infrastructure ready.
     Activate by removing 'hidden' attribute once real testimonials are collected.
@@ -268,11 +330,15 @@
     </div>
   </section>
 
-  <section class="cta-strip">
+  <section class="quick-cta">
     <div class="container">
       <h2>Tem um projeto em Lagos?</h2>
-      <p>Trabalhamos com construtoras, promotores e arquitetos em Lagos e em todo o Algarve.</p>
-      <a href="/contact/" class="btn btn--primary">Pedir Orçamento</a>
+      <p>Construtoras, promotores e arquitetos — respondemos a pedidos de orçamento em 24 horas úteis. Fale connosco diretamente.</p>
+      <div class="quick-cta__actions">
+        <a href="tel:+351965445801" class="quick-cta__btn quick-cta__btn--primary" aria-label="Ligar para iStarTec">📞 +351 965 445 801</a>
+        <a href="mailto:geral@kauffen.com?subject=Pedido%20de%20Or%C3%A7amento%20-%20Lagos" class="quick-cta__btn quick-cta__btn--ghost" aria-label="Email iStarTec">✉ geral@kauffen.com</a>
+        <a href="/contact/" class="quick-cta__btn quick-cta__btn--ghost">Pedir Orçamento</a>
+      </div>
     </div>
   </section>
 
