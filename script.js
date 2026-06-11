@@ -13,7 +13,7 @@ const translations = {
     'nav.cta':         'Pedir Orçamento',
     'contact.label.short': 'Contacto',
     // Hero
-    'hero.label':      '25+ anos no Algarve · Alvará IMPIC 4ª',
+    'hero.label':      '25+ anos no Algarve',
     'hero.title':      'Canalização e<br>Instalações Hidráulicas<br><span class="accent">no Algarve.</span>',
     'hero.sub':        'Sistemas técnicos para construtoras, promotores e arquitetos. Obra premium em moradias e empreendimentos residenciais no Algarve.',
     'hero.btn1':       'Os Nossos Serviços',
@@ -219,7 +219,7 @@ const translations = {
     'nav.cta':         'Request Quote',
     'contact.label.short': 'Contact',
     // Hero
-    'hero.label':      '25+ years in the Algarve · IMPIC Cat. 4 License',
+    'hero.label':      '25+ years in the Algarve',
     'hero.title':      'Plumbing &amp;<br>Hydraulic Installations<br><span class="accent">in the Algarve.</span>',
     'hero.sub':        'Technical systems for construction companies, developers and architects. Premium work on villas and residential developments across the Algarve.',
     'hero.btn1':       'Our Services',
