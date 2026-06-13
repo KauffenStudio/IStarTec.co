@@ -88,6 +88,40 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/contact/" />
   </url>
 
+  <!-- PARTICULARES (B2C) PT -->
+  <url>
+    <loc>https://istartec.co/particulares/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/particulares/solar-termico/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/solar-termico/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/solar-termico/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/particulares/chao-radiante/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/chao-radiante/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/chao-radiante/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/particulares/remodelacao-canalizacao/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
+  </url>
+
   <!-- LOCATION PAGES PT -->
   <url>
     <loc>https://istartec.co/portimao/</loc>
