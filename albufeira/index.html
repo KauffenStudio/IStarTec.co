@@ -56,7 +56,9 @@
     "@context": "https://schema.org",
     "@type": "Plumber",
     "@id": "https://istartec.co/albufeira/#business",
+    "additionalType": "https://schema.org/HVACBusiness",
     "name": "iStarTec — Albufeira",
+    "legalName": "iStarTec — Instalações Técnicas",
     "url": "https://istartec.co/albufeira/",
     "telephone": "+351965445801",
     "email": "geral@kauffen.com",
@@ -64,20 +66,60 @@
     "image": "https://istartec.co/assets/istartec-cover.png",
     "logo": "https://istartec.co/assets/istartec-logo.png",
     "priceRange": "€€€",
+    "foundingDate": "2000",
+    "slogan": "Canalização e Instalações Hidráulicas em Albufeira · 25+ anos",
+    "parentOrganization": { "@id": "https://istartec.co/#organization" },
     "address": { "@type": "PostalAddress", "addressLocality": "Albufeira", "addressRegion": "Algarve", "postalCode": "8200", "addressCountry": "PT" },
     "geo": { "@type": "GeoCoordinates", "latitude": 37.0892, "longitude": -8.2486 },
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 37.0892, "longitude": -8.2486 },
+      "geoRadius": "25000"
+    },
     "areaServed": [
       { "@type": "City", "name": "Albufeira" },
+      { "@type": "Place", "name": "Guia" },
+      { "@type": "Place", "name": "Paderne" },
+      { "@type": "Place", "name": "Olhos de Água" },
+      { "@type": "Place", "name": "Armação de Pêra" },
+      { "@type": "Place", "name": "Pêra" },
+      { "@type": "Place", "name": "Vilamoura" },
+      { "@type": "Place", "name": "Quarteira" },
       { "@type": "City", "name": "Loulé" },
       { "@type": "City", "name": "Lagoa" },
-      { "@type": "City", "name": "Silves" },
-      { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 37.0892, "longitude": -8.2486 }, "geoRadius": 25000 }
+      { "@type": "City", "name": "Silves" }
     ],
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" }
     ],
-    "knowsAbout": ["Canalização", "Chão radiante", "Solar térmico", "Instalações sanitárias", "Bomba de calor", "AQS"],
-    "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Alvará IMPIC 4ª classe 3" }
+    "knowsAbout": [
+      "Instalações de canalização",
+      "Chão radiante",
+      "Sistemas solares térmicos",
+      "Instalações sanitárias",
+      "Águas quentes sanitárias",
+      "Drenagem residual e pluvial",
+      "Bomba de calor aerotérmica",
+      "Coletores hidráulicos"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços iStarTec em Albufeira",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalações de Canalização em Albufeira", "serviceType": "Plumbing installation", "areaServed": { "@type": "City", "name": "Albufeira" }, "provider": { "@id": "https://istartec.co/albufeira/#business" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistema de Chão Radiante em Albufeira", "serviceType": "Underfloor heating installation", "areaServed": { "@type": "City", "name": "Albufeira" }, "provider": { "@id": "https://istartec.co/albufeira/#business" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas Solares Térmicos em Albufeira", "serviceType": "Solar thermal installation", "areaServed": { "@type": "City", "name": "Albufeira" }, "provider": { "@id": "https://istartec.co/albufeira/#business" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalações Sanitárias em Albufeira", "serviceType": "Sanitary installation", "areaServed": { "@type": "City", "name": "Albufeira" }, "provider": { "@id": "https://istartec.co/albufeira/#business" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bomba de Calor Aerotérmica em Albufeira", "serviceType": "Heat pump installation", "areaServed": { "@type": "City", "name": "Albufeira" }, "provider": { "@id": "https://istartec.co/albufeira/#business" } } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Águas Quentes Sanitárias em Albufeira", "serviceType": "Hot water systems", "areaServed": { "@type": "City", "name": "Albufeira" }, "provider": { "@id": "https://istartec.co/albufeira/#business" } } }
+      ]
+    },
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "license", "name": "Alvará IMPIC 4ª classe 3", "recognizedBy": { "@type": "Organization", "name": "IMPIC — Instituto dos Mercados Públicos, do Imobiliário e da Construção" } },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Parceiro Bosch" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Certificado Uponor" }
+    ],
+    "sameAs": []
   }
   </script>
   <script type="application/ld+json">

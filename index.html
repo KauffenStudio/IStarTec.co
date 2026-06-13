@@ -55,12 +55,13 @@
     gtag('config', 'AW-18074242840');
   </script>
 
-  <!-- Structured Data: LocalBusiness (Plumber) -->
+  <!-- Structured Data: LocalBusiness (Plumber + HVAC) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Plumber",
     "@id": "https://istartec.co/#business",
+    "additionalType": "https://schema.org/HVACBusiness",
     "name": "iStarTec",
     "legalName": "iStarTec — Instalações Técnicas",
     "url": "https://istartec.co/",
@@ -70,20 +71,43 @@
     "telephone": "+351965445801",
     "email": "geral@kauffen.com",
     "priceRange": "€€€",
+    "foundingDate": "2000",
+    "slogan": "Canalização e Instalações Hidráulicas no Algarve · 25+ anos",
     "address": {
       "@type": "PostalAddress",
       "addressRegion": "Algarve",
       "addressCountry": "PT"
     },
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.10,
+        "longitude": -8.30
+      },
+      "geoRadius": "80000"
+    },
     "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Algarve" },
       { "@type": "City", "name": "Portimão" },
       { "@type": "City", "name": "Albufeira" },
       { "@type": "City", "name": "Lagos" },
       { "@type": "City", "name": "Lagoa" },
+      { "@type": "Place", "name": "Carvoeiro" },
       { "@type": "City", "name": "Silves" },
       { "@type": "City", "name": "Faro" },
       { "@type": "City", "name": "Loulé" },
-      { "@type": "AdministrativeArea", "name": "Algarve" }
+      { "@type": "Place", "name": "Almancil" },
+      { "@type": "Place", "name": "Vilamoura" },
+      { "@type": "Place", "name": "Quarteira" },
+      { "@type": "City", "name": "Tavira" },
+      { "@type": "City", "name": "Olhão" },
+      { "@type": "City", "name": "Vila Real de Santo António" },
+      { "@type": "City", "name": "São Brás de Alportel" },
+      { "@type": "City", "name": "Monchique" },
+      { "@type": "City", "name": "Aljezur" },
+      { "@type": "City", "name": "Vila do Bispo" },
+      { "@type": "City", "name": "Castro Marim" }
     ],
     "knowsAbout": [
       "Instalações de canalização",
@@ -99,10 +123,66 @@
       "@type": "OfferCatalog",
       "name": "Serviços iStarTec",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalações de Canalização" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistema de Chão Radiante" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas Solares Térmicos" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalações Sanitárias" } }
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Instalações de Canalização",
+            "serviceType": "Plumbing installation",
+            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
+            "provider": { "@id": "https://istartec.co/#business" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sistema de Chão Radiante",
+            "serviceType": "Underfloor heating installation",
+            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
+            "provider": { "@id": "https://istartec.co/#business" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Sistemas Solares Térmicos",
+            "serviceType": "Solar thermal installation",
+            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
+            "provider": { "@id": "https://istartec.co/#business" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Instalações Sanitárias",
+            "serviceType": "Sanitary installation",
+            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
+            "provider": { "@id": "https://istartec.co/#business" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Bomba de Calor Aerotérmica",
+            "serviceType": "Heat pump installation",
+            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
+            "provider": { "@id": "https://istartec.co/#business" }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Águas Quentes Sanitárias (AQS)",
+            "serviceType": "Hot water systems",
+            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
+            "provider": { "@id": "https://istartec.co/#business" }
+          }
+        }
       ]
     },
     "hasCredential": [
@@ -123,14 +203,6 @@
         "name": "Certificado Uponor"
       }
     ],
-    "award": [
-      "Albufeira Garden (76 apartamentos · Grupo Libertas)",
-      "Edifício Bellevue Lote 13 (Praia da Rocha · Ordem Geométrica)",
-      "Edifício Elite Residence (Praia da Rocha · Ordem Geométrica)",
-      "Moradias emohb Portimão (chão radiante Uponor + aerotérmica)",
-      "Alvor Ria Residence (30 apartamentos · solar térmico)"
-    ],
-    "slogan": "Canalização e Instalações Hidráulicas no Algarve · 25+ anos",
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
@@ -151,6 +223,7 @@
     "@id": "https://istartec.co/#organization",
     "name": "iStarTec",
     "url": "https://istartec.co/",
+    "foundingDate": "2000",
     "logo": {
       "@type": "ImageObject",
       "url": "https://istartec.co/assets/istartec-logo.png",
