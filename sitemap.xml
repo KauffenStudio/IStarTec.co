@@ -125,6 +125,30 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/faro/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/faro/" />
   </url>
+  <url>
+    <loc>https://istartec.co/loule/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/loule/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/loule/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/vilamoura/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/vilamoura/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/vilamoura/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/lagoa/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/lagoa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/lagoa/" />
+  </url>
 
   <!-- EN HOMEPAGE + CORE -->
   <url>
