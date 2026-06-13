@@ -258,6 +258,84 @@
     "publisher": { "@id": "https://istartec.co/#organization" }
   }
   </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://istartec.co/#faq",
+    "inLanguage": "pt-PT",
+    "isPartOf": { "@id": "https://istartec.co/#website" },
+    "about": { "@id": "https://istartec.co/#business" },
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Em que zonas do Algarve trabalham?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cobrimos toda a região do Algarve, com presença regular em Portimão, Lagos, Albufeira, Lagoa, Loulé, Vilamoura, Quarteira, Almancil, Faro, Olhão, Tavira, Silves e Carvoeiro. Para obras de maior dimensão deslocamo-nos a qualquer ponto da região, incluindo Aljezur, Monchique, Vila Real de Santo António e o sotavento algarvio. A logística está articulada com distribuidores Bosch e Uponor em toda a região, garantindo tempos de resposta curtos e disponibilidade de material."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que tipo de obras executam?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trabalhamos exclusivamente em construção residencial para construtoras, promotores e arquitetos — não fazemos avenças domésticas nem assistência avulsa. As obras-tipo são empreendimentos de 15 a 80 apartamentos, moradias unifamiliares de elevada exigência técnica e remodelações de raiz. Executamos canalização interior completa, chão radiante, solar térmico, bomba de calor aerotérmica para AQS, instalações sanitárias e drenagem residual e pluvial."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que alvará e certificações têm?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Temos Alvará IMPIC 4ª classe 3 em instalações hidráulicas, o que nos habilita a executar obras públicas e privadas até 664 000€ na categoria principal. Somos parceiros Bosch (bombas de calor e AQS) e certificados Uponor (chão radiante PEX). Todas as instalações são executadas conforme as normas vigentes em Portugal e com materiais homologados, com documentação técnica entregue no final da obra."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo demora uma instalação hidráulica completa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende muito da dimensão e da fase de construção. Uma moradia unifamiliar típica leva 6 a 12 semanas (canalização, chão radiante, AQS e sanitários). Um empreendimento residencial com 30+ apartamentos leva vários meses, executados por fases coordenadas com o plano de obra do construtor. Apresentamos sempre um cronograma realista no orçamento, com marcos claros e datas de comissionamento."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Como funciona a instalação de chão radiante numa moradia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Após a base de betão estar nivelada, executamos: (1) isolamento térmico ao chão, (2) instalação do tubo Uponor PEX em circuitos por divisão, (3) ligação aos coletores hidráulicos e ao gerador de calor (bomba de calor aerotérmica ou caldeira), (4) testes de pressão a frio e a quente, (5) entrega do esquema hidráulico documentado. O sistema é compatível com aquecimento e arrefecimento em moradias com solo adequado — uma vantagem significativa em climas como o do Algarve."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Qual a diferença entre solar térmico e bomba de calor para AQS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "São tecnologias complementares. O solar térmico usa coletores solares para aquecer diretamente a água — investimento inicial menor, dependente da radiação solar, com necessidade de apoio em meses sem sol. A bomba de calor aerotérmica retira calor do ar exterior — funciona todo o ano, COP elevado (3-4×), investimento maior, mas regulamentarmente exigida para nova construção residencial (NZEB). Em moradias premium recomendamos frequentemente uma solução híbrida, conjugando ambas para maximizar eficiência."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Trabalham com gás natural?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A iStarTec especializa-se em instalações hidráulicas (canalização, AQS, chão radiante, solar térmico, aerotérmica) e instalações sanitárias. Para instalações de gás natural, ligação à rede ou Cap. Gás do orçamento, recomendamos contactar um instalador certificado de gás separadamente — podemos articular o planeamento técnico com esse instalador, se solicitado pelo construtor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Que garantia oferecem nos trabalhos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Garantia de 5 anos sobre a mão-de-obra de instalação, conforme aplicável a empreitadas de construção em Portugal. As garantias de fabricante (Bosch, Uponor, BAXI, etc.) aplicam-se aos componentes — tipicamente 2 a 10 anos consoante o produto. Documentamos o esquema hidráulico e as fichas de equipamento na entrega da obra, facilitando manutenção futura por qualquer instalador."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -1204,6 +1282,86 @@
             <span class="about__img-card-label" data-i18n="about.years">Anos de Experiência</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ───────────────────────────────────────────── -->
+  <section id="faq" class="faq section">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label">Perguntas Frequentes</div>
+        <h2 class="section__title">Respostas Diretas</h2>
+        <p class="section__desc">As perguntas que construtores, promotores e arquitetos nos colocam mais frequentemente — respondidas sem rodeios.</p>
+      </div>
+
+      <div class="faq__list">
+
+        <details class="faq__item" open>
+          <summary class="faq__q">Em que zonas do Algarve trabalham?</summary>
+          <div class="faq__a">
+            <p>Cobrimos toda a região do Algarve, com presença regular em Portimão, Lagos, Albufeira, Lagoa, Loulé, Vilamoura, Quarteira, Almancil, Faro, Olhão, Tavira, Silves e Carvoeiro. Para obras de maior dimensão deslocamo-nos a qualquer ponto da região, incluindo Aljezur, Monchique, Vila Real de Santo António e o sotavento algarvio.</p>
+            <p>A logística está articulada com distribuidores Bosch e Uponor em toda a região, garantindo tempos de resposta curtos e disponibilidade de material.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Que tipo de obras executam?</summary>
+          <div class="faq__a">
+            <p>Trabalhamos exclusivamente em construção residencial para <strong>construtoras, promotores e arquitetos</strong> — não fazemos avenças domésticas nem assistência avulsa. As obras-tipo são empreendimentos de 15 a 80 apartamentos, moradias unifamiliares de elevada exigência técnica e remodelações de raiz.</p>
+            <p>Executamos canalização interior completa, chão radiante, solar térmico, bomba de calor aerotérmica para AQS, instalações sanitárias e drenagem residual e pluvial.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Que alvará e certificações têm?</summary>
+          <div class="faq__a">
+            <p>Temos <strong>Alvará IMPIC 4ª classe 3</strong> em instalações hidráulicas, o que nos habilita a executar obras públicas e privadas até 664 000€ na categoria principal. Somos <strong>parceiros Bosch</strong> (bombas de calor e AQS) e <strong>certificados Uponor</strong> (chão radiante PEX).</p>
+            <p>Todas as instalações são executadas conforme as normas vigentes em Portugal e com materiais homologados, com documentação técnica entregue no final da obra.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Quanto tempo demora uma instalação hidráulica completa?</summary>
+          <div class="faq__a">
+            <p>Depende muito da dimensão e da fase de construção. Uma <strong>moradia unifamiliar típica</strong> leva 6 a 12 semanas (canalização, chão radiante, AQS e sanitários). Um <strong>empreendimento residencial</strong> com 30+ apartamentos leva vários meses, executados por fases coordenadas com o plano de obra do construtor.</p>
+            <p>Apresentamos sempre um cronograma realista no orçamento, com marcos claros e datas de comissionamento.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Como funciona a instalação de chão radiante numa moradia?</summary>
+          <div class="faq__a">
+            <p>Após a base de betão estar nivelada, executamos: (1) isolamento térmico ao chão, (2) instalação do tubo Uponor PEX em circuitos por divisão, (3) ligação aos coletores hidráulicos e ao gerador de calor (bomba de calor aerotérmica ou caldeira), (4) testes de pressão a frio e a quente, (5) entrega do esquema hidráulico documentado.</p>
+            <p>O sistema é compatível com aquecimento <em>e</em> arrefecimento em moradias com solo adequado — uma vantagem significativa em climas como o do Algarve.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Qual a diferença entre solar térmico e bomba de calor para AQS?</summary>
+          <div class="faq__a">
+            <p>São tecnologias complementares. O <strong>solar térmico</strong> usa coletores solares para aquecer diretamente a água — investimento inicial menor, dependente da radiação solar, com necessidade de apoio em meses sem sol.</p>
+            <p>A <strong>bomba de calor aerotérmica</strong> retira calor do ar exterior — funciona todo o ano, COP elevado (3-4×), investimento maior, mas regulamentarmente exigida para nova construção residencial (NZEB).</p>
+            <p>Em moradias premium recomendamos frequentemente uma solução híbrida, conjugando ambas para maximizar eficiência.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Trabalham com gás natural?</summary>
+          <div class="faq__a">
+            <p><strong>Não.</strong> A iStarTec especializa-se em instalações hidráulicas (canalização, AQS, chão radiante, solar térmico, aerotérmica) e instalações sanitárias.</p>
+            <p>Para instalações de gás natural, ligação à rede ou Cap. Gás do orçamento, recomendamos contactar um instalador certificado de gás separadamente — podemos articular o planeamento técnico com esse instalador, se solicitado pelo construtor.</p>
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">Que garantia oferecem nos trabalhos?</summary>
+          <div class="faq__a">
+            <p><strong>Garantia de 5 anos</strong> sobre a mão-de-obra de instalação, conforme aplicável a empreitadas de construção em Portugal. As garantias de fabricante (Bosch, Uponor, BAXI, etc.) aplicam-se aos componentes — tipicamente 2 a 10 anos consoante o produto.</p>
+            <p>Documentamos o esquema hidráulico e as fichas de equipamento na entrega da obra, facilitando manutenção futura por qualquer instalador.</p>
+          </div>
+        </details>
+
       </div>
     </div>
   </section>
