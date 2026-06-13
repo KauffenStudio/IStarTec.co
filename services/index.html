@@ -43,15 +43,87 @@
   }
   </script>
   <script type="application/ld+json">
-  {
+    {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Serviços iStarTec",
+    "@id": "https://istartec.co/services/#catalog",
+    "name": "Serviços iStarTec — Instalações Hidráulicas no Algarve",
+    "description": "Catálogo de serviços de instalações técnicas para construção residencial no Algarve: canalização, chão radiante, solar térmico e instalações sanitárias.",
+    "numberOfItems": 4,
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
     "itemListElement": [
-      { "@type": "Service", "position": 1, "name": "Instalações de Canalização", "url": "https://istartec.co/services/canalizacao/", "description": "Sistemas hidráulicos completos para edifícios residenciais e moradias: redes de abastecimento de água, sistemas de esgotos, drenagem pluvial e ventilação.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
-      { "@type": "Service", "position": 2, "name": "Sistema de Chão Radiante", "url": "https://istartec.co/services/chao-radiante/", "description": "Instalação de chão radiante com tubagem Uponor e coletores de zona, combinado com bombas de calor e solar térmico.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
-      { "@type": "Service", "position": 3, "name": "Sistemas Solares Térmicos", "url": "https://istartec.co/services/solar-termico/", "description": "Projeto e instalação de coletores solares térmicos para AQS. Marcas Bosch e BAXI.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
-      { "@type": "Service", "position": 4, "name": "Instalações Sanitárias", "url": "https://istartec.co/services/sanitarias/", "description": "Fornecimento e instalação de equipamento sanitário premium para casas de banho de moradias e empreendimentos no Algarve.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" }
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Service",
+          "@id": "https://istartec.co/services/canalizacao/#service",
+          "name": "Instalações de Canalização",
+          "url": "https://istartec.co/services/canalizacao/",
+          "description": "Sistemas hidráulicos completos para edifícios residenciais e moradias no Algarve: redes de água multicamada/PEX/cobre, esgotos, drenagem pluvial interior, ventilação e coletores hidráulicos. Instalaçõ",
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          },
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Service",
+          "@id": "https://istartec.co/services/chao-radiante/#service",
+          "name": "Instalação de Chão Radiante",
+          "url": "https://istartec.co/services/chao-radiante/",
+          "description": "Instalação de chão radiante hidráulico com tubagem Uponor PEX, coletores de zona e controlo termostático multi-zona. Integração com bomba de calor aerotérmica e solar térmico para máxima eficiência en",
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          },
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Service",
+          "@id": "https://istartec.co/services/solar-termico/#service",
+          "name": "Instalação de Sistemas Solares Térmicos",
+          "url": "https://istartec.co/services/solar-termico/",
+          "description": "Projeto e instalação de coletores solares térmicos para Águas Quentes Sanitárias (AQS), dimensionados para a elevada irradiância solar do Algarve. Sistemas Bosch e BAXI, termossifão e circulação força",
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          },
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          }
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Service",
+          "@id": "https://istartec.co/services/sanitarias/#service",
+          "name": "Instalações Sanitárias",
+          "url": "https://istartec.co/services/sanitarias/",
+          "description": "Fornecimento e instalação de equipamento sanitário premium em casas de banho de moradias de luxo e empreendimentos no Algarve. Marcas Hansgrohe, Roca, Geberit. Coordenação com gabinete de arquitetura ",
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          },
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          }
+        }
+      }
     ]
   }
   </script>
