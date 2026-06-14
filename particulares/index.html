@@ -150,8 +150,12 @@
     .service-cards h2 { font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700; text-align: center; margin: 0 0 1rem; }
     .service-cards .lede { max-width: 720px; margin: 0 auto 3rem; text-align: center; color: #475569; font-size: 1.05rem; line-height: 1.7; }
     .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
-    .service-link-card { display: flex; flex-direction: column; padding: 2rem; background: white; border: 1px solid #e2e8f0; border-radius: 14px; text-decoration: none; color: inherit; transition: all .15s ease; }
+    .service-link-card { display: flex; flex-direction: column; background: white; border: 1px solid #e2e8f0; border-radius: 14px; text-decoration: none; color: inherit; transition: all .15s ease; overflow: hidden; }
     .service-link-card:hover { border-color: #2563eb; box-shadow: 0 12px 32px rgba(37, 99, 235, .1); transform: translateY(-3px); }
+    .service-link-card__img { display: block; width: 100%; aspect-ratio: 4 / 3; overflow: hidden; background: #eef2f7; }
+    .service-link-card__img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .35s ease; }
+    .service-link-card:hover .service-link-card__img img { transform: scale(1.04); }
+    .service-link-card__body { display: flex; flex-direction: column; flex-grow: 1; padding: 2rem; }
     .service-link-card__label { font-size: .8rem; font-weight: 600; color: #2563eb; text-transform: uppercase; letter-spacing: .04em; margin-bottom: .75rem; }
     .service-link-card h3 { font-family: 'Space Grotesk', sans-serif; font-size: 1.35rem; font-weight: 700; margin: 0 0 .75rem; color: #0f172a; line-height: 1.25; }
     .service-link-card p { margin: 0 0 1.5rem; font-size: .98rem; color: #475569; line-height: 1.6; flex-grow: 1; }
@@ -305,22 +309,37 @@
       <p class="lede">Três tipos de obra, todas com a mesma exigência técnica das obras profissionais que fazemos para construtoras. Cada serviço é uma instalação completa, projetada para durar décadas.</p>
       <div class="service-grid">
         <a href="/particulares/solar-termico/" class="service-link-card">
-          <span class="service-link-card__label">Energia solar</span>
-          <h3>Instalar solar térmico em sua casa</h3>
-          <p>Aproveite os 1900 kWh/m² de sol do Algarve para aquecer água sanitária. Sistema Bosch ou BAXI, payback de 4 a 7 anos, IVA a 6%. Instalação em 2-3 dias.</p>
-          <span class="service-link-card__arrow">Ver serviço →</span>
+          <span class="service-link-card__img">
+            <img src="/assets/services-home/solar-termico.webp" alt="Instalação de painéis solares térmicos em telhado de habitação no Algarve" width="672" height="900" loading="lazy" decoding="async" />
+          </span>
+          <span class="service-link-card__body">
+            <span class="service-link-card__label">Energia solar</span>
+            <h3>Instalar solar térmico em sua casa</h3>
+            <p>Aproveite os 1900 kWh/m² de sol do Algarve para aquecer água sanitária. Sistema Bosch ou BAXI, payback de 4 a 7 anos, IVA a 6%. Instalação em 2-3 dias.</p>
+            <span class="service-link-card__arrow">Ver serviço →</span>
+          </span>
         </a>
         <a href="/particulares/chao-radiante/" class="service-link-card">
-          <span class="service-link-card__label">Conforto térmico</span>
-          <h3>Instalar chão radiante numa casa existente</h3>
-          <p>Conforto silencioso, distribuição uniforme de temperatura, custo operacional mínimo com bomba de calor. Tubo Uponor PEX (10 anos de garantia). Possível em quase qualquer casa.</p>
-          <span class="service-link-card__arrow">Ver serviço →</span>
+          <span class="service-link-card__img">
+            <img src="/assets/services-home/chao-radiante.webp" alt="Montagem de chão radiante com tubo Uponor PEX numa casa existente" width="672" height="900" loading="lazy" decoding="async" />
+          </span>
+          <span class="service-link-card__body">
+            <span class="service-link-card__label">Conforto térmico</span>
+            <h3>Instalar chão radiante numa casa existente</h3>
+            <p>Conforto silencioso, distribuição uniforme de temperatura, custo operacional mínimo com bomba de calor. Tubo Uponor PEX (10 anos de garantia). Possível em quase qualquer casa.</p>
+            <span class="service-link-card__arrow">Ver serviço →</span>
+          </span>
         </a>
         <a href="/particulares/remodelacao-canalizacao/" class="service-link-card">
-          <span class="service-link-card__label">Renovar a casa</span>
-          <h3>Remodelar a canalização de toda a casa</h3>
-          <p>Substituir redes antigas em ferro galvanizado, chumbo ou PVC degradado. Multicamada ou PEX moderno, com coletores acessíveis. Acaba com fugas, ruído e baixa pressão.</p>
-          <span class="service-link-card__arrow">Ver serviço →</span>
+          <span class="service-link-card__img">
+            <img src="/assets/services-home/remodelacao-canalizacao.webp" alt="Remodelação completa da canalização de uma habitação com tubo multicamada" width="672" height="900" loading="lazy" decoding="async" />
+          </span>
+          <span class="service-link-card__body">
+            <span class="service-link-card__label">Renovar a casa</span>
+            <h3>Remodelar a canalização de toda a casa</h3>
+            <p>Substituir redes antigas em ferro galvanizado, chumbo ou PVC degradado. Multicamada ou PEX moderno, com coletores acessíveis. Acaba com fugas, ruído e baixa pressão.</p>
+            <span class="service-link-card__arrow">Ver serviço →</span>
+          </span>
         </a>
       </div>
     </div>
