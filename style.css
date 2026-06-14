@@ -2219,7 +2219,7 @@ input, select, textarea { font: inherit; }
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
-  margin: 1.25rem 0 0;
+  margin: 1.25rem auto 0;
   max-width: 880px;
   width: 100%;
 }
@@ -2277,6 +2277,17 @@ input, select, textarea { font: inherit; }
   color: var(--blue-dark);
 }
 
+.hero-audience-cta {
+  text-align: center;
+  width: 100%;
+  max-width: 880px;
+  margin: 1.75rem auto 0;
+}
+.hero-audience-cta__btn {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
 @media (max-width: 640px) {
   .hero-audience-split {
     grid-template-columns: 1fr;
@@ -2286,4 +2297,6 @@ input, select, textarea { font: inherit; }
   .audience-card { padding: 1.5rem; min-height: 0; }
   .audience-card__title { font-size: 1.2rem; }
   .audience-card__desc { font-size: .92rem; }
+  .hero-audience-cta { margin-top: 1.25rem; }
+  .hero-audience-cta__btn { width: 100%; justify-content: center; }
 }
