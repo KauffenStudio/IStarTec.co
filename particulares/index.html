@@ -32,6 +32,13 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/style.css" />
 
+  <!-- Audience preference: visiting /particulares/ confirms 'particular' mode. -->
+  <script>
+  (function () {
+    try { localStorage.setItem('istar_audience', 'particular'); } catch (e) {}
+  })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18074242840"></script>
   <script>
@@ -111,7 +118,7 @@
       { "@type": "Question", "name": "Trabalham diretamente com donos de casa, ou só com construtoras?", "acceptedAnswer": { "@type": "Answer", "text": "Trabalhamos com ambos. O nosso histórico de 25+ anos é em construção residencial para promotores, mas agora também aceitamos obra de particulares — desde que seja remodelação completa ou troca de sistema (solar, chão radiante, canalização toda da casa). Não fazemos pequenas reparações nem assistência avulsa." } },
       { "@type": "Question", "name": "Trabalham em casa habitada?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. A maioria dos clientes particulares pede para trocar o sistema sem mudar de casa. Fazemos a obra por fases para minimizar o desconforto: chegamos cedo, protegemos o espaço, deixamos água e luz sempre disponíveis no fim de cada dia, e limpamos a área de trabalho antes de sair." } },
       { "@type": "Question", "name": "Quanto tempo demora uma instalação?", "acceptedAnswer": { "@type": "Answer", "text": "Depende do serviço: solar térmico tipicamente 2 a 3 dias; chão radiante numa moradia entre 1 a 2 semanas (com obra de piso); remodelação completa de canalização 2 a 4 semanas. Damos sempre um planeamento detalhado antes de começar." } },
-      { "@type": "Question", "name": "Que garantia oferecem?", "acceptedAnswer": { "@type": "Answer", "text": "5 anos de garantia na mão-de-obra de instalação. As garantias dos equipamentos seguem o fabricante: Bosch dá 2 anos (até 10 nalguns coletores), Uponor 10 anos no tubo PEX. Damos sempre cópia das garantias por escrito no fim da obra." } },
+      { "@type": "Question", "name": "Que garantia oferecem?", "acceptedAnswer": { "@type": "Answer", "text": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Os fabricantes adicionam as suas próprias garantias — Bosch até 10 anos em alguns coletores, Uponor 10 anos no tubo PEX. Damos sempre cópia das garantias por escrito no fim da obra." } },
       { "@type": "Question", "name": "Fazem pequenas reparações ou assistência avulsa?", "acceptedAnswer": { "@type": "Answer", "text": "Não. Concentramo-nos em obras de remodelação completa e instalação de sistemas — não fazemos avenças domésticas nem assistência 24h. Para uma fuga ou avaria pontual, recomendamos um canalizador local." } },
       { "@type": "Question", "name": "Há incentivos fiscais para solar térmico?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Em 2026 a instalação de solar térmico para AQS tem IVA reduzido a 6% (em vez dos 23% gerais) e pode beneficiar do programa PRR para eficiência energética. Damos toda a documentação necessária para o cliente candidatar-se." } }
     ]
@@ -210,32 +217,91 @@
         </span>
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
-      <ul class="nav__links">
-        <li><a href="/" class="nav__link">Início</a></li>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="/particulares/" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link">Serviços</a></li>
-        <li><a href="/particulares/" class="nav__link" aria-current="page">Particulares</a></li>
         <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
         <li><a href="/about/" class="nav__link">Sobre Nós</a></li>
         <li><a href="/blog/" class="nav__link">Blog</a></li>
-        <li><a href="/contact/" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
+        <li class="nav__lang-item">
+          <div class="lang-toggle lang-toggle--static" aria-label="Idioma">
+            <a class="lang-toggle__btn lang-toggle__btn--active" href="#" aria-current="true" aria-label="Português (atual)">
+              <span class="lang-flag">🇵🇹</span><span>PT</span>
+            </a>
+            <a class="lang-toggle__btn" href="/en/" hreflang="en" rel="alternate" aria-label="View English version">
+              <span class="lang-flag">🇬🇧</span><span>EN</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav__audience-item">
+          <div class="audience-toggle" role="tablist" aria-label="Tipo de cliente">
+            <a href="/particulares/" class="audience-toggle__btn audience-toggle__btn--active" data-audience="particular" role="tab" aria-selected="true" aria-current="true">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+              Particular
+            </a>
+            <a href="/?audience=empresa" class="audience-toggle__btn" data-audience="empresa" role="tab" aria-selected="false">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg>
+              Empresa
+            </a>
+          </div>
+        </li>
+        <li><a href="/#contact" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="subpage-hero">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="Navegação">
-        <a href="/">Início</a> › <span>Particulares</span>
-      </nav>
-      <div class="section__label">Para o seu lar</div>
-      <h1>Solar térmico, chão radiante e canalização para sua casa</h1>
-      <p>A mesma equipa que durante 25+ anos instala sistemas hidráulicos em empreendimentos residenciais do Algarve, agora também para particulares. Para obras de remodelação completa ou troca de sistema — não para pequenas reparações.</p>
+  <!-- ─── HERO (unificado com homepage) ──────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero__bg-photo">
+      <picture>
+        <source srcset="/assets/hero-bg.webp" type="image/webp" />
+        <img src="/assets/hero-bg.jpg" alt="" aria-hidden="true" width="1600" height="1067" fetchpriority="high" decoding="async" />
+      </picture>
+    </div>
+    <div class="hero__bg-grid"></div>
+    <div class="hero__shapes" aria-hidden="true">
+      <div class="hero__shape hero__shape--ring"></div>
+      <div class="hero__shape hero__shape--cross"></div>
+      <div class="hero__shape hero__shape--circle"></div>
+      <div class="hero__shape hero__shape--square"></div>
+      <div class="hero__shape hero__shape--dots"></div>
+    </div>
+    <div class="container hero__inner hero__inner--anim">
+      <div class="hero__label">25+ anos no Algarve</div>
+      <h1 class="hero__title">
+        Canalização e<br>Instalações Hidráulicas<br>
+        <span class="accent">no Algarve.</span>
+      </h1>
+      <p class="hero__sub">
+        Sistemas técnicos para particulares, construtoras, promotores e arquitetos.<br>Obra premium em moradias e empreendimentos residenciais no Algarve.
+      </p>
+      <div class="hero-audience-split">
+        <a href="/particulares/#services" class="audience-card">
+          <span class="audience-card__label">Para Particulares</span>
+          <span class="audience-card__title">Donos de moradias e apartamentos</span>
+          <span class="audience-card__desc">Remodelações de canalização, painéis solares térmicos e chão radiante, para a sua casa.</span>
+          <span class="audience-card__arrow">Ver serviços para particulares →</span>
+        </a>
+        <a href="/?audience=empresa" class="audience-card">
+          <span class="audience-card__label">Para Empresas</span>
+          <span class="audience-card__title">Construtoras, Promotores e Arquitetos</span>
+          <span class="audience-card__desc">Empreendimentos residenciais, moradias e remodelações de raiz.</span>
+          <span class="audience-card__arrow">Ver serviços para empresas →</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Rolar</span>
+      <div class="hero__scroll-line"></div>
     </div>
   </section>
 
-  <section class="service-cards">
+  <section id="services" class="service-cards">
     <div class="container">
-      <h2>O que fazemos para particulares</h2>
+      <h2>Pensa em fazer obras em sua casa</h2>
       <p class="lede">Três tipos de obra, todas com a mesma exigência técnica das obras profissionais que fazemos para construtoras. Cada serviço é uma instalação completa, projetada para durar décadas.</p>
       <div class="service-grid">
         <a href="/particulares/solar-termico/" class="service-link-card">
@@ -267,52 +333,23 @@
       <div class="process-grid">
         <div class="process-step">
           <div class="process-step__num">1</div>
-          <h3>Pedido inicial</h3>
-          <p>Telefonema ou email — explica-nos o que pretende, em que ponto está, e quando gostaria de fazer a obra.</p>
+          <h3>Contacto e visita técnica</h3>
+          <p>Telefonema ou email para nos explicar o que pretende. Vamos a sua casa, medimos e avaliamos o que é viável. Gratuito e sem compromisso.</p>
         </div>
         <div class="process-step">
           <div class="process-step__num">2</div>
-          <h3>Visita técnica</h3>
-          <p>Vamos a sua casa, medimos, vemos o estado das infraestruturas existentes e percebemos o que é viável. Gratuita e sem compromisso.</p>
-        </div>
-        <div class="process-step">
-          <div class="process-step__num">3</div>
           <h3>Orçamento detalhado</h3>
           <p>Em 5 dias úteis recebe um orçamento escrito com materiais, mão-de-obra, prazo e validade. Sem custos escondidos.</p>
         </div>
         <div class="process-step">
-          <div class="process-step__num">4</div>
+          <div class="process-step__num">3</div>
           <h3>Instalação</h3>
           <p>Equipa de 2 a 4 técnicos no horário acordado. Em casa habitada, deixamos sempre água e luz disponíveis e limpamos no fim de cada dia.</p>
         </div>
         <div class="process-step">
-          <div class="process-step__num">5</div>
+          <div class="process-step__num">4</div>
           <h3>Garantia e assistência</h3>
-          <p>5 anos de garantia na mão-de-obra. Equipamentos com garantia do fabricante (Bosch, Uponor). Documentação tudo entregue por escrito.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="trust-block">
-    <div class="container">
-      <h2>Porque pode confiar</h2>
-      <div class="trust-grid">
-        <div class="trust-item">
-          <div class="trust-item__num">25+</div>
-          <div class="trust-item__label">Anos no Algarve</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-item__num">50+</div>
-          <div class="trust-item__label">Projetos concluídos</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-item__num">IMPIC</div>
-          <div class="trust-item__label">Alvará 4ª classe 3</div>
-        </div>
-        <div class="trust-item">
-          <div class="trust-item__num">5 anos</div>
-          <div class="trust-item__label">Garantia na instalação</div>
+          <p>1 ano de garantia iStarTec no serviço e 2 anos nos materiais. Equipamentos com garantia adicional do fabricante (Bosch, Uponor). Documentação entregue por escrito.</p>
         </div>
       </div>
     </div>
@@ -324,6 +361,318 @@
       <p><strong>Não fazemos pequenas reparações</strong> (fuga numa torneira, autoclismo avariado, desentupimentos). Para isso, recomendamos um canalizador local que faça assistência avulsa — sai mais barato a si do que deslocar a nossa equipa.</p>
       <p><strong>Não fazemos avenças domésticas</strong> nem assistência 24h. Concentramo-nos em obras de remodelação completa onde a nossa experiência técnica faz uma diferença real.</p>
       <p><strong>Não fazemos instalações de gás natural</strong> nem certificações de Cap. Gás. Recomendamos profissionais especializados para essa parte.</p>
+    </div>
+  </section>
+
+<!-- ─── PORTFOLIO ─────────────────────────────────────── -->
+  <section id="portfolio" class="portfolio section">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__label" data-i18n="portfolio.label">Projetos Selecionados</div>
+        <h2 class="section__title" data-i18n="portfolio.title">Portfolio</h2>
+        <p class="section__desc" data-i18n-html="portfolio.desc">
+          Projetos entregues em Portimão e no Algarve, incluindo obras executadas em colaboração com empresas de construção.
+        </p>
+      </div>
+
+      <div class="portfolio__filter">
+        <button class="filter-btn filter-btn--active" data-filter="all"      data-i18n="portfolio.filter.all">Todos</button>
+        <button class="filter-btn"                    data-filter="portimao" data-i18n="portfolio.filter.portimao">Portimão</button>
+        <button class="filter-btn"                    data-filter="alvor"    data-i18n="portfolio.filter.alvor">Alvor</button>
+        <button class="filter-btn"                    data-filter="albufeira" data-i18n="portfolio.filter.albufeira">Albufeira</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+
+        <div class="portfolio-card" data-location="portimao" data-project="bellevue">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-2-3-thegem-gallery-sidebar.png" alt="Edifício Bellevue Lote 13 — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p2.title">Edifício Bellevue Lote 13 · Praia da Rocha</h3>
+            <p data-i18n-html="p2.desc">Edifício de 33 habitações — infraestrutura hidráulica completa para condomínio privado de luxo. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.drainage">Drenagem</span>
+              <span data-i18n="tag.collectors">Coletores</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="portfolio-card" data-location="portimao" data-project="elite">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-7-2-thegem-gallery-sidebar.png" alt="Edifício Elite Residence — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p5.title">Edifício Elite Residence · Praia da Rocha</h3>
+            <p data-i18n-html="p5.desc">Edifício residencial de 104 habitações — especificação completa de canalização, coletores hidráulicos e sistemas Bosch. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>Bosch</span>
+              <span data-i18n="tag.heatpump">Bomba de Calor</span>
+              <span data-i18n="tag.collectors">Coletores</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="albufeira" data-project="albufeira-garden">
+          <div class="portfolio-card__img">
+            <img src="https://images.egorealestate.com/Z1280x1024/S5/C332/P23672660/Tphoto/ID54376901-0000-0500-0000-0000111e086c.jpg" alt="Albufeira Garden — Albufeira" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Albufeira</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p7.title">Albufeira Garden · Albufeira</h3>
+            <p data-i18n="p7.desc">Nova construção pelo Grupo Libertas em Albufeira — 76 apartamentos com instalações hidráulicas completas e sistemas de bomba de calor.</p>
+            <div class="portfolio-card__meta">
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.heatpump">Bomba de Calor</span>
+              <span data-i18n="tag.solar">Solar Térmico</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="fojo-47">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/12/image-0023-thegem-gallery-sidebar.jpeg" alt="Fojo Lote 47 — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p8.title">Fojo Lote 47 · Portimão</h3>
+            <p data-i18n-html="p8.desc">Edifício residencial de 38 habitações — instalações hidráulicas completas. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>38 hab.</span>
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.solar">Solar Térmico</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="urbigal">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/11/Design-sem-nome-32-1-thegem-gallery-sidebar.png" alt="Edifício Urbigal — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p9.title">Edifício Urbigal · Praia da Rocha</h3>
+            <p data-i18n-html="p9.desc">Edifício residencial de 45 habitações — sistemas hidráulicos e solar térmico. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>45 hab.</span>
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.heatpump">Bomba de Calor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="iate-residence">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2023/02/Fotos-orgem-geometrica-marca-de-agua-7-thegem-gallery-sidebar.png" alt="Edifício Iate Residence — Praia da Rocha" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p10.title">Edifício Iate Residence · Praia da Rocha</h3>
+            <p data-i18n-html="p10.desc">Edifício residencial de 27 habitações — instalação hidráulica completa e coletores hidráulicos. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>27 hab.</span>
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.collectors">Coletores</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="sesmarias">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/10/Lote5_Sesmarias_entrada-scaled-thegem-gallery-sidebar.jpg" alt="Sesmarias — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p11.title">Sesmarias · Portimão</h3>
+            <p data-i18n-html="p11.desc">Moradia de 15 habitações com piscina — instalações hidráulicas e solar térmico. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>15 hab.</span>
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.solar">Solar Térmico</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="garden-city">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/12/6085a96a-d24f-427f-b2b5-716248eeb4f5-thegem-gallery-sidebar.jpg" alt="Garden City 16/17 — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p12.title">Garden City 16/17 · Portimão</h3>
+            <p data-i18n-html="p12.desc">Edifício residencial de 38 habitações — instalações hidráulicas completas e bomba de calor. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>38 hab.</span>
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.heatpump">Bomba de Calor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="lote-7-8">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/09/IMG_6614-scaled-thegem-product-justified-square-m.jpg" alt="Lote 7/8 — Portimão" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p13.title">Lote 7/8 · Portimão</h3>
+            <p data-i18n-html="p13.desc">Edifício residencial de 36 habitações — sistemas hidráulicos e coletores. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>36 hab.</span>
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.collectors">Coletores</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="alvor" data-project="alvor-ria-residence">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2022/10/photo-output-3-thegem-gallery-sidebar.jpg" alt="Alvor Ria Residence — Alvor" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Alvor</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p14.title">Alvor Ria Residence · Alvor</h3>
+            <p data-i18n-html="p14.desc">Empreendimento residencial frente à Ria de Alvor — instalações hidráulicas e solar térmico. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span data-i18n="tag.plumbing">Canalização</span>
+              <span data-i18n="tag.solar">Solar Térmico</span>
+              <span data-i18n="tag.heatpump">Bomba de Calor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="alvor" data-project="casa-alvor">
+          <div class="portfolio-card__img">
+            <img src="https://ordemgeometrica.pt/wp-content/uploads/2020/01/Casa-10-thegem-gallery-sidebar.jpg" alt="Residência Privada — Alvor" width="800" height="533" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Alvor</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p6.title">Residência Privada · Alvor</h3>
+            <p data-i18n-html="p6.desc">Moradia V8 com 8 quartos e 330 m² — aproveitamento pluvial, reutilização de águas cinzentas e solar térmico para AQS. Em colaboração com <em>Ordem Geométrica</em>.</p>
+            <div class="portfolio-card__meta">
+              <span data-i18n="tag.rain">Águas Pluviais</span>
+              <span data-i18n="tag.solar">Solar Térmico</span>
+              <span data-i18n="tag.plumbing">Canalização</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="emohb-moradia-1">
+          <div class="portfolio-card__img">
+            <picture><source srcset="/assets/portfolio/emohb-m1-img_3376.webp" type="image/webp" /><img src="/assets/portfolio/emohb-m1-img_3376.jpg" alt="Moradia emohb 1 — Portimão" width="1058" height="785" loading="lazy" decoding="async" /></picture>
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p15.title">Moradia emohb I · Portimão</h3>
+            <p data-i18n="p15.desc">Conjunto de 3 moradias — canalização completa, bomba de calor, chão radiante e painéis solares térmicos. Em colaboração com <em>emohb</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>3 moradias</span>
+              <span data-i18n="tag.heatpump">Bomba de Calor</span>
+              <span data-i18n="tag.solar">Solar Térmico</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-location="portimao" data-project="emohb-moradia-2">
+          <div class="portfolio-card__img">
+            <picture><source srcset="/assets/portfolio/emohb-m2-img_3370.webp" type="image/webp" /><img src="/assets/portfolio/emohb-m2-img_3370.jpg" alt="Moradia emohb 2 — Portimão" width="1055" height="789" loading="lazy" decoding="async" /></picture>
+            <div class="portfolio-card__overlay">
+              <span class="portfolio-card__tag">Portimão</span>
+            </div>
+            <button class="portfolio-card__gallery-btn" aria-label="Ver galeria">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span data-i18n="portfolio.gallery">Ver Galeria</span>
+            </button>
+          </div>
+          <div class="portfolio-card__info">
+            <h3 data-i18n="p16.title">Moradia emohb II · Portimão</h3>
+            <p data-i18n="p16.desc">Conjunto de 3 moradias — canalização completa, bomba de calor, chão radiante e painéis solares térmicos. Em colaboração com <em>emohb</em>.</p>
+            <div class="portfolio-card__meta">
+              <span>3 moradias</span>
+              <span data-i18n="tag.heatpump">Bomba de Calor</span>
+              <span data-i18n="tag.solar">Solar Térmico</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
@@ -344,7 +693,7 @@
       </div>
       <div class="faq-item">
         <h3>Que garantia oferecem?</h3>
-        <p>5 anos de garantia na mão-de-obra de instalação. As garantias dos equipamentos seguem o fabricante: Bosch dá 2 anos (até 10 nalguns coletores), Uponor 10 anos no tubo PEX. Damos sempre cópia das garantias por escrito no fim da obra.</p>
+        <p>Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Os fabricantes adicionam as suas próprias garantias — Bosch até 10 anos em alguns coletores, Uponor 10 anos no tubo PEX. Damos sempre cópia das garantias por escrito no fim da obra.</p>
       </div>
       <div class="faq-item">
         <h3>Fazem pequenas reparações ou assistência avulsa?</h3>
@@ -360,7 +709,6 @@
   <section class="cities-served">
     <div class="container">
       <h2>Onde Trabalhamos</h2>
-      <p class="lede">Toda a região do Algarve. Para obras pequenas damos prioridade ao barlavento (Portimão–Loulé) por questões logísticas — mas para remodelação completa deslocamo-nos a qualquer concelho.</p>
       <div class="cities-grid">
         <a href="/portimao/" class="city-card">
           <h3>Portimão</h3>
@@ -376,7 +724,7 @@
         </a>
         <a href="/albufeira/" class="city-card">
           <h3>Albufeira</h3>
-          <p>Olhos de Água, Areias de São João, Patroves</p>
+          <p>Olhos de Água, Areias de São João, Patroves, Ferreiras, Paderne</p>
         </a>
         <a href="/loule/" class="city-card">
           <h3>Loulé</h3>
@@ -401,7 +749,7 @@
       <div class="quick-cta__actions">
         <a href="tel:+351965445801" class="quick-cta__btn quick-cta__btn--primary" aria-label="Ligar para iStarTec">📞 +351 965 445 801</a>
         <a href="mailto:geral@kauffen.com?subject=Pedido%20de%20Or%C3%A7amento%20-%20Particular" class="quick-cta__btn quick-cta__btn--ghost" aria-label="Email iStarTec">✉ geral@kauffen.com</a>
-        <a href="/contact/" class="quick-cta__btn quick-cta__btn--ghost">Pedir Orçamento</a>
+        <a href="/#contact" class="quick-cta__btn quick-cta__btn--ghost">Pedir Orçamento</a>
       </div>
     </div>
   </section>
@@ -428,7 +776,7 @@
           <li><a href="/portfolio/">Portfolio</a></li>
           <li><a href="/about/">Sobre Nós</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/contact/">Pedir Orçamento</a></li>
+          <li><a href="/#contact">Pedir Orçamento</a></li>
         </ul>
       </div>
       <div class="footer__nav">
@@ -468,6 +816,53 @@
       </div>
     </div>
   </footer>
+
+  <!-- ─── LIGHTBOX ──────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__panel">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="lightbox__body">
+        <div class="lightbox__stage">
+          <button class="lightbox__arrow lightbox__arrow--prev" id="lightboxPrev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="lightbox__img-wrap">
+            <img id="lightboxImg" src="" alt="" />
+            <div class="lightbox__spinner" id="lightboxSpinner"></div>
+          </div>
+          <button class="lightbox__arrow lightbox__arrow--next" id="lightboxNext" aria-label="Próxima">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="lightbox__sidebar">
+          <div class="lightbox__meta">
+            <p class="lightbox__project-type" id="lightboxType"></p>
+            <h3 class="lightbox__title" id="lightboxTitle"></h3>
+            <p class="lightbox__desc" id="lightboxDesc"></p>
+            <div class="lightbox__units" id="lightboxUnits"></div>
+            <div class="lightbox__services" id="lightboxServices"></div>
+            <div class="lightbox__credit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <strong id="lightboxCreditTitle">Construção</strong>
+                <span>Ordem Geométrica</span>
+                <strong id="lightboxCreditHydro">Inst. Hidráulicas</strong>
+                <span>iStarTec</span>
+              </div>
+            </div>
+          </div>
+          <div class="lightbox__thumbs-wrap">
+            <div class="lightbox__thumbs" id="lightboxThumbs"></div>
+          </div>
+          <div class="lightbox__counter" id="lightboxCounter"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/script.js" defer></script>
 
 </body>
 </html>

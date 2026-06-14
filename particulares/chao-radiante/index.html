@@ -32,6 +32,13 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="/style.css" />
 
+  <!-- Audience preference: visiting /particulares/* confirms 'particular' mode. -->
+  <script>
+  (function () {
+    try { localStorage.setItem('istar_audience', 'particular'); } catch (e) {}
+  })();
+  </script>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18074242840"></script>
   <script>
@@ -73,7 +80,7 @@
       { "@type": "City", "name": "Faro" }
     ],
     "category": "HVAC / Underfloor heating",
-    "termsOfService": "Garantia de mão-de-obra: 5 anos. Garantia tubo Uponor PEX: 10 anos."
+    "termsOfService": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Garantia adicional tubo Uponor PEX: 10 anos (fabricante)."
   }
   </script>
   <script type="application/ld+json">
@@ -87,7 +94,7 @@
       { "@type": "Question", "name": "Demora quanto tempo a instalar?", "acceptedAnswer": { "@type": "Answer", "text": "Numa remodelação, conta com 2 a 3 semanas: 3-4 dias para levantar piso e preparar base; 2-3 dias para colocar isolamento e tubo; 1 dia de betonagem; 5-7 dias de secagem da betonilha; depois colocação do pavimento final (que pode ser outro empreiteiro). Em obra nova é mais rápido — 1 semana só para o tubo e betonilha." } },
       { "@type": "Question", "name": "Que pavimento posso usar?", "acceptedAnswer": { "@type": "Answer", "text": "Quase todos funcionam — cerâmico/porcelânico é o melhor (transmite o calor com excelência), pedra natural também. Madeira flutuante e vinílico LVT também são compatíveis, desde que tenham certificação para chão radiante. Madeira maciça grossa não é recomendada." } },
       { "@type": "Question", "name": "Vale a pena no Algarve, onde não é tão frio?", "acceptedAnswer": { "@type": "Answer", "text": "Vale a pena se quiser conforto real no inverno e na meia-estação. As casas no Algarve são pensadas para o verão e arrefecem rapidamente — chão radiante elimina a sensação de pavimento frio nos meses húmidos (nov-fev). Combinado com bomba de calor, é o sistema de aquecimento mais económico para uma casa bem isolada." } },
-      { "@type": "Question", "name": "Que garantia oferecem?", "acceptedAnswer": { "@type": "Answer", "text": "Tubo Uponor PEX: 10 anos de garantia do fabricante. Coletores e válvulas: 2-5 anos consoante componente. Mão-de-obra: 5 anos. Damos toda a documentação por escrito, com indicação de onde passa cada circuito (essencial para futuras intervenções)." } }
+      { "@type": "Question", "name": "Que garantia oferecem?", "acceptedAnswer": { "@type": "Answer", "text": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Os fabricantes adicionam: tubo Uponor PEX 10 anos, coletores e válvulas 2-5 anos consoante componente. Damos toda a documentação por escrito, com indicação de onde passa cada circuito (essencial para futuras intervenções)." } }
     ]
   }
   </script>
@@ -191,13 +198,34 @@
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
       <ul class="nav__links">
-        <li><a href="/" class="nav__link">Início</a></li>
+        <li><a href="/particulares/" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link">Serviços</a></li>
-        <li><a href="/particulares/" class="nav__link" aria-current="page">Particulares</a></li>
         <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
         <li><a href="/about/" class="nav__link">Sobre Nós</a></li>
         <li><a href="/blog/" class="nav__link">Blog</a></li>
-        <li><a href="/contact/" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
+        <li class="nav__lang-item">
+          <div class="lang-toggle lang-toggle--static" aria-label="Idioma">
+            <a class="lang-toggle__btn lang-toggle__btn--active" href="#" aria-current="true" aria-label="Português (atual)">
+              <span class="lang-flag">🇵🇹</span><span>PT</span>
+            </a>
+            <a class="lang-toggle__btn" href="/en/" hreflang="en" rel="alternate" aria-label="View English version">
+              <span class="lang-flag">🇬🇧</span><span>EN</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav__audience-item">
+          <div class="audience-toggle" role="tablist" aria-label="Tipo de cliente">
+            <a href="/particulares/" class="audience-toggle__btn audience-toggle__btn--active" data-audience="particular" role="tab" aria-selected="true" aria-current="true">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+              Particular
+            </a>
+            <a href="/?audience=empresa" class="audience-toggle__btn" data-audience="empresa" role="tab" aria-selected="false">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg>
+              Empresa
+            </a>
+          </div>
+        </li>
+        <li><a href="/#contact" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
       </ul>
     </nav>
   </header>
@@ -395,7 +423,7 @@
       </div>
       <div class="faq-item">
         <h3>Que garantia oferecem?</h3>
-        <p>Tubo Uponor PEX: 10 anos de garantia do fabricante. Coletores e válvulas: 2-5 anos consoante componente. Mão-de-obra: 5 anos. Damos toda a documentação por escrito, com indicação de onde passa cada circuito (essencial para futuras intervenções).</p>
+        <p>Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Os fabricantes adicionam: tubo Uponor PEX 10 anos, coletores e válvulas 2-5 anos consoante componente. Damos toda a documentação por escrito, com indicação de onde passa cada circuito (essencial para futuras intervenções).</p>
       </div>
     </div>
   </section>
@@ -419,7 +447,7 @@
         </a>
         <a href="/albufeira/" class="city-card">
           <h3>Albufeira</h3>
-          <p>Olhos de Água, Areias de São João</p>
+          <p>Olhos de Água, Areias de São João, Ferreiras, Paderne</p>
         </a>
         <a href="/loule/" class="city-card">
           <h3>Loulé</h3>
@@ -455,7 +483,7 @@
       <div class="quick-cta__actions">
         <a href="tel:+351965445801" class="quick-cta__btn quick-cta__btn--primary">📞 +351 965 445 801</a>
         <a href="mailto:geral@kauffen.com?subject=Pedido%20de%20Or%C3%A7amento%20-%20Ch%C3%A3o%20Radiante%20Particular" class="quick-cta__btn quick-cta__btn--ghost">✉ geral@kauffen.com</a>
-        <a href="/contact/" class="quick-cta__btn quick-cta__btn--ghost">Pedir Orçamento</a>
+        <a href="/#contact" class="quick-cta__btn quick-cta__btn--ghost">Pedir Orçamento</a>
       </div>
     </div>
   </section>
@@ -482,7 +510,7 @@
           <li><a href="/portfolio/">Portfolio</a></li>
           <li><a href="/about/">Sobre Nós</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/contact/">Pedir Orçamento</a></li>
+          <li><a href="/#contact">Pedir Orçamento</a></li>
         </ul>
       </div>
       <div class="footer__nav">

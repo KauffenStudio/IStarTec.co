@@ -3,6 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Audience default: first-time visitors land on /particulares/ (B2C).
+       Bypassed by ?audience=empresa, stored 'empresa' preference, or hash anchor. -->
+  <script>
+  (function () {
+    try {
+      var path = window.location.pathname;
+      if (path !== '/' && path !== '/index.html') return;
+      // Anchor links to / (e.g. /#contact) bypass the redirect so the user
+      // lands on / and scrolls to the requested section.
+      if (window.location.hash) return;
+      var params = new URLSearchParams(window.location.search);
+      var explicit = params.get('audience');
+      if (explicit === 'empresa') {
+        try { localStorage.setItem('istar_audience', 'empresa'); } catch (e) {}
+        return;
+      }
+      if (explicit === 'particular') {
+        try { localStorage.setItem('istar_audience', 'particular'); } catch (e) {}
+        window.location.replace('/particulares/');
+        return;
+      }
+      var pref = null;
+      try { pref = localStorage.getItem('istar_audience'); } catch (e) {}
+      if (pref === 'empresa') return;
+      window.location.replace('/particulares/');
+    } catch (e) {}
+  })();
+  </script>
+
   <title>Canalização e Instalações Hidráulicas no Algarve — iStarTec | 25+ anos</title>
   <meta name="description" content="iStarTec — canalização, chão radiante, solar térmico e instalações sanitárias para construção residencial no Algarve. 25+ anos. Alvará IMPIC 4ª classe 3. Parceiro Bosch e Uponor." />
   <meta name="keywords" content="canalização Algarve, canalizador Portimão, chão radiante Algarve, solar térmico Portimão, instalações sanitárias Algarve, instalações hidráulicas, iStarTec" />
@@ -331,7 +361,7 @@
         "name": "Que garantia oferecem nos trabalhos?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Garantia de 5 anos sobre a mão-de-obra de instalação, conforme aplicável a empreitadas de construção em Portugal. As garantias de fabricante (Bosch, Uponor, BAXI, etc.) aplicam-se aos componentes — tipicamente 2 a 10 anos consoante o produto. Documentamos o esquema hidráulico e as fichas de equipamento na entrega da obra, facilitando manutenção futura por qualquer instalador."
+          "text": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. As garantias de fabricante (Bosch, Uponor, BAXI, etc.) aplicam-se adicionalmente aos componentes — tipicamente 2 a 10 anos consoante o produto. Documentamos o esquema hidráulico e as fichas de equipamento na entrega da obra, facilitando manutenção futura por qualquer instalador."
         }
       }
     ]
@@ -342,6 +372,13 @@
 
   <!-- ─── NAVIGATION ─────────────────────────────────────── -->
   <header id="header">
+    <div class="audience-bar" role="navigation" aria-label="Selector de audiência">
+      <div class="audience-bar__inner">
+        <a href="/?audience=empresa" class="audience-pill audience-pill--active">Empresas</a>
+        <span class="audience-bar__sep" aria-hidden="true"></span>
+        <a href="/particulares/" class="audience-pill">Particulares</a>
+      </div>
+    </div>
     <nav class="nav container">
       <a href="#home" class="nav__logo">
         <span class="nav__logo-mark">
@@ -371,6 +408,18 @@
           </div>
         </li>        <li><a href="/blog/" class="nav__link">Blog</a></li>
 
+        <li class="nav__audience-item">
+          <div class="audience-toggle" role="tablist" aria-label="Tipo de cliente">
+            <a href="/particulares/#services" class="audience-toggle__btn" data-audience="particular" role="tab" aria-selected="false">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+              Particular
+            </a>
+            <a href="/?audience=empresa" class="audience-toggle__btn audience-toggle__btn--active" data-audience="empresa" role="tab" aria-selected="true" aria-current="true">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg>
+              Empresa
+            </a>
+          </div>
+        </li>
         <li><a href="#contact" class="nav__link nav__link--cta" data-i18n="nav.cta">Pedir Orçamento</a></li>
       </ul>
     </nav>
@@ -401,12 +450,22 @@
         Canalização e<br>Instalações Hidráulicas<br>
         <span class="accent">no Algarve.</span>
       </h1>
-      <p class="hero__sub" data-i18n="hero.sub">
-        Sistemas técnicos para construtoras, promotores e arquitetos. Obra premium em moradias e empreendimentos residenciais no Algarve.
+      <p class="hero__sub" data-i18n-html="hero.sub">
+        Sistemas técnicos para particulares, construtoras, promotores e arquitetos.<br>Obra premium em moradias e empreendimentos residenciais no Algarve.
       </p>
-      <div class="hero__actions">
-        <a href="#services" class="btn btn--primary" data-i18n="hero.btn1">Os Nossos Serviços</a>
-        <a href="#portfolio" class="btn btn--ghost"  data-i18n="hero.btn2">Ver Projetos</a>
+      <div class="hero-audience-split">
+        <a href="/particulares/#services" class="audience-card">
+          <span class="audience-card__label">Para Particulares</span>
+          <span class="audience-card__title">Donos de moradias e apartamentos</span>
+          <span class="audience-card__desc">Remodelações de canalização, painéis solares térmicos e chão radiante, para a sua casa.</span>
+          <span class="audience-card__arrow">Ver serviços para particulares →</span>
+        </a>
+        <a href="/services/" class="audience-card">
+          <span class="audience-card__label">Para Empresas</span>
+          <span class="audience-card__title">Construtoras, Promotores e Arquitetos</span>
+          <span class="audience-card__desc">Empreendimentos residenciais, moradias e remodelações de raiz.</span>
+          <span class="audience-card__arrow">Ver serviços para empresas →</span>
+        </a>
       </div>
     </div>
     <div class="hero__scroll">
@@ -633,7 +692,7 @@
         <div class="section__label" data-i18n="portfolio.label">Projetos Selecionados</div>
         <h2 class="section__title" data-i18n="portfolio.title">Portfolio</h2>
         <p class="section__desc" data-i18n-html="portfolio.desc">
-          Projetos entregues em Portimão e no Algarve, incluindo obras executadas em colaboração com a empresa de construção <strong>Ordem Geométrica</strong>.
+          Projetos entregues em Portimão e no Algarve, incluindo obras executadas em colaboração com empresas de construção.
         </p>
       </div>
 
@@ -935,32 +994,6 @@
 
       </div>
 
-      <div class="portfolio__collab">
-        <p class="portfolio__collab-label" data-i18n="collab.label" style="margin-bottom:1.25rem;">Parceiros de Longa Data</p>
-        <div class="portfolio__collab-partners">
-          <div class="portfolio__collab-inner">
-            <div class="portfolio__collab-logo portfolio__collab-logo--img">
-              <img src="https://ordemgeometrica.pt/wp-content/uploads/thegem/logos/logo_3c7c51678efd6e6349899f6ddd429742_1x.png" alt="Ordem Geométrica" />
-            </div>
-            <div>
-              <p class="portfolio__collab-name">Ordem Geométrica</p>
-              <p class="portfolio__collab-desc" data-i18n="collab.desc">Vários projetos no Algarve foram executados em colaboração com a Ordem Geométrica, uma das principais empresas de construção da região. Esta parceria garante uma integração perfeita entre a construção civil e as instalações técnicas.</p>
-            </div>
-          </div>
-          <div class="portfolio__collab-inner">
-            <div class="portfolio__collab-logo">
-              <svg viewBox="0 0 80 32" xmlns="http://www.w3.org/2000/svg" style="width:80px;height:auto;">
-                <text x="0" y="22" font-family="'Space Grotesk',system-ui,sans-serif" font-weight="700" font-size="13" fill="white" letter-spacing="0.5">TACU</text>
-                <text x="0" y="32" font-family="'Space Grotesk',system-ui,sans-serif" font-weight="400" font-size="10" fill="rgba(255,255,255,0.75)" letter-spacing="1">BACALIUC</text>
-              </svg>
-            </div>
-            <div>
-              <p class="portfolio__collab-name">Tacu Bacaliuc</p>
-              <p class="portfolio__collab-desc" data-i18n="collab.tacu.desc">Empresa de construção parceira de longa data no Algarve, com vasta experiência em obras residenciais de qualidade na região.</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -1051,84 +1084,6 @@
               <li data-i18n="sanitop.li1">Equipamentos sanitários certificados</li>
               <li data-i18n="sanitop.li2">Acessórios para instalações técnicas</li>
               <li data-i18n="sanitop.li3">Soluções para nova construção</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ─── PARTNERS ───────────────────────────────────────── -->
-  <section class="partners section">
-    <div class="container">
-      <div class="section__header">
-        <div class="section__label" data-i18n="partners.label">Parcerias Estratégicas</div>
-        <h2 class="section__title" data-i18n="partners.title">Parceiros</h2>
-        <p class="section__desc" data-i18n="partners.desc">Trabalhamos lado a lado com promotores imobiliários e construtoras líderes no Algarve, integrando as nossas instalações técnicas nos seus projetos de referência.</p>
-      </div>
-      <div class="partners__grid">
-
-        <div class="partner-card">
-          <div class="partner-card__logo">
-            <img src="https://libertas.pt/wp-content/uploads/2025/02/logo-libertas-real-estate-portugal.svg" alt="Grupo Libertas" />
-          </div>
-          <div class="partner-card__content">
-            <div class="partner-card__type" data-i18n="partner.type.developer">Promotor Imobiliário</div>
-            <h3>Grupo Libertas</h3>
-            <p data-i18n="libertas.desc">Grupo imobiliário com presença consolidada no Algarve, responsável por empreendimentos residenciais de nova construção de alto padrão.</p>
-            <ul>
-              <li data-i18n="libertas.li1">Albufeira Garden — 76 apartamentos</li>
-              <li data-i18n="libertas.li2">Nova construção em Albufeira</li>
-              <li data-i18n="libertas.li3">Promotor de referência no Algarve</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div class="partner-card__logo partner-card__logo--img">
-            <img src="https://www.emohb.pt/wp-content/uploads/2021/11/logo.svg" alt="emohb" />
-          </div>
-          <div class="partner-card__content">
-            <div class="partner-card__type" data-i18n="partner.type.builder">Empresa de Construção</div>
-            <h3>emohb</h3>
-            <p data-i18n="emohb.desc">Empresa de construção e mediação imobiliária no Algarve, com mais de 30 anos de conhecimento na área. Parceira na execução de moradias modernas em Portimão.</p>
-            <ul>
-              <li data-i18n="emohb.li1">Construção e mediação imobiliária</li>
-              <li data-i18n="emohb.li2">Moradias modernas em Portimão</li>
-              <li data-i18n="emohb.li3">+30 anos de experiência</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div class="partner-card__logo partner-card__logo--og">
-            <span>TB</span>
-          </div>
-          <div class="partner-card__content">
-            <div class="partner-card__type" data-i18n="partner.type.builder">Empresa de Construção</div>
-            <h3>Tacu Bacaliuc</h3>
-            <p data-i18n="tacu.desc">Empresa de construção de referência no Algarve, com longa parceria na execução de obras residenciais e empreendimentos de alta qualidade na região.</p>
-            <ul>
-              <li data-i18n="tacu.li1">Parceiro de longa data</li>
-              <li data-i18n="tacu.li2">Construção residencial no Algarve</li>
-              <li data-i18n="tacu.li3">Empreendimentos de alta qualidade</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="partner-card">
-          <div class="partner-card__logo partner-card__logo--img">
-            <img src="https://ordemgeometrica.pt/wp-content/uploads/thegem/logos/logo_3c7c51678efd6e6349899f6ddd429742_1x.png" alt="Ordem Geométrica" />
-          </div>
-          <div class="partner-card__content">
-            <div class="partner-card__type" data-i18n="partner.type.builder">Empresa de Construção</div>
-            <h3>Ordem Geométrica</h3>
-            <p data-i18n="og.desc">Uma das principais empresas de construção residencial do Algarve, com vasto historial em empreendimentos de luxo em Portimão e na costa algarvia.</p>
-            <ul>
-              <li data-i18n="og.li1">Edifícios residenciais em Portimão</li>
-              <li data-i18n="og.li2">Projetos de luxo na Praia da Rocha</li>
-              <li data-i18n="og.li3">Construtor de referência no Algarve</li>
             </ul>
           </div>
         </div>
@@ -1358,7 +1313,7 @@
         <details class="faq__item">
           <summary class="faq__q">Que garantia oferecem nos trabalhos?</summary>
           <div class="faq__a">
-            <p><strong>Garantia de 5 anos</strong> sobre a mão-de-obra de instalação, conforme aplicável a empreitadas de construção em Portugal. As garantias de fabricante (Bosch, Uponor, BAXI, etc.) aplicam-se aos componentes — tipicamente 2 a 10 anos consoante o produto.</p>
+            <p><strong>Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais.</strong> As garantias de fabricante (Bosch, Uponor, BAXI, etc.) aplicam-se adicionalmente aos componentes — tipicamente 2 a 10 anos consoante o produto.</p>
             <p>Documentamos o esquema hidráulico e as fichas de equipamento na entrega da obra, facilitando manutenção futura por qualquer instalador.</p>
           </div>
         </details>

@@ -106,14 +106,35 @@
         </span>
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
-      <ul class="nav__links">
-        <li><a href="/" class="nav__link">Início</a></li>
+            <ul class="nav__links">
+        <li><a href="/?audience=empresa" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link">Serviços</a></li>
         <li><a href="/portfolio/" class="nav__link" aria-current="page">Portfolio</a></li>
         <li><a href="/about/" class="nav__link">Sobre Nós</a></li>
-                <li class="nav__lang-item"><a href="/en/portfolio/" class="lang-pill" hreflang="en" rel="alternate" aria-label="View English version">EN</a></li>        <li><a href="/blog/" class="nav__link">Blog</a></li>
-
-<li><a href="/contact/" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
+        <li><a href="/blog/" class="nav__link">Blog</a></li>
+        <li class="nav__lang-item">
+          <div class="lang-toggle lang-toggle--static" aria-label="Idioma">
+            <a class="lang-toggle__btn lang-toggle__btn--active" href="#" aria-current="true" aria-label="Português (atual)">
+              <span class="lang-flag">🇵🇹</span><span>PT</span>
+            </a>
+            <a class="lang-toggle__btn" href="/en/portfolio/" hreflang="en" rel="alternate" aria-label="View English version">
+              <span class="lang-flag">🇬🇧</span><span>EN</span>
+            </a>
+          </div>
+        </li>
+        <li class="nav__audience-item">
+          <div class="audience-toggle" role="tablist" aria-label="Tipo de cliente">
+            <a href="/particulares/#services" class="audience-toggle__btn" data-audience="particular" role="tab" aria-selected="false">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+              Particular
+            </a>
+            <a href="/?audience=empresa" class="audience-toggle__btn audience-toggle__btn--active" data-audience="empresa" role="tab" aria-selected="true" aria-current="true">
+              <svg class="audience-toggle__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M9 7h.01M15 7h.01M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg>
+              Empresa
+            </a>
+          </div>
+        </li>
+        <li><a href="/contact/" class="nav__link nav__link--cta">Pedir Orçamento</a></li>
       </ul>
     </nav>
   </header>

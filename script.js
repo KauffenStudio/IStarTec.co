@@ -15,7 +15,7 @@ const translations = {
     // Hero
     'hero.label':      '25+ anos no Algarve',
     'hero.title':      'Canalização e<br>Instalações Hidráulicas<br><span class="accent">no Algarve.</span>',
-    'hero.sub':        'Sistemas técnicos para construtoras, promotores e arquitetos. Obra premium em moradias e empreendimentos residenciais no Algarve.',
+    'hero.sub':        'Sistemas técnicos para particulares, construtoras, promotores e arquitetos.<br>Obra premium em moradias e empreendimentos residenciais no Algarve.',
     'hero.btn1':       'Os Nossos Serviços',
     'hero.btn2':       'Ver Projetos',
     'hero.scroll':     'Rolar',
@@ -57,7 +57,7 @@ const translations = {
     // Portfolio
     'portfolio.label':           'Projetos Selecionados',
     'portfolio.title':           'Portfolio',
-    'portfolio.desc':            'Projetos entregues em Portimão e no Algarve, incluindo obras executadas em colaboração com a empresa de construção <strong>Ordem Geométrica</strong>.',
+    'portfolio.desc':            'Projetos entregues em Portimão e no Algarve, incluindo obras executadas em colaboração com empresas de construção.',
     'portfolio.filter.all':      'Todos',
     'portfolio.filter.portimao': 'Portimão',
     'portfolio.filter.alvor':    'Alvor',
@@ -221,7 +221,7 @@ const translations = {
     // Hero
     'hero.label':      '25+ years in the Algarve',
     'hero.title':      'Plumbing &amp;<br>Hydraulic Installations<br><span class="accent">in the Algarve.</span>',
-    'hero.sub':        'Technical systems for construction companies, developers and architects. Premium work on villas and residential developments across the Algarve.',
+    'hero.sub':        'Technical systems for homeowners, construction companies, developers and architects.<br>Premium work on villas and residential developments across the Algarve.',
     'hero.btn1':       'Our Services',
     'hero.btn2':       'View Projects',
     'hero.scroll':     'Scroll',
@@ -263,7 +263,7 @@ const translations = {
     // Portfolio
     'portfolio.label':           'Selected Projects',
     'portfolio.title':           'Portfolio',
-    'portfolio.desc':            'Projects delivered across Portimão and the Algarve region, including works executed in collaboration with construction company <strong>Ordem Geométrica</strong>.',
+    'portfolio.desc':            'Projects delivered across Portimão and the Algarve region, including works executed in collaboration with construction companies.',
     'portfolio.filter.all':      'All Projects',
     'portfolio.filter.portimao': 'Portimão',
     'portfolio.filter.alvor':    'Alvor',
@@ -465,6 +465,7 @@ function setLanguage(lang) {
 /* ── Language toggle (sliding pill) ─────────────────────── */
 function updateLangSlider() {
   const toggle    = document.getElementById('langSwitch');
+  if (!toggle) return;
   const track     = document.getElementById('langTrack');
   const activeBtn = toggle.querySelector('.lang-toggle__btn--active');
   if (!track || !activeBtn) return;
@@ -504,19 +505,21 @@ window.addEventListener('scroll', () => {
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 
-navToggle.addEventListener('click', () => {
-  const open = navLinks.classList.toggle('open');
-  navToggle.classList.toggle('open', open);
-  navToggle.setAttribute('aria-expanded', open);
-});
-
-navLinks.querySelectorAll('.nav__link').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    navToggle.classList.remove('open');
-    navToggle.setAttribute('aria-expanded', false);
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
   });
-});
+
+  navLinks.querySelectorAll('.nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', false);
+    });
+  });
+}
 
 /* ── Active nav link on scroll ────────────────────────────── */
 const sections = document.querySelectorAll('section[id]');
@@ -1226,7 +1229,7 @@ lightbox.addEventListener('touchend', e => {
 /* ── Contact form ─────────────────────────────────────────── */
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
+if (contactForm) contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
   let valid = true;
