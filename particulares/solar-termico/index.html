@@ -60,29 +60,65 @@
   }
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://istartec.co/particulares/solar-termico/#service",
-    "name": "Instalação de Solar Térmico para Particulares no Algarve",
-    "serviceType": "Residential solar thermal installation",
-    "description": "Instalação de sistemas solares térmicos Bosch e BAXI para Águas Quentes Sanitárias em moradias e apartamentos no Algarve. Termossifão ou circulação forçada. Trabalho em casa habitada. Garantia iStarTec: 1 ano no serviço + 2 anos nos materiais.",
-    "provider": { "@id": "https://istartec.co/#business" },
-    "audience": { "@type": "Audience", "audienceType": "Homeowner" },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Algarve" },
-      { "@type": "City", "name": "Portimão" },
-      { "@type": "City", "name": "Lagoa" },
-      { "@type": "City", "name": "Lagos" },
-      { "@type": "City", "name": "Albufeira" },
-      { "@type": "City", "name": "Loulé" },
-      { "@type": "City", "name": "Vilamoura" },
-      { "@type": "City", "name": "Faro" }
-    ],
-    "category": "Solar thermal / Renewable energy",
-    "termsOfService": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Garantias adicionais de equipamento: conforme fabricante."
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://istartec.co/particulares/solar-termico/#service",
+  "name": "Instalação de Solar Térmico para Particulares no Algarve",
+  "serviceType": "Residential solar thermal installation",
+  "description": "Instalação de sistemas solares térmicos Bosch e BAXI para Águas Quentes Sanitárias em moradias e apartamentos no Algarve. Termossifão ou circulação forçada. Trabalho em casa habitada. Garantia iStarTec: 1 ano no serviço + 2 anos nos materiais.",
+  "provider": {
+    "@id": "https://istartec.co/#business"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Homeowner"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Algarve"
+    },
+    {
+      "@type": "City",
+      "name": "Portimão"
+    },
+    {
+      "@type": "City",
+      "name": "Lagoa"
+    },
+    {
+      "@type": "City",
+      "name": "Lagos"
+    },
+    {
+      "@type": "City",
+      "name": "Albufeira"
+    },
+    {
+      "@type": "City",
+      "name": "Loulé"
+    },
+    {
+      "@type": "City",
+      "name": "Vilamoura"
+    },
+    {
+      "@type": "City",
+      "name": "Faro"
+    }
+  ],
+  "category": "Solar thermal / Renewable energy",
+  "termsOfService": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Garantias adicionais de equipamento: conforme fabricante.",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".answer-box__q",
+      ".answer-box__a"
+    ]
   }
-  </script>
+}
+</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -239,6 +275,23 @@
       <div class="section__label">Particulares · Energia solar</div>
       <h1>Instalar solar térmico em sua casa no Algarve</h1>
       <p>Aproveite os 1900 kWh/m² de sol anuais — das melhores irradiâncias da Europa — para aquecer a água sanitária com payback de 4 a 7 anos. Sistemas Bosch e BAXI, instalação em 2-3 dias, em casa habitada.</p>
+    </div>
+  </section>
+
+  <section class="answer-box-wrap">
+    <div class="container">
+      <div class="answer-box">
+        <h2 class="answer-box__q">Quanto custa instalar solar térmico numa casa no Algarve?</h2>
+        <p class="answer-box__a">Um sistema solar térmico completo — coletor, depósito de 200 a 300 litros, acessórios e instalação — custa entre 3.000 € e 5.500 €, com IVA à taxa geral de 23 %. Para uma moradia T3-T4 com três a quatro pessoas, a poupança anual situa-se entre 400 € e 700 €, o que coloca o retorno do investimento entre 5 e 8 anos num sistema com vida útil de 20 a 25 anos.</p>
+        <ul class="answer-box__facts">
+          <li><strong>Termossifão simples (T2-T3):</strong> 2.800 € – 3.800 €</li>
+          <li><strong>Sistema standard (T3-T4):</strong> 3.500 € – 4.800 €</li>
+          <li><strong>Sistema premium (tubos de vácuo):</strong> 4.500 € – 6.500 €</li>
+          <li><strong>Poupança anual típica:</strong> 400 € – 700 €</li>
+          <li><strong>Retorno do investimento:</strong> 5 a 8 anos</li>
+          <li><strong>IVA:</strong> taxa geral de 23 % (a taxa reduzida de 6 % já não vigora)</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -511,18 +564,26 @@
         <h4>Onde Trabalhamos</h4>
         <ul>
           <li><a href="/portimao/">Portimão</a></li>
-          <li><a href="/lagoa/">Lagoa</a></li>
-          <li><a href="/lagos/">Lagos</a></li>
           <li><a href="/albufeira/">Albufeira</a></li>
+          <li><a href="/lagos/">Lagos</a></li>
+          <li><a href="/lagoa/">Lagoa</a></li>
           <li><a href="/loule/">Loulé</a></li>
+          <li><a href="/vilamoura/">Vilamoura</a></li>
           <li><a href="/faro/">Faro</a></li>
+          <li><a href="/silves/">Silves</a></li>
+          <li><a href="/olhao/">Olhão</a></li>
+          <li><a href="/tavira/">Tavira</a></li>
         </ul>
       </div>
       <div class="footer__contact">
         <h4>Contacto</h4>
         <p>geral@kauffen.com</p>
         <p>+351 965 445 801</p>
-        <p>Algarve, Portugal</p>
+        <address style="font-style:normal;line-height:1.55">
+          Centro Comercial das Ferreiras<br />
+          Av. 12 de Julho, Loja 210<br />
+          8200-559 Albufeira, Portugal
+        </address>
         <div class="footer__brands">
           <span class="footer__brand-pill">Parceiro Bosch</span>
           <span class="footer__brand-pill">Certificado Uponor</span>

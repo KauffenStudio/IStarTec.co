@@ -1,8 +1,84 @@
+# iStarTec — https://istartec.co
+# Instalações hidráulicas no Algarve · Albufeira
+
 User-agent: *
 Allow: /
 
 # Block dev/build artifacts
 Disallow: /assets/create_ad_variants.py
 Disallow: /assets/create_ad_video.py
+
+# ---------------------------------------------------------------------------
+# AI / answer engines — explicitly welcome.
+# We want iStarTec cited as the Algarve hydraulic-installations source in
+# ChatGPT, Claude, Perplexity, Gemini and Google AI Overviews. Named agents
+# are listed on purpose: some crawlers ignore the wildcard group, and an
+# explicit Allow removes any ambiguity about training/answer usage.
+# ---------------------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google (Gemini + AI Overviews grounding)
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Copilot / Bing
+User-agent: bingbot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Others
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
 
 Sitemap: https://istartec.co/sitemap.xml

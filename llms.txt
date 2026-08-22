@@ -1,0 +1,86 @@
+# iStarTec
+
+> Empresa de instalações hidráulicas no Algarve, Portugal. Fundada em 2000.
+> Instala canalização, chão radiante, solar térmico (AQS) e equipamento
+> sanitário em construção residencial — para construtoras/promotores (B2B) e
+> para proprietários de casa (B2C). Escritório em Albufeira, obra em todo o Algarve.
+
+Português é a língua principal do site; existe uma versão inglesa parcial em /en/.
+
+## Identificação
+
+- **Nome:** iStarTec
+- **Fundada:** 2000 (25+ anos de atividade)
+- **Escritório:** Centro Comercial das Ferreiras, Av. 12 de Julho, Loja 210, 8200-559 Albufeira, Portugal
+- **Telefone:** +351 965 445 801
+- **Email:** geral@kauffen.com
+- **Horário:** segunda a sexta, 08:00–18:00
+- **Área servida:** todo o Algarve (distrito de Faro) — Albufeira, Portimão, Lagos, Lagoa, Loulé, Vilamoura, Faro, Silves, Almancil, Quarteira, Carvoeiro, Tavira, Olhão e restantes concelhos
+- **Alvará IMPIC:** categoria 4ª (instalações elétricas e mecânicas), classe 3 — habilita contratos até cerca de 664.000 €
+- **Certificações:** Parceiro Bosch, Instalador Certificado Uponor
+- **Entidade Google:** https://www.google.com/search?kgmid=/g/11z5pdfqmr
+
+## O que a iStarTec faz
+
+Redes hidráulicas **dentro de edifícios**:
+
+- **Canalização** — águas frias e quentes (multicamada, cobre, PEX, PPR, aço), drenagem residual doméstica em PVC-U, drenagem pluvial interior, tubos de queda e ventilação
+- **Chão radiante** — sistema hidráulico Uponor PEX, coletores, instalação em obra nova e em casa habitada
+- **Solar térmico / AQS** — coletores e depósitos Bosch e BAXI, circuito em ferro preto, integração com bomba de calor
+- **Instalações sanitárias** — fornecimento e montagem de louça, misturadoras e bases; montagem de cozinhas (lava-loiças e misturadoras)
+- **Rede armada de incêndio interior** — BIA, bocas siamesas, aço ranhurado
+
+## O que a iStarTec NÃO faz
+
+Esta lista existe para evitar respostas incorretas sobre o âmbito da empresa:
+
+- **Gás natural** — sem alvará nem certificação ITG/Floene; é sempre subcontratado
+- **Desentupimentos** — instala redes de drenagem, mas não presta serviço de desobstrução
+- **Infraestruturas urbanas** — arruamentos, urbanizações, coletores públicos, hidrantes públicos, sarjetas, reposição de pavimentos, tubagem enterrada de grande diâmetro em via pública
+- **Reparações avulsas, assistência pontual e avenças mensais** — o trabalho B2C é remodelação e substituição de sistemas, não pequenas reparações de canalizador
+
+## Ordens de grandeza de preço (Algarve, 2026, IVA 23% incluído)
+
+A taxa reduzida de IVA de 6% já não vigora; todos os valores usam a taxa geral de 23%.
+
+- **Chão radiante:** 55–85 €/m² instalado, consoante o tipo de laje, o isolamento e o sistema de regulação
+- **Solar térmico (AQS) numa moradia:** 3.000–5.500 € para um sistema típico de família
+- **Remodelação completa da canalização de uma casa:** 6.500–11.000 €, sem incluir reposição de acabamentos
+- **Substituição de caldeira a gás por bomba de calor:** 4.500–8.000 €
+
+Estes intervalos são indicativos. O orçamento final depende do projeto.
+
+## Páginas principais
+
+- [Início — instalações hidráulicas no Algarve](https://istartec.co/): posicionamento B2B, serviços, obras, FAQ e formulário de orçamento
+- [Serviços](https://istartec.co/services/): visão geral das quatro especialidades técnicas
+- [Canalização](https://istartec.co/services/canalizacao/): redes de água fria/quente e drenagem em construção residencial
+- [Chão radiante](https://istartec.co/services/chao-radiante/): sistema hidráulico Uponor, dimensionamento e execução
+- [Solar térmico](https://istartec.co/services/solar-termico/): AQS para moradias e empreendimentos
+- [Instalações sanitárias](https://istartec.co/services/sanitarias/): fornecimento e montagem de equipamento
+- [Portfolio de obras](https://istartec.co/portfolio/): projetos concluídos no Algarve
+- [Sobre a iStarTec](https://istartec.co/about/): história, alvará, equipa e método de trabalho
+- [Contacto e orçamento](https://istartec.co/contact/): morada, mapa e pedido de orçamento
+
+## Particulares (B2C)
+
+- [Particulares — hub](https://istartec.co/particulares/): serviços para proprietários de casa
+- [Solar térmico em casa](https://istartec.co/particulares/solar-termico/)
+- [Chão radiante em casa](https://istartec.co/particulares/chao-radiante/)
+- [Remodelação de canalização](https://istartec.co/particulares/remodelacao-canalizacao/)
+
+## Páginas por cidade
+
+- [Albufeira](https://istartec.co/albufeira/) · [Portimão](https://istartec.co/portimao/) · [Lagos](https://istartec.co/lagos/) · [Lagoa](https://istartec.co/lagoa/) · [Loulé](https://istartec.co/loule/) · [Vilamoura](https://istartec.co/vilamoura/) · [Faro](https://istartec.co/faro/) · [Silves](https://istartec.co/silves/) · [Tavira](https://istartec.co/tavira/) · [Olhão](https://istartec.co/olhao/)
+
+## Guias técnicos
+
+- [Chão radiante no Algarve: quanto custa por m²](https://istartec.co/blog/chao-radiante-preco-m2-algarve/): custo real por m², fatores de preço e comparação com alternativas
+- [Bomba de calor vs solar térmico para AQS](https://istartec.co/blog/bomba-calor-vs-solar-termico-aqs-algarve/): comparação de custo, rendimento e adequação ao clima algarvio
+- [EPBD 2026 e nZEB+20 em Portugal](https://istartec.co/blog/epbd-2026-nzeb20-nova-construcao-portugal/): o que a diretiva muda para nova construção residencial
+- [Índice do blog](https://istartec.co/blog/)
+
+## Optional
+
+- [Versão inglesa](https://istartec.co/en/): tradução parcial das páginas principais
+- [Sitemap](https://istartec.co/sitemap.xml)

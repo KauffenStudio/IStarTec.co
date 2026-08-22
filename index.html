@@ -4,15 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Audience default: first-time visitors land on /particulares/ (B2C).
-       Bypassed by ?audience=empresa, stored 'empresa' preference, or hash anchor. -->
+  <!-- Audience preference.
+       SEO: the homepage NEVER auto-redirects first-time visitors or crawlers.
+       A client-side redirect on "/" makes Google treat the homepage as a soft
+       redirect to /particulares/, which throws away the strongest page on the
+       site (Organization + WebSite + Plumber + Review schema all live here)
+       and hijacks B2B search intent ("canalização Algarve", "subempreiteiro").
+       We only honour an EXPLICIT choice: ?audience=particular, or a returning
+       visitor who previously clicked "Particulares" in the audience toggle. -->
   <script>
   (function () {
     try {
       var path = window.location.pathname;
       if (path !== '/' && path !== '/index.html') return;
-      // Anchor links to / (e.g. /#contact) bypass the redirect so the user
-      // lands on / and scrolls to the requested section.
+      // Anchor links to / (e.g. /#contact) always stay on the homepage.
       if (window.location.hash) return;
       var params = new URLSearchParams(window.location.search);
       var explicit = params.get('audience');
@@ -25,10 +30,11 @@
         window.location.replace('/particulares/');
         return;
       }
+      // Returning visitor who explicitly picked "Particulares" before.
+      // First-time visitors and crawlers (no localStorage entry) stay on "/".
       var pref = null;
       try { pref = localStorage.getItem('istar_audience'); } catch (e) {}
-      if (pref === 'empresa') return;
-      window.location.replace('/particulares/');
+      if (pref === 'particular') window.location.replace('/particulares/');
     } catch (e) {}
   })();
   </script>
@@ -88,199 +94,347 @@
 
   <!-- Structured Data: LocalBusiness (Plumber + HVAC) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Plumber",
-    "@id": "https://istartec.co/#business",
-    "additionalType": "https://schema.org/HVACBusiness",
-    "name": "iStarTec",
-    "legalName": "iStarTec — Instalações Técnicas",
-    "url": "https://istartec.co/",
-    "logo": "https://istartec.co/assets/istartec-logo.png",
-    "image": "https://istartec.co/assets/istartec-cover.png",
-    "description": "Instalações de canalização, chão radiante, solar térmico e instalações sanitárias para construção residencial no Algarve. Alvará IMPIC 4ª classe 3.",
-    "telephone": "+351965445801",
-    "email": "geral@kauffen.com",
-    "priceRange": "€€€",
-    "foundingDate": "2000",
-    "slogan": "Canalização e Instalações Hidráulicas no Algarve · 25+ anos",
-    "address": {
-      "@type": "PostalAddress",
-      "addressRegion": "Algarve",
-      "addressCountry": "PT"
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "@id": "https://istartec.co/#business",
+  "additionalType": "https://schema.org/HVACBusiness",
+  "name": "iStarTec",
+  "legalName": "iStarTec — Instalações Técnicas",
+  "url": "https://istartec.co/",
+  "logo": "https://istartec.co/assets/istartec-logo.png",
+  "image": "https://istartec.co/assets/istartec-cover.png",
+  "description": "Instalações de canalização, chão radiante, solar térmico e instalações sanitárias para construção residencial no Algarve. Alvará IMPIC 4ª classe 3.",
+  "telephone": "+351965445801",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=iStarTec%2C+Centro+Comercial+das+Ferreiras%2C+Albufeira",
+  "email": "geral@kauffen.com",
+  "priceRange": "€€€",
+  "foundingDate": "2000",
+  "slogan": "Canalização e Instalações Hidráulicas no Algarve · 25+ anos",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Centro Comercial das Ferreiras, Av. 12 de Julho, Loja 210",
+    "addressLocality": "Albufeira",
+    "addressRegion": "Faro",
+    "postalCode": "8200-559",
+    "addressCountry": "PT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.12652,
+    "longitude": -8.24036
+  },
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 37.1,
+      "longitude": -8.3
     },
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 37.10,
-        "longitude": -8.30
-      },
-      "geoRadius": "80000"
+    "geoRadius": "80000"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Algarve"
     },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Algarve" },
-      { "@type": "City", "name": "Portimão" },
-      { "@type": "City", "name": "Albufeira" },
-      { "@type": "City", "name": "Lagos" },
-      { "@type": "City", "name": "Lagoa" },
-      { "@type": "Place", "name": "Carvoeiro" },
-      { "@type": "City", "name": "Silves" },
-      { "@type": "City", "name": "Faro" },
-      { "@type": "City", "name": "Loulé" },
-      { "@type": "Place", "name": "Almancil" },
-      { "@type": "Place", "name": "Vilamoura" },
-      { "@type": "Place", "name": "Quarteira" },
-      { "@type": "City", "name": "Tavira" },
-      { "@type": "City", "name": "Olhão" },
-      { "@type": "City", "name": "Vila Real de Santo António" },
-      { "@type": "City", "name": "São Brás de Alportel" },
-      { "@type": "City", "name": "Monchique" },
-      { "@type": "City", "name": "Aljezur" },
-      { "@type": "City", "name": "Vila do Bispo" },
-      { "@type": "City", "name": "Castro Marim" }
-    ],
-    "knowsAbout": [
-      "Instalações de canalização",
-      "Chão radiante",
-      "Sistemas solares térmicos",
-      "Instalações sanitárias",
-      "Águas quentes sanitárias",
-      "Drenagem residual e pluvial",
-      "Bomba de calor aerotérmica",
-      "Coletores hidráulicos"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Serviços iStarTec",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Instalações de Canalização",
-            "serviceType": "Plumbing installation",
-            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
-            "provider": { "@id": "https://istartec.co/#business" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Sistema de Chão Radiante",
-            "serviceType": "Underfloor heating installation",
-            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
-            "provider": { "@id": "https://istartec.co/#business" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Sistemas Solares Térmicos",
-            "serviceType": "Solar thermal installation",
-            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
-            "provider": { "@id": "https://istartec.co/#business" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Instalações Sanitárias",
-            "serviceType": "Sanitary installation",
-            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
-            "provider": { "@id": "https://istartec.co/#business" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Bomba de Calor Aerotérmica",
-            "serviceType": "Heat pump installation",
-            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
-            "provider": { "@id": "https://istartec.co/#business" }
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Águas Quentes Sanitárias (AQS)",
-            "serviceType": "Hot water systems",
-            "areaServed": { "@type": "AdministrativeArea", "name": "Algarve" },
-            "provider": { "@id": "https://istartec.co/#business" }
+    {
+      "@type": "City",
+      "name": "Portimão"
+    },
+    {
+      "@type": "City",
+      "name": "Albufeira"
+    },
+    {
+      "@type": "City",
+      "name": "Lagos"
+    },
+    {
+      "@type": "City",
+      "name": "Lagoa"
+    },
+    {
+      "@type": "Place",
+      "name": "Carvoeiro"
+    },
+    {
+      "@type": "City",
+      "name": "Silves"
+    },
+    {
+      "@type": "City",
+      "name": "Faro"
+    },
+    {
+      "@type": "City",
+      "name": "Loulé"
+    },
+    {
+      "@type": "Place",
+      "name": "Almancil"
+    },
+    {
+      "@type": "Place",
+      "name": "Vilamoura"
+    },
+    {
+      "@type": "Place",
+      "name": "Quarteira"
+    },
+    {
+      "@type": "City",
+      "name": "Tavira"
+    },
+    {
+      "@type": "City",
+      "name": "Olhão"
+    },
+    {
+      "@type": "City",
+      "name": "Vila Real de Santo António"
+    },
+    {
+      "@type": "City",
+      "name": "São Brás de Alportel"
+    },
+    {
+      "@type": "City",
+      "name": "Monchique"
+    },
+    {
+      "@type": "City",
+      "name": "Aljezur"
+    },
+    {
+      "@type": "City",
+      "name": "Vila do Bispo"
+    },
+    {
+      "@type": "City",
+      "name": "Castro Marim"
+    }
+  ],
+  "knowsAbout": [
+    "Instalações de canalização",
+    "Chão radiante",
+    "Sistemas solares térmicos",
+    "Instalações sanitárias",
+    "Águas quentes sanitárias",
+    "Drenagem residual e pluvial",
+    "Bomba de calor aerotérmica",
+    "Coletores hidráulicos"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços iStarTec",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Instalações de Canalização",
+          "serviceType": "Plumbing installation",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          },
+          "provider": {
+            "@id": "https://istartec.co/#business"
           }
         }
-      ]
-    },
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "license",
-        "name": "Alvará IMPIC 4ª classe 3",
-        "recognizedBy": { "@type": "Organization", "name": "IMPIC — Instituto dos Mercados Públicos, do Imobiliário e da Construção" }
       },
       {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "certification",
-        "name": "Parceiro Bosch"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sistema de Chão Radiante",
+          "serviceType": "Underfloor heating installation",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          },
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          }
+        }
       },
       {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "certification",
-        "name": "Certificado Uponor"
-      }
-    ],
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:00",
-        "closes": "18:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.google.com/search?kgmid=/g/11z5pdfqmr"
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "bestRating": "5",
-      "worstRating": "1",
-      "ratingCount": "3",
-      "reviewCount": "3"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Patrícia Rosca" },
-        "datePublished": "2026-06-14",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
-        "reviewBody": "Contratei a IStarTec para a instalação de painéis solares na minha moradia em Faro e fiquei extremamente satisfeito com todo o processo. Desde o primeiro contacto, a equipa demonstrou profissionalismo, conhecimento técnico e total transparência. A instalação foi concluída dentro do prazo e com um acabamento impecável. Recomendo a IStarTec a quem procura energia solar, eficiência energética e um serviço de confiança em Faro e no Algarve.",
-        "publisher": { "@type": "Organization", "name": "Google" }
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sistemas Solares Térmicos",
+          "serviceType": "Solar thermal installation",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          },
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          }
+        }
       },
       {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Antoine Thalot" },
-        "datePublished": "2026-06-11",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
-        "reviewBody": "Excelente empresa. Desde o primeiro contacto até à conclusão da obra, tudo correu de forma muito organizada. Pessoas competentes e de confiança, difícil de encontrar hoje em dia.",
-        "publisher": { "@type": "Organization", "name": "Google" }
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Instalações Sanitárias",
+          "serviceType": "Sanitary installation",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          },
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          }
+        }
       },
       {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Anna Capocchi" },
-        "datePublished": "2026-04-14",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5", "worstRating": "1" },
-        "reviewBody": "A great experience overall. The service was very professional, and the team was highly qualified and efficient. Everything ran smoothly, highly recommend!",
-        "publisher": { "@type": "Organization", "name": "Google" }
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bomba de Calor Aerotérmica",
+          "serviceType": "Heat pump installation",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          },
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Águas Quentes Sanitárias (AQS)",
+          "serviceType": "Hot water systems",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          },
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          }
+        }
       }
     ]
+  },
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "license",
+      "name": "Alvará IMPIC 4ª classe 3",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "IMPIC — Instituto dos Mercados Públicos, do Imobiliário e da Construção"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Parceiro Bosch"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Certificado Uponor"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.google.com/search?kgmid=/g/11z5pdfqmr"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "3",
+    "reviewCount": "3"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Patrícia Rosca"
+      },
+      "datePublished": "2026-06-14",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": "Contratei a IStarTec para a instalação de painéis solares na minha moradia em Faro e fiquei extremamente satisfeito com todo o processo. Desde o primeiro contacto, a equipa demonstrou profissionalismo, conhecimento técnico e total transparência. A instalação foi concluída dentro do prazo e com um acabamento impecável. Recomendo a IStarTec a quem procura energia solar, eficiência energética e um serviço de confiança em Faro e no Algarve.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Antoine Thalot"
+      },
+      "datePublished": "2026-06-11",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": "Excelente empresa. Desde o primeiro contacto até à conclusão da obra, tudo correu de forma muito organizada. Pessoas competentes e de confiança, difícil de encontrar hoje em dia.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Anna Capocchi"
+      },
+      "datePublished": "2026-04-14",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": "A great experience overall. The service was very professional, and the team was highly qualified and efficient. Everything ran smoothly, highly recommend!",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google"
+      }
+    }
+  ],
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".answer-box__q",
+      ".answer-box__a"
+    ]
   }
-  </script>
+}
+</script>
 
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
@@ -508,6 +662,23 @@
     <div class="hero__scroll">
       <span data-i18n="hero.scroll">Rolar</span>
       <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="answer-box-wrap">
+    <div class="container">
+      <div class="answer-box">
+        <h2 class="answer-box__q">Que serviços de instalações hidráulicas presta a iStarTec no Algarve?</h2>
+        <p class="answer-box__a">A iStarTec é uma empresa de instalações hidráulicas fundada em 2000, com escritório em Albufeira e obra em todo o Algarve. Executa canalização, chão radiante, solar térmico (AQS) e instalações sanitárias em construção residencial, tanto para construtoras e promotores como para proprietários particulares. Não trabalha em gás natural, desentupimentos nem infraestruturas urbanas.</p>
+        <ul class="answer-box__facts">
+          <li><strong>Especialidades:</strong> canalização, chão radiante, solar térmico e instalações sanitárias</li>
+          <li><strong>Habilitação:</strong> Alvará IMPIC 4ª categoria, classe 3 — contratos até cerca de 664.000 €</li>
+          <li><strong>Certificações:</strong> Parceiro Bosch e Instalador Certificado Uponor</li>
+          <li><strong>Área servida:</strong> todo o Algarve, a partir de Albufeira</li>
+          <li><strong>Desde:</strong> 2000 — mais de 25 anos de atividade</li>
+          <li><strong>Fora de âmbito:</strong> gás natural, desentupimentos e infraestruturas urbanas</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -1577,14 +1748,24 @@
           <li><a href="/portimao/">Portimão</a></li>
           <li><a href="/albufeira/">Albufeira</a></li>
           <li><a href="/lagos/">Lagos</a></li>
+          <li><a href="/lagoa/">Lagoa</a></li>
+          <li><a href="/loule/">Loulé</a></li>
+          <li><a href="/vilamoura/">Vilamoura</a></li>
           <li><a href="/faro/">Faro</a></li>
+          <li><a href="/silves/">Silves</a></li>
+          <li><a href="/olhao/">Olhão</a></li>
+          <li><a href="/tavira/">Tavira</a></li>
         </ul>
       </div>
       <div class="footer__contact">
         <h4 data-i18n="contact.label.short">Contacto</h4>
         <p>geral@kauffen.com</p>
         <p>+351 965 445 801</p>
-        <p>Algarve, Portugal</p>
+        <address style="font-style:normal;line-height:1.55">
+          Centro Comercial das Ferreiras<br />
+          Av. 12 de Julho, Loja 210<br />
+          8200-559 Albufeira, Portugal
+        </address>
         <div class="footer__brands">
           <span class="footer__brand-pill" data-i18n="footer.bosch">Parceiro Bosch</span>
           <span class="footer__brand-pill" data-i18n="footer.uponor">Certificado Uponor</span>

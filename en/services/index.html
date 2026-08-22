@@ -44,18 +44,62 @@
   }
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Services iStarTec",
-    "itemListElement": [
-      { "@type": "Service", "position": 1, "name": "Plumbing Installations", "description": "Sistemas hidráulicos completos para edifícios residenciais e moradias: redes de abastecimento de água, sistemas de esgotos, drenagem pluvial e ventilação.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
-      { "@type": "Service", "position": 2, "name": "Bathroom Installations", "description": "Fornecimento e instalação de equipamento sanitário premium para casas de banho de moradias e empreendimentos no Algarve.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
-      { "@type": "Service", "position": 3, "name": "Solar Thermal Systems", "description": "Projeto e instalação de coletores solares térmicos para AQS. Marcas Bosch e BAXI.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" },
-      { "@type": "Service", "position": 4, "name": "Underfloor Heating System", "description": "Instalação de chão radiante com tubagem Uponor e coletores de zona, combinado com bombas de calor e solar térmico.", "provider": { "@type": "Plumber", "name": "iStarTec" }, "areaServed": "Algarve" }
-    ]
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Services iStarTec",
+  "itemListElement": [
+    {
+      "@type": "Service",
+      "position": 1,
+      "name": "Plumbing Installations",
+      "description": "Sistemas hidráulicos completos para edifícios residenciais e moradias: redes de abastecimento de água, sistemas de esgotos, drenagem pluvial e ventilação.",
+      "provider": {
+        "@id": "https://istartec.co/#business",
+        "@type": "Plumber",
+        "name": "iStarTec"
+      },
+      "areaServed": "Algarve"
+    },
+    {
+      "@type": "Service",
+      "position": 2,
+      "name": "Bathroom Installations",
+      "description": "Fornecimento e instalação de equipamento sanitário premium para casas de banho de moradias e empreendimentos no Algarve.",
+      "provider": {
+        "@id": "https://istartec.co/#business",
+        "@type": "Plumber",
+        "name": "iStarTec"
+      },
+      "areaServed": "Algarve"
+    },
+    {
+      "@type": "Service",
+      "position": 3,
+      "name": "Solar Thermal Systems",
+      "description": "Projeto e instalação de coletores solares térmicos para AQS. Marcas Bosch e BAXI.",
+      "provider": {
+        "@id": "https://istartec.co/#business",
+        "@type": "Plumber",
+        "name": "iStarTec"
+      },
+      "areaServed": "Algarve"
+    },
+    {
+      "@type": "Service",
+      "position": 4,
+      "name": "Underfloor Heating System",
+      "description": "Instalação de chão radiante com tubagem Uponor e coletores de zona, combinado com bombas de calor e solar térmico.",
+      "provider": {
+        "@id": "https://istartec.co/#business",
+        "@type": "Plumber",
+        "name": "iStarTec"
+      },
+      "areaServed": "Algarve"
+    }
+  ]
+}
+</script>
 
   <style>
     .lang-pill { display: inline-flex; align-items: center; gap: .35rem; padding: .4rem .85rem; border-radius: 999px; background: #f1f5f9; color: #0f172a; text-decoration: none; font-size: .82rem; font-weight: 600; transition: background .15s ease; }
@@ -278,7 +322,11 @@
         <h4>Contact</h4>
         <p>geral@kauffen.com</p>
         <p>+351 965 445 801</p>
-        <p>Algarve, Portugal</p>
+        <address style="font-style:normal;line-height:1.55">
+          Centro Comercial das Ferreiras<br />
+          Av. 12 de Julho, Loja 210<br />
+          8200-559 Albufeira, Portugal
+        </address>
         <div class="footer__brands">
           <span class="footer__brand-pill">Bosch Partner</span>
           <span class="footer__brand-pill">Uponor Certified</span>

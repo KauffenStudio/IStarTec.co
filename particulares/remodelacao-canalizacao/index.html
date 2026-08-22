@@ -60,29 +60,65 @@
   }
   </script>
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://istartec.co/particulares/remodelacao-canalizacao/#service",
-    "name": "Remodelação de Canalização para Particulares no Algarve",
-    "serviceType": "Residential plumbing renovation",
-    "description": "Substituição completa de redes de água fria, água quente e esgotos em moradias e apartamentos. Saída de ferro galvanizado, chumbo ou PVC degradado para multicamada ou PEX. Sistema com coletores acessíveis. Garantia iStarTec: 1 ano no serviço e 2 anos nos materiais.",
-    "provider": { "@id": "https://istartec.co/#business" },
-    "audience": { "@type": "Audience", "audienceType": "Homeowner" },
-    "areaServed": [
-      { "@type": "AdministrativeArea", "name": "Algarve" },
-      { "@type": "City", "name": "Portimão" },
-      { "@type": "City", "name": "Lagoa" },
-      { "@type": "City", "name": "Lagos" },
-      { "@type": "City", "name": "Albufeira" },
-      { "@type": "City", "name": "Loulé" },
-      { "@type": "City", "name": "Vilamoura" },
-      { "@type": "City", "name": "Faro" }
-    ],
-    "category": "Plumbing renovation",
-    "termsOfService": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Garantia adicional tubos multicamada/PEX: 10 anos (fabricante)."
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://istartec.co/particulares/remodelacao-canalizacao/#service",
+  "name": "Remodelação de Canalização para Particulares no Algarve",
+  "serviceType": "Residential plumbing renovation",
+  "description": "Substituição completa de redes de água fria, água quente e esgotos em moradias e apartamentos. Saída de ferro galvanizado, chumbo ou PVC degradado para multicamada ou PEX. Sistema com coletores acessíveis. Garantia iStarTec: 1 ano no serviço e 2 anos nos materiais.",
+  "provider": {
+    "@id": "https://istartec.co/#business"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Homeowner"
+  },
+  "areaServed": [
+    {
+      "@type": "AdministrativeArea",
+      "name": "Algarve"
+    },
+    {
+      "@type": "City",
+      "name": "Portimão"
+    },
+    {
+      "@type": "City",
+      "name": "Lagoa"
+    },
+    {
+      "@type": "City",
+      "name": "Lagos"
+    },
+    {
+      "@type": "City",
+      "name": "Albufeira"
+    },
+    {
+      "@type": "City",
+      "name": "Loulé"
+    },
+    {
+      "@type": "City",
+      "name": "Vilamoura"
+    },
+    {
+      "@type": "City",
+      "name": "Faro"
+    }
+  ],
+  "category": "Plumbing renovation",
+  "termsOfService": "Garantia iStarTec: 1 ano no serviço de instalação e 2 anos nos materiais. Garantia adicional tubos multicamada/PEX: 10 anos (fabricante).",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".answer-box__q",
+      ".answer-box__a"
+    ]
   }
-  </script>
+}
+</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -238,6 +274,23 @@
       <div class="section__label">Particulares · Renovar a casa</div>
       <h1>Remodelar a canalização de toda a sua casa</h1>
       <p>Substituir redes antigas em ferro galvanizado, chumbo ou PVC degradado por multicamada PEX moderno, com coletores acessíveis. Acaba com fugas, pressão baixa e ruído. Garantia 1 ano serviço + 2 anos materiais.</p>
+    </div>
+  </section>
+
+  <section class="answer-box-wrap">
+    <div class="container">
+      <div class="answer-box">
+        <h2 class="answer-box__q">Quanto custa remodelar a canalização de uma casa no Algarve?</h2>
+        <p class="answer-box__a">Refazer toda a canalização interior de uma moradia T3-T4 — água fria, água quente, esgotos e coletores — custa tipicamente entre 6.500 € e 11.000 €. Num apartamento T2-T3, a faixa é de 4.500 € a 8.000 €. Estes valores não incluem a reposição de cerâmicos nem a pintura final. O acesso aos tubos existentes é o fator que mais pesa: paredes de tijolo saem mais baratas do que paredes de pedra.</p>
+        <ul class="answer-box__facts">
+          <li><strong>Apartamento T2-T3 (80-110 m²):</strong> 4.500 € – 8.000 €</li>
+          <li><strong>Moradia T3-T4 (120-180 m²):</strong> 6.500 € – 11.000 €</li>
+          <li><strong>Moradia T4+ ou multi-piso (180+ m²):</strong> 10.000 € – 18.000 €</li>
+          <li><strong>Incluído:</strong> água fria e quente, esgotos e coletores acessíveis</li>
+          <li><strong>Não incluído:</strong> reposição de cerâmicos, pintura final e ligações exteriores</li>
+          <li><strong>Garantia:</strong> 1 ano de serviço e 2 anos de materiais</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -529,18 +582,26 @@
         <h4>Onde Trabalhamos</h4>
         <ul>
           <li><a href="/portimao/">Portimão</a></li>
-          <li><a href="/lagoa/">Lagoa</a></li>
-          <li><a href="/lagos/">Lagos</a></li>
           <li><a href="/albufeira/">Albufeira</a></li>
+          <li><a href="/lagos/">Lagos</a></li>
+          <li><a href="/lagoa/">Lagoa</a></li>
           <li><a href="/loule/">Loulé</a></li>
+          <li><a href="/vilamoura/">Vilamoura</a></li>
           <li><a href="/faro/">Faro</a></li>
+          <li><a href="/silves/">Silves</a></li>
+          <li><a href="/olhao/">Olhão</a></li>
+          <li><a href="/tavira/">Tavira</a></li>
         </ul>
       </div>
       <div class="footer__contact">
         <h4>Contacto</h4>
         <p>geral@kauffen.com</p>
         <p>+351 965 445 801</p>
-        <p>Algarve, Portugal</p>
+        <address style="font-style:normal;line-height:1.55">
+          Centro Comercial das Ferreiras<br />
+          Av. 12 de Julho, Loja 210<br />
+          8200-559 Albufeira, Portugal
+        </address>
         <div class="footer__brands">
           <span class="footer__brand-pill">Parceiro Bosch</span>
           <span class="footer__brand-pill">Certificado Uponor</span>
