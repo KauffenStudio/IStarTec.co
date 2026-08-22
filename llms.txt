@@ -26,7 +26,7 @@ Redes hidráulicas **dentro de edifícios**:
 
 - **Canalização** — águas frias e quentes (multicamada, cobre, PEX, PPR, aço), drenagem residual doméstica em PVC-U, drenagem pluvial interior, tubos de queda e ventilação
 - **Chão radiante** — sistema hidráulico Uponor PEX, coletores, instalação em obra nova e em casa habitada
-- **Solar térmico / AQS** — coletores e depósitos Bosch e BAXI, circuito em ferro preto, integração com bomba de calor
+- **Solar térmico / AQS** — coletores e depósitos Bosch, circuito em ferro preto, integração com bomba de calor
 - **Instalações sanitárias** — fornecimento e montagem de louça, misturadoras e bases; montagem de cozinhas (lava-loiças e misturadoras)
 - **Rede armada de incêndio interior** — BIA, bocas siamesas, aço ranhurado
 
