@@ -227,6 +227,59 @@
     .quick-cta__btn--ghost { background: rgba(255,255,255,.08); color: white; border: 1px solid rgba(255,255,255,.2); }
     .quick-cta__btn--ghost:hover { background: rgba(255,255,255,.15); }
   </style>
+
+  <!-- Lead tracking: phone + email clicks.
+       Most leads for this business arrive as a call, so a conversion that only
+       fires on the contact form under-reports badly and leaves Smart Bidding
+       with nothing to optimise against. Audience is derived from the path so
+       the B2C and B2B campaigns can each own a conversion action.
+       TODO: create two conversion actions in Google Ads and paste their labels
+       into LABELS below; until then both report to the existing action. -->
+  <script>
+  (function () {
+    var ADS = 'AW-18074242840';
+    var LABELS = {
+      // Replace with the real labels once the conversion actions exist.
+      particular: '1LsSCPCqkpkcEJievKpD',
+      empresa:    '1LsSCPCqkpkcEJievKpD'
+    };
+
+    function audience() {
+      var p = window.location.pathname;
+      if (p.indexOf('/particulares/') === 0) return 'particular';
+      if (p.indexOf('/services/') === 0 || p.indexOf('/en/services/') === 0) return 'empresa';
+      try {
+        var pref = localStorage.getItem('istar_audience');
+        if (pref === 'particular' || pref === 'empresa') return pref;
+      } catch (e) {}
+      return 'empresa';
+    }
+
+    var sent = {};
+    function report(kind) {
+      // One conversion per lead type per pageview; a visitor tapping the phone
+      // number three times is still one lead.
+      if (sent[kind]) return;
+      sent[kind] = true;
+      var who = audience();
+      if (typeof gtag !== 'function') return;
+      gtag('event', 'conversion', {
+        send_to: ADS + '/' + LABELS[who],
+        event_category: 'lead',
+        event_label: kind + '_' + who,
+        page_path: window.location.pathname
+      });
+    }
+
+    document.addEventListener('click', function (e) {
+      var a = e.target && e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.getAttribute('href') || '';
+      if (href.indexOf('tel:') === 0) report('telefone');
+      else if (href.indexOf('mailto:') === 0) report('email');
+    }, true);
+  })();
+  </script>
 </head>
 <body>
 
