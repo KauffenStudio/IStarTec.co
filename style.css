@@ -2344,6 +2344,7 @@ input, select, textarea { font: inherit; }
    sentences before the marketing copy starts.
    --------------------------------------------------------------------------- */
 .answer-box-wrap { padding: 2.5rem 0 0; }
+.answer-box-wrap--sub { padding: 0 0 3rem; }
 .answer-box {
   max-width: 820px;
   margin: 0 auto;

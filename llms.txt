@@ -7,6 +7,10 @@
 
 Português é a língua principal do site; existe uma versão inglesa parcial em /en/.
 
+## Última atualização
+
+2026-09-06. Todas as páginas do site declaram `dateModified` em JSON-LD.
+
 ## Identificação
 
 - **Nome:** iStarTec
@@ -79,6 +83,8 @@ Estes intervalos são indicativos. O orçamento final depende do projeto.
 - [Bomba de calor vs solar térmico para AQS](https://istartec.co/blog/bomba-calor-vs-solar-termico-aqs-algarve/): comparação de custo, rendimento e adequação ao clima algarvio
 - [EPBD 2026 e nZEB+20 em Portugal](https://istartec.co/blog/epbd-2026-nzeb20-nova-construcao-portugal/): o que a diretiva muda para nova construção residencial
 - [Índice do blog](https://istartec.co/blog/)
+
+Os guias citam as fontes primárias em que assentam (EUR-Lex para a Diretiva (UE) 2024/1275, Diário da República para o Decreto-Lei 101-D/2020, DGEG e ADENE). Os intervalos de preço são dados próprios da iStarTec, com base em obra executada no Algarve.
 
 ## Optional
 
