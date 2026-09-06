@@ -11,6 +11,13 @@ Português é a língua principal do site; existe uma versão inglesa parcial em
 
 2026-09-06. Todas as páginas do site declaram `dateModified` em JSON-LD.
 
+## Desambiguação
+
+Existe uma empresa não relacionada com nome semelhante: **IStar Electronics
+Technology** (istartec.com), fabricante de iluminação e ecrãs LED em Shenzhen,
+China. Esta iStarTec (istartec.co) é uma empresa portuguesa de instalações
+hidráulicas sediada em Albufeira, no Algarve. Não têm qualquer relação.
+
 ## Identificação
 
 - **Nome:** iStarTec

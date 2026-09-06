@@ -58,116 +58,200 @@
 
   <!-- Structured Data: LocalBusiness (Plumber) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Plumber",
-    "@id": "https://istartec.co/#business",
-    "name": "iStarTec",
-    "legalName": "iStarTec — Instalações Técnicas",
-    "url": "https://istartec.co/",
-    "logo": "https://istartec.co/assets/istartec-logo.png",
-    "image": "https://istartec.co/assets/istartec-cover.png",
-    "description": "Instalações de canalização, chão radiante, solar térmico e instalações sanitárias para construção residencial no Algarve. Alvará IMPIC 4ª classe 3.",
-    "telephone": "+351965445801",
-    "hasMap": "https://www.google.com/maps/search/?api=1&query=iStarTec%2C+Centro+Comercial+das+Ferreiras%2C+Albufeira",
-    "email": "geral@istartec.co",
-    "priceRange": "€€€",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Centro Comercial das Ferreiras, Av. 12 de Julho, Loja 210",
-      "addressLocality": "Albufeira",
-      "addressRegion": "Faro",
-      "postalCode": "8200-559",
-      "addressCountry": "PT"
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "@id": "https://istartec.co/#business",
+  "name": "iStarTec",
+  "legalName": "iStarTec — Instalações Técnicas",
+  "url": "https://istartec.co/",
+  "logo": "https://istartec.co/assets/istartec-logo.png",
+  "image": "https://istartec.co/assets/istartec-cover.png",
+  "description": "Instalações de canalização, chão radiante, solar térmico e instalações sanitárias para construção residencial no Algarve. Alvará IMPIC 4ª classe 3.",
+  "telephone": "+351965445801",
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=iStarTec%2C+Centro+Comercial+das+Ferreiras%2C+Albufeira",
+  "email": "geral@istartec.co",
+  "priceRange": "€€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Centro Comercial das Ferreiras, Av. 12 de Julho, Loja 210",
+    "addressLocality": "Albufeira",
+    "addressRegion": "Faro",
+    "postalCode": "8200-559",
+    "addressCountry": "PT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.12652,
+    "longitude": -8.24036
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Portimão"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 37.12652, "longitude": -8.24036 },
-    "areaServed": [
-      { "@type": "City", "name": "Portimão" },
-      { "@type": "City", "name": "Albufeira" },
-      { "@type": "City", "name": "Lagos" },
-      { "@type": "City", "name": "Lagoa" },
-      { "@type": "City", "name": "Silves" },
-      { "@type": "City", "name": "Faro" },
-      { "@type": "City", "name": "Loulé" },
-      { "@type": "AdministrativeArea", "name": "Algarve" }
-    ],
-    "knowsAbout": [
-      "Instalações de canalização",
-      "Chão radiante",
-      "Sistemas solares térmicos",
-      "Instalações sanitárias",
-      "Águas quentes sanitárias",
-      "Drenagem residual e pluvial",
-      "Bomba de calor aerotérmica",
-      "Coletores hidráulicos"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Serviços iStarTec",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalações de Canalização" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistema de Chão Radiante" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas Solares Térmicos" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalações Sanitárias" } }
-      ]
+    {
+      "@type": "City",
+      "name": "Albufeira"
     },
-    "hasCredential": [
+    {
+      "@type": "City",
+      "name": "Lagos"
+    },
+    {
+      "@type": "City",
+      "name": "Lagoa"
+    },
+    {
+      "@type": "City",
+      "name": "Silves"
+    },
+    {
+      "@type": "City",
+      "name": "Faro"
+    },
+    {
+      "@type": "City",
+      "name": "Loulé"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Algarve"
+    }
+  ],
+  "knowsAbout": [
+    "Instalações de canalização",
+    "Chão radiante",
+    "Sistemas solares térmicos",
+    "Instalações sanitárias",
+    "Águas quentes sanitárias",
+    "Drenagem residual e pluvial",
+    "Bomba de calor aerotérmica",
+    "Coletores hidráulicos"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços iStarTec",
+    "itemListElement": [
       {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "license",
-        "name": "Alvará IMPIC 4ª classe 3",
-        "recognizedBy": { "@type": "Organization", "name": "IMPIC — Instituto dos Mercados Públicos, do Imobiliário e da Construção" }
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Instalações de Canalização"
+        }
       },
       {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "certification",
-        "name": "Parceiro Bosch"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sistema de Chão Radiante"
+        }
       },
       {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "certification",
-        "name": "Certificado Uponor"
-      }
-    ],
-    "openingHoursSpecification": [
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Sistemas Solares Térmicos"
+        }
+      },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "08:00",
-        "closes": "18:00"
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Instalações Sanitárias"
+        }
       }
-    ],
-    "sameAs": [
-      "https://www.google.com/search?kgmid=/g/11z5pdfqmr",
-      "https://maps.app.goo.gl/Vr3heZGxAQZhWjN66"
     ]
+  },
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "license",
+      "name": "Alvará IMPIC 4ª classe 3",
+      "recognizedBy": {
+        "@type": "Organization",
+        "name": "IMPIC — Instituto dos Mercados Públicos, do Imobiliário e da Construção"
+      }
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Parceiro Bosch"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "certification",
+      "name": "Certificado Uponor"
+    }
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.google.com/search?kgmid=/g/11z5pdfqmr",
+    "https://maps.app.goo.gl/Vr3heZGxAQZhWjN66"
+  ],
+  "disambiguatingDescription": "Portuguese hydraulic installation company based in Albufeira, Algarve. Not affiliated with IStar Electronics Technology (istartec.com), an LED lighting manufacturer in Shenzhen, China.",
+  "alternateName": [
+    "iStarTec Instalações Técnicas",
+    "iStarTec Algarve"
+  ],
+  "isicV4": "4322",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Albufeira, Faro, Portugal"
   }
-  </script>
+}
+</script>
 
   <!-- Structured Data: Organization -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://istartec.co/#organization",
-    "name": "iStarTec",
-    "url": "https://istartec.co/",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://istartec.co/assets/istartec-logo.png",
-      "width": 500,
-      "height": 500
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+351965445801",
-      "email": "geral@istartec.co",
-      "contactType": "sales",
-      "areaServed": "PT",
-      "availableLanguage": ["Portuguese","English"]
-    }
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://istartec.co/#organization",
+  "name": "iStarTec",
+  "url": "https://istartec.co/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://istartec.co/assets/istartec-logo.png",
+    "width": 500,
+    "height": 500
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+351965445801",
+    "email": "geral@istartec.co",
+    "contactType": "sales",
+    "areaServed": "PT",
+    "availableLanguage": [
+      "Portuguese",
+      "English"
+    ]
+  },
+  "disambiguatingDescription": "Portuguese hydraulic installation company based in Albufeira, Algarve. Not affiliated with IStar Electronics Technology (istartec.com), an LED lighting manufacturer in Shenzhen, China.",
+  "alternateName": [
+    "iStarTec Instalações Técnicas",
+    "iStarTec Algarve"
+  ],
+  "isicV4": "4322",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Albufeira, Faro, Portugal"
   }
-  </script>
+}
+</script>
 
   <!-- Structured Data: WebSite (for sitelinks search box) -->
   <script type="application/ld+json">
