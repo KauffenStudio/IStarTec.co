@@ -8,6 +8,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
   <link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
+  <link rel="alternate" hreflang="en" href="https://istartec.co/en/homeowners/plumbing-renovation/" />
   <link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
 
   <meta property="og:type" content="website" />
@@ -125,7 +126,7 @@
     "@type": "FAQPage",
     "mainEntity": [
       { "@type": "Question", "name": "Quando devo trocar toda a canalização da casa?", "acceptedAnswer": { "@type": "Answer", "text": "Os sinais habituais são: fugas repetidas (mais de 2-3 nos últimos anos), pressão baixa em pontos de água, água barrenta após paragem, ruído nos tubos, ou simplesmente a idade — redes em ferro galvanizado com mais de 40 anos devem ser substituídas. Se vai fazer remodelação grande (cozinha + casa de banho), faz sentido aproveitar para trocar a canalização toda." } },
-      { "@type": "Question", "name": "Quanto custa remodelar a canalização de uma moradia T3?", "acceptedAnswer": { "@type": "Answer", "text": "Para uma moradia T3-T4 (120-180 m²), a remodelação completa da canalização interior (água fria + água quente + esgotos + coletores) custa tipicamente entre €6.500 e €11.000. Não inclui reposição de cerâmicos nem trabalhos de pintura final. Em apartamentos T2-T3 a faixa é €4.500 a €8.000. O preço depende muito do acesso aos tubos existentes — em casas com paredes de tijolo é mais barato que em pedra ou betão." } },
+      { "@type": "Question", "name": "Quanto custa remodelar a canalização de uma moradia T3?", "acceptedAnswer": { "@type": "Answer", "text": "O que mais pesa no preço é o acesso aos tubos existentes: paredes de tijolo saem bastante mais baratas do que paredes de pedra ou betão, onde a abertura de roços é um trabalho pesado. Depois conta a área, o número de casas de banho e se a casa é de um ou vários pisos. Por isso orçamentamos caso a caso, depois de ver a obra: visita técnica e orçamento detalhado gratuitos, com resposta em 24 horas úteis. O orçamento cobre água fria, água quente, esgotos e coletores acessíveis, e não inclui reposição de cerâmicos nem pintura final." } },
       { "@type": "Question", "name": "Tem que abrir paredes todas?", "acceptedAnswer": { "@type": "Answer", "text": "Não necessariamente. Sempre que possível usamos os mesmos roços das tubagens antigas — o que minimiza o trabalho de obra civil. Em casas com paredes secas (tipo Pladur) é praticamente sem destruição. Em casas tradicionais com pedra, há mais abertura de roços, mas o trabalho é orientado para minimizar a área afetada." } },
       { "@type": "Question", "name": "Posso continuar a viver em casa durante a obra?", "acceptedAnswer": { "@type": "Answer", "text": "Tipicamente sim, mas com algum desconforto. A água fica indisponível durante 1-3 dias (quando estamos a fazer as ligações finais). Combinamos com o cliente: posso pré-encher reservatórios, ou viver no Algarve significa que é fácil arranjar 2 dias num hotel. Casa de banho funcional sempre disponível exceto neste período." } },
       { "@type": "Question", "name": "Que tubo usam — multicamada, PEX ou cobre?", "acceptedAnswer": { "@type": "Answer", "text": "Por defeito usamos tubo multicamada PEX-AL-PEX para água fria e quente — combina a flexibilidade do PEX com a estabilidade dimensional do alumínio. Excelente para sistemas com coletores. Cobre só em situações específicas (climas extremos, ligações a equipamentos específicos). Esgotos sempre em PP ou PVC de qualidade alemã (Geberit, Wavin). Nada de PVC genérico chinês." } },
@@ -296,6 +297,13 @@
 <body>
 
   <header id="header">
+    <div class="audience-bar" role="navigation" aria-label="Selector de audiência">
+      <div class="audience-bar__inner">
+        <a href="/?audience=empresa" class="audience-pill">Empresas</a>
+        <span class="audience-bar__sep" aria-hidden="true"></span>
+        <a href="/particulares/" class="audience-pill audience-pill--active" aria-current="true">Particulares</a>
+      </div>
+    </div>
     <nav class="nav container">
       <a href="/" class="nav__logo">
         <span class="nav__logo-mark">
@@ -305,7 +313,10 @@
         </span>
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
-      <ul class="nav__links">
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
         <li><a href="/particulares/" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link">Serviços</a></li>
         <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
@@ -316,7 +327,7 @@
             <a class="lang-toggle__btn lang-toggle__btn--active" href="#" aria-current="true" aria-label="Português (atual)">
               <span class="lang-flag">🇵🇹</span><span>PT</span>
             </a>
-            <a class="lang-toggle__btn" href="/en/" hreflang="en" rel="alternate" aria-label="View English version">
+            <a class="lang-toggle__btn" href="/en/homeowners/plumbing-renovation/" hreflang="en" rel="alternate" aria-label="View English version">
               <span class="lang-flag">🇬🇧</span><span>EN</span>
             </a>
           </div>
@@ -353,14 +364,14 @@
     <div class="container">
       <div class="answer-box">
         <h2 class="answer-box__q">Quanto custa remodelar a canalização de uma casa no Algarve?</h2>
-        <p class="answer-box__a">Refazer toda a canalização interior de uma moradia T3-T4 — água fria, água quente, esgotos e coletores — custa tipicamente entre 6.500 € e 11.000 €. Num apartamento T2-T3, a faixa é de 4.500 € a 8.000 €. Estes valores não incluem a reposição de cerâmicos nem a pintura final. O acesso aos tubos existentes é o fator que mais pesa: paredes de tijolo saem mais baratas do que paredes de pedra.</p>
+        <p class="answer-box__a">O acesso aos tubos existentes é o fator que mais pesa: paredes de tijolo saem bastante mais baratas do que paredes de pedra ou betão. Depois contam a área, o número de casas de banho e se a casa tem um ou vários pisos. Vemos a obra antes de dar valores — visita técnica e orçamento detalhado gratuitos, com resposta em 24 horas úteis.</p>
         <ul class="answer-box__facts">
-          <li><strong>Apartamento T2-T3 (80-110 m²):</strong> 4.500 € – 8.000 €</li>
-          <li><strong>Moradia T3-T4 (120-180 m²):</strong> 6.500 € – 11.000 €</li>
-          <li><strong>Moradia T4+ ou multi-piso (180+ m²):</strong> 10.000 € – 18.000 €</li>
+          <li><strong>Orçamento:</strong> gratuito, após visita técnica, com resposta em 24 horas úteis</li>
+          <li><strong>O que faz variar o preço:</strong> tipo de parede, área, número de casas de banho e número de pisos</li>
           <li><strong>Incluído:</strong> água fria e quente, esgotos e coletores acessíveis</li>
           <li><strong>Não incluído:</strong> reposição de cerâmicos, pintura final e ligações exteriores</li>
           <li><strong>Garantia:</strong> 1 ano de serviço e 2 anos de materiais</li>
+          <li><strong>Marcas utilizadas:</strong> Uponor, Geberit e Wavin</li>
         </ul>
       </div>
     </div>
@@ -411,26 +422,27 @@
   <section class="price-block">
     <div class="container">
       <h2>Quanto custa</h2>
-      <p class="price-lede">Valores indicativos para a remodelação completa da canalização interior. Não inclui reposição de cerâmicos, pintura final ou ligações exteriores.</p>
+      <p class="price-lede">Não há dois trabalhos de remodelação iguais — o preço depende do que está dentro das paredes. Vemos a casa e damos-lhe o valor exato, sem compromisso.</p>
       <div class="price-grid">
         <div class="price-card">
           <h3>Apartamento T2-T3</h3>
-          <p class="amount">€4.500 – €8.000</p>
           <p>80-110 m². Água fria + água quente + esgotos + coletores. Paredes secas facilitam, paredes em pedra encarecem.</p>
         </div>
         <div class="price-card">
           <h3>Moradia T3-T4</h3>
-          <p class="amount">€6.500 – €11.000</p>
           <p>120-180 m². Casa típica de família algarvia. Inclui redes interiores completas e ligações pluviais.</p>
         </div>
         <div class="price-card">
           <h3>Moradia T4+ ou multi-piso</h3>
-          <p class="amount">€10.000 – €18.000</p>
           <p>180+ m². Múltiplas casas-de-banho, tubos de queda, ventilação primária. Coordenação complexa.</p>
         </div>
       </div>
       <div class="price-note">
         <strong>Importante:</strong> o preço final depende muito da acessibilidade dos tubos existentes. Em casa com tubo embebido em parede de pedra ou betão, o trabalho de abertura de roços é significativo. Damos sempre orçamento detalhado após visita técnica.
+        <p class="price-cta">
+          <a href="/#contact" class="price-cta__btn">Pedir orçamento gratuito</a>
+          <a href="tel:+351965445801" class="price-cta__link">ou ligue +351 965 445 801</a>
+        </p>
       </div>
     </div>
   </section>
@@ -532,7 +544,7 @@
       </div>
       <div class="faq-item">
         <h3>Quanto custa remodelar a canalização de uma moradia T3?</h3>
-        <p>Para uma moradia T3-T4 (120-180 m²), a remodelação completa da canalização interior (água fria + água quente + esgotos + coletores) custa tipicamente entre €6.500 e €11.000. Não inclui reposição de cerâmicos nem trabalhos de pintura final. Em apartamentos T2-T3 a faixa é €4.500 a €8.000. O preço depende muito do acesso aos tubos existentes — em casas com paredes de tijolo é mais barato que em pedra ou betão.</p>
+        <p>O que mais pesa no preço é o acesso aos tubos existentes: paredes de tijolo saem bastante mais baratas do que paredes de pedra ou betão, onde a abertura de roços é um trabalho pesado. Depois conta a área, o número de casas de banho e se a casa é de um ou vários pisos. Por isso orçamentamos caso a caso, depois de ver a obra: visita técnica e orçamento detalhado gratuitos, com resposta em 24 horas úteis. O orçamento cobre água fria, água quente, esgotos e coletores acessíveis, e não inclui reposição de cerâmicos nem pintura final.</p>
       </div>
       <div class="faq-item">
         <h3>Tem que abrir paredes todas?</h3>
@@ -688,5 +700,27 @@
     </div>
   </footer>
 
+  <script>
+  /* Mobile nav toggle. These pages do not load script.js, so the
+     header needed its own copy — without it the menu was display:none
+     on phones with no way to open it. */
+  (function () {
+    var t = document.getElementById('navToggle');
+    var l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open);
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        l.classList.remove('open');
+        t.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+  </script>
 </body>
 </html>

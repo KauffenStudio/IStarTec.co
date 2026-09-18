@@ -8,6 +8,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://istartec.co/particulares/chao-radiante/" />
   <link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/chao-radiante/" />
+  <link rel="alternate" hreflang="en" href="https://istartec.co/en/homeowners/underfloor-heating/" />
   <link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/chao-radiante/" />
 
   <meta property="og:type" content="website" />
@@ -124,7 +125,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Quanto custa chão radiante por m2 no Algarve?", "acceptedAnswer": { "@type": "Answer", "text": "Em 2026 o custo médio de chão radiante hidráulico instalado no Algarve varia entre €55 e €85 por m² — incluindo tubo Uponor PEX, isolamento, coletores, manga e mão-de-obra. Não inclui a fonte de calor (bomba de calor, caldeira ou solar). O preço por m² baixa com a área: uma moradia T3 (150 m²) tende para o limite inferior do intervalo, um espaço pequeno (40 m²) tende para o superior." } },
+      { "@type": "Question", "name": "Quanto custa chão radiante por m2 no Algarve?", "acceptedAnswer": { "@type": "Answer", "text": "O preço por m² depende sobretudo do estado do piso: numa laje já preparada em obra nova fica bastante abaixo de uma remodelação que obriga a levantar o pavimento existente, e um sistema low-profile, para casos sem margem de altura, usa material mais caro. A área total também conta — quanto maior a área contínua, menor o custo por m². Por isso orçamentamos caso a caso: visita técnica e orçamento detalhado gratuitos, com resposta em 24 horas úteis. O orçamento inclui isolamento, tubo Uponor PEX, coletores, manga e mão-de-obra, e não inclui o pavimento final nem a fonte de calor." } },
       { "@type": "Question", "name": "Posso pôr chão radiante numa casa já construída?", "acceptedAnswer": { "@type": "Answer", "text": "Sim, é uma das obras de remodelação mais procuradas no Algarve. Implica levantar o pavimento existente, colocar isolamento + tubo, fazer betonilha por cima e voltar a colocar o pavimento. Ganha-se cerca de 8 cm de altura (em alguns sistemas mais finos, 5-6 cm). Para limitações de altura, existem sistemas low-profile, mais caros mas viáveis." } },
       { "@type": "Question", "name": "Funciona bem com bomba de calor?", "acceptedAnswer": { "@type": "Answer", "text": "Sim — é, na verdade, a combinação ideal. O chão radiante trabalha a baixa temperatura (35-45ºC) e a bomba de calor é mais eficiente exatamente nesta gama. A combinação bomba de calor + chão radiante tem o custo operacional mais baixo do mercado para uma casa no Algarve." } },
       { "@type": "Question", "name": "Demora quanto tempo a instalar?", "acceptedAnswer": { "@type": "Answer", "text": "Numa remodelação, conta com 2 a 3 semanas: 3-4 dias para levantar piso e preparar base; 2-3 dias para colocar isolamento e tubo; 1 dia de betonagem; 5-7 dias de secagem da betonilha; depois colocação do pavimento final (que pode ser outro empreiteiro). Em obra nova é mais rápido — 1 semana só para o tubo e betonilha." } },
@@ -296,6 +297,13 @@
 <body>
 
   <header id="header">
+    <div class="audience-bar" role="navigation" aria-label="Selector de audiência">
+      <div class="audience-bar__inner">
+        <a href="/?audience=empresa" class="audience-pill">Empresas</a>
+        <span class="audience-bar__sep" aria-hidden="true"></span>
+        <a href="/particulares/" class="audience-pill audience-pill--active" aria-current="true">Particulares</a>
+      </div>
+    </div>
     <nav class="nav container">
       <a href="/" class="nav__logo">
         <span class="nav__logo-mark">
@@ -305,7 +313,10 @@
         </span>
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
-      <ul class="nav__links">
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
         <li><a href="/particulares/" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link">Serviços</a></li>
         <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
@@ -316,7 +327,7 @@
             <a class="lang-toggle__btn lang-toggle__btn--active" href="#" aria-current="true" aria-label="Português (atual)">
               <span class="lang-flag">🇵🇹</span><span>PT</span>
             </a>
-            <a class="lang-toggle__btn" href="/en/" hreflang="en" rel="alternate" aria-label="View English version">
+            <a class="lang-toggle__btn" href="/en/homeowners/underfloor-heating/" hreflang="en" rel="alternate" aria-label="View English version">
               <span class="lang-flag">🇬🇧</span><span>EN</span>
             </a>
           </div>
@@ -353,14 +364,14 @@
     <div class="container">
       <div class="answer-box">
         <h2 class="answer-box__q">Quanto custa instalar chão radiante por m² no Algarve?</h2>
-        <p class="answer-box__a">Em 2026, o chão radiante hidráulico instalado no Algarve custa entre 55 € e 85 € por m², incluindo tubo Uponor PEX, isolamento, coletores, manga e mão-de-obra. O valor não inclui o pavimento final nem a fonte de calor. O que mais faz variar o preço é a obra de piso: numa laje já preparada fica no limite inferior, numa remodelação que obriga a levantar o pavimento existente sobe.</p>
+        <p class="answer-box__a">O que mais faz variar o preço é a obra de piso: numa laje já preparada fica claramente mais barato do que numa remodelação que obriga a levantar o pavimento existente, e um sistema low-profile, para casos sem margem de altura, usa material mais caro. A área contínua também conta — quanto maior, menor o custo por m². Fazemos visita técnica e damos orçamento detalhado e gratuito, com resposta em 24 horas úteis.</p>
         <ul class="answer-box__facts">
-          <li><strong>Obra nova ou de raiz:</strong> 55 € – 70 € / m²</li>
-          <li><strong>Remodelação com obra de piso:</strong> 70 € – 85 € / m²</li>
-          <li><strong>Sistema low-profile (5-6 cm):</strong> 85 € – 110 € / m²</li>
+          <li><strong>Orçamento:</strong> gratuito, após visita técnica, com resposta em 24 horas úteis</li>
+          <li><strong>O que faz variar o preço:</strong> obra nova ou remodelação, altura disponível e área contínua</li>
           <li><strong>Incluído:</strong> isolamento, tubo Uponor PEX, coletor, manga e betonilha</li>
           <li><strong>Não incluído:</strong> pavimento final e fonte de calor</li>
           <li><strong>Garantia do tubo:</strong> 10 anos</li>
+          <li><strong>Temperatura de operação:</strong> água entre 35 e 45 ºC</li>
         </ul>
       </div>
     </div>
@@ -396,27 +407,28 @@
 
   <section class="price-block">
     <div class="container">
-      <h2>Quanto custa por m²</h2>
-      <p class="price-lede">Valores indicativos por m² instalado, sem fonte de calor. Orçamento detalhado e gratuito após visita técnica.</p>
+      <h2>Quanto custa</h2>
+      <p class="price-lede">O preço por m² muda muito conforme o cenário da obra. Vemos a casa, medimos a área e dizemos-lhe o valor exato — visita técnica e orçamento gratuitos, sem compromisso.</p>
       <div class="price-grid">
         <div class="price-card">
           <h3>Obra nova ou raiz</h3>
-          <p class="amount">€55 – €70 / m²</p>
-          <p>Sobre laje preparada. Inclui isolamento, tubo, coletor, betonilha. Não inclui pavimento final nem fonte de calor.</p>
+          <p>Sobre laje preparada. Inclui isolamento, tubo, coletor, betonilha. Não inclui pavimento final nem fonte de calor. É o cenário mais económico.</p>
         </div>
         <div class="price-card">
           <h3>Remodelação (com obra de piso)</h3>
-          <p class="amount">€70 – €85 / m²</p>
-          <p>Implica levantar pavimento existente e refazer a base. Maior trabalho de demolição e regularização.</p>
+          <p>Implica levantar pavimento existente e refazer a base. Maior trabalho de demolição e regularização, e por isso mais caro por m².</p>
         </div>
         <div class="price-card">
           <h3>Low-profile (altura limitada)</h3>
-          <p class="amount">€85 – €110 / m²</p>
-          <p>Sistemas finos (5-6 cm em vez de 8-10 cm) para casos onde não há margem de altura. Material premium.</p>
+          <p>Sistemas finos (5-6 cm em vez de 8-10 cm) para casos onde não há margem de altura. Material premium, custo por m² mais elevado.</p>
         </div>
       </div>
       <div class="price-note">
-        <strong>Bónus de leitura:</strong> temos um <a href="/blog/chao-radiante-preco-m2-algarve/" style="color:#2563eb;font-weight:600;text-decoration:none;">guia detalhado de preços de chão radiante no Algarve</a> com todos os fatores que afetam o orçamento — vale a leitura antes de pedir orçamentos.
+        Diga-nos a área e o estado do piso e damos-lhe um orçamento detalhado, com material discriminado, depois da visita técnica.
+        <p class="price-cta">
+          <a href="/#contact" class="price-cta__btn">Pedir orçamento gratuito</a>
+          <a href="tel:+351965445801" class="price-cta__link">ou ligue +351 965 445 801</a>
+        </p>
       </div>
     </div>
   </section>
@@ -524,7 +536,7 @@
       <h2>Perguntas Frequentes — Chão Radiante para Particulares</h2>
       <div class="faq-item">
         <h3>Quanto custa chão radiante por m² no Algarve?</h3>
-        <p>Em 2026 o custo médio de chão radiante hidráulico instalado no Algarve varia entre €55 e €85 por m² — incluindo tubo Uponor PEX, isolamento, coletores, manga e mão-de-obra. Não inclui a fonte de calor (bomba de calor, caldeira ou solar). O preço por m² baixa com a área. Vale ler o nosso <a href="/blog/chao-radiante-preco-m2-algarve/">guia detalhado de preços</a>.</p>
+        <p>O preço por m² depende sobretudo do estado do piso: numa laje já preparada em obra nova fica bastante abaixo de uma remodelação que obriga a levantar o pavimento existente, e um sistema low-profile, para casos sem margem de altura, usa material mais caro. A área total também conta — quanto maior a área contínua, menor o custo por m². Por isso orçamentamos caso a caso: visita técnica e orçamento detalhado gratuitos, com resposta em 24 horas úteis. O orçamento inclui isolamento, tubo Uponor PEX, coletores, manga e mão-de-obra, e não inclui o pavimento final nem a fonte de calor.</p>
       </div>
       <div class="faq-item">
         <h3>Posso pôr chão radiante numa casa já construída?</h3>
@@ -684,5 +696,27 @@
     </div>
   </footer>
 
+  <script>
+  /* Mobile nav toggle. These pages do not load script.js, so the
+     header needed its own copy — without it the menu was display:none
+     on phones with no way to open it. */
+  (function () {
+    var t = document.getElementById('navToggle');
+    var l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open);
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        l.classList.remove('open');
+        t.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+  </script>
 </body>
 </html>

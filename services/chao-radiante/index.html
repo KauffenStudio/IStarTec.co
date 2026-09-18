@@ -326,7 +326,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Quanto custa chão radiante por m² no Algarve?", "acceptedAnswer": { "@type": "Answer", "text": "O custo de instalação de chão radiante hidráulico no Algarve varia tipicamente entre 45 € e 75 €/m² (material + mão-de-obra), dependendo do sistema (passo da tubagem, isolamento, número de zonas) e da geração de calor (bomba de calor, solar térmico, caldeira). Temos um guia detalhado de preços no nosso blog." } },
+      { "@type": "Question", "name": "Quanto custa chão radiante por m² no Algarve?", "acceptedAnswer": { "@type": "Answer", "text": "O preço por m² depende do cenário de obra (laje nova ou remodelação com levantamento de pavimento), do sistema escolhido (passo da tubagem, isolamento, número de zonas), da área contínua e da fonte de calor associada — bomba de calor, solar térmico ou caldeira. Orçamentamos caso a caso após visita técnica, sem custo e com resposta em 24 horas úteis." } },
       { "@type": "Question", "name": "Faz sentido chão radiante no Algarve com clima ameno?", "acceptedAnswer": { "@type": "Answer", "text": "Sim — e cada vez mais. O Algarve tem invernos com noites frias (8-12 °C) e moradias modernas com grandes vãos envidraçados perdem conforto rapidamente. O chão radiante a baixa temperatura (35-40 °C) com bomba de calor é hoje a solução de melhor custo/conforto operacional." } },
       { "@type": "Question", "name": "Chão radiante hidráulico ou elétrico?", "acceptedAnswer": { "@type": "Answer", "text": "Em obra nova ou remodelação profunda recomendamos sempre hidráulico — custos operacionais muito menores (especialmente com bomba de calor), distribuição de calor mais uniforme e durabilidade superior. O elétrico só faz sentido em pontos isolados como casas de banho." } },
       { "@type": "Question", "name": "Trabalham com Uponor?", "acceptedAnswer": { "@type": "Answer", "text": "Sim — Uponor é o nosso sistema preferencial para chão radiante. Trabalhamos com tubagem PEX-a com barreira de oxigénio, coletores Uponor Vario e válvulas de zona com atuadores termostáticos." } },
@@ -475,6 +475,13 @@
 <body>
 
   <header id="header">
+    <div class="audience-bar" role="navigation" aria-label="Selector de audiência">
+      <div class="audience-bar__inner">
+        <a href="/?audience=empresa" class="audience-pill audience-pill--active" aria-current="true">Empresas</a>
+        <span class="audience-bar__sep" aria-hidden="true"></span>
+        <a href="/particulares/" class="audience-pill">Particulares</a>
+      </div>
+    </div>
     <nav class="nav container">
       <a href="/" class="nav__logo">
         <span class="nav__logo-mark">
@@ -484,7 +491,10 @@
         </span>
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
-            <ul class="nav__links">
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
         <li><a href="/?audience=empresa" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link" aria-current="page">Serviços</a></li>
         <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
@@ -570,8 +580,8 @@
 
       <div class="blog-link-box">
         <h3>Quanto custa por m²?</h3>
-        <p>Temos um guia completo com preços reais 2026 por sistema (hidráulico vs elétrico), tamanho de moradia e marca.</p>
-        <a href="/blog/chao-radiante-preco-m2-algarve/">Ler o guia de preços no blog →</a>
+        <p>Depende do cenário de obra, do sistema escolhido, da área contínua e da fonte de calor. Vemos o projeto e damos-lhe um valor firme — visita técnica e orçamento gratuitos, com resposta em 24 horas úteis.</p>
+        <a href="/contact/">Pedir orçamento gratuito →</a>
       </div>
 
       <h2>Integração com bomba de calor e solar térmico</h2>
@@ -606,7 +616,7 @@
       <h2>Perguntas Frequentes — Chão Radiante</h2>
       <div class="faq-item">
         <h3>Quanto custa chão radiante por m² no Algarve?</h3>
-        <p>O custo de instalação de chão radiante hidráulico no Algarve varia tipicamente entre 45 € e 75 €/m² (material + mão-de-obra), dependendo do sistema (passo da tubagem, isolamento, número de zonas) e da geração de calor (bomba de calor, solar térmico, caldeira). Temos um <a href="/blog/chao-radiante-preco-m2-algarve/">guia detalhado de preços</a> no nosso blog.</p>
+        <p>O preço por m² depende do cenário de obra (laje nova ou remodelação com levantamento de pavimento), do sistema escolhido (passo da tubagem, isolamento, número de zonas), da área contínua e da fonte de calor associada — bomba de calor, solar térmico ou caldeira. Orçamentamos caso a caso após visita técnica, sem custo e com resposta em 24 horas úteis.</p>
       </div>
       <div class="faq-item">
         <h3>Faz sentido chão radiante no Algarve com clima ameno?</h3>
@@ -759,5 +769,27 @@
     </div>
   </footer>
 
+  <script>
+  /* Mobile nav toggle. These pages do not load script.js, so the
+     header needed its own copy — without it the menu was display:none
+     on phones with no way to open it. */
+  (function () {
+    var t = document.getElementById('navToggle');
+    var l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open);
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        l.classList.remove('open');
+        t.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+  </script>
 </body>
 </html>

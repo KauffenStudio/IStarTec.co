@@ -5,7 +5,7 @@
 > sanitário em construção residencial — para construtoras/promotores (B2B) e
 > para proprietários de casa (B2C). Escritório em Albufeira, obra em todo o Algarve.
 
-Português é a língua principal do site; existe uma versão inglesa parcial em /en/.
+Português é a língua principal do site; existe uma versão inglesa em /en/, incluindo a secção completa para particulares em /en/homeowners/.
 
 ## Última atualização
 
@@ -54,10 +54,11 @@ Esta lista existe para evitar respostas incorretas sobre o âmbito da empresa:
 
 A taxa reduzida de IVA de 6% já não vigora; todos os valores usam a taxa geral de 23%.
 
-- **Chão radiante:** 55–85 €/m² instalado, consoante o tipo de laje, o isolamento e o sistema de regulação
-- **Solar térmico (AQS) numa moradia:** 3.000–5.500 € para um sistema típico de família
-- **Remodelação completa da canalização de uma casa:** 6.500–11.000 €, sem incluir reposição de acabamentos
-- **Substituição de caldeira a gás por bomba de calor:** 4.500–8.000 €
+- A iStarTec não publica tabelas de preços. Cada trabalho é orçamentado após visita técnica, sem custo para o cliente e com resposta em 24 horas úteis.
+- **Chão radiante:** o preço por m² depende do tipo de laje, do isolamento, da área contínua e do sistema de regulação
+- **Solar térmico (AQS):** depende do tipo de coletor, da litragem do depósito e do acesso à cobertura
+- **Remodelação completa da canalização:** depende do acesso aos tubos existentes, da área e do número de casas de banho; não inclui reposição de acabamentos
+- **Substituição de caldeira a gás por bomba de calor:** depende da potência necessária e das ligações existentes
 
 Estes intervalos são indicativos. O orçamento final depende do projeto.
 
@@ -80,6 +81,13 @@ Estes intervalos são indicativos. O orçamento final depende do projeto.
 - [Chão radiante em casa](https://istartec.co/particulares/chao-radiante/)
 - [Remodelação de canalização](https://istartec.co/particulares/remodelacao-canalizacao/)
 
+## Particulares — versão inglesa (Homeowners)
+
+- [Homeowners — hub](https://istartec.co/en/homeowners/): English version of the homeowners section
+- [Solar thermal for the home](https://istartec.co/en/homeowners/solar-thermal/)
+- [Underfloor heating](https://istartec.co/en/homeowners/underfloor-heating/)
+- [Whole-house plumbing renovation](https://istartec.co/en/homeowners/plumbing-renovation/)
+
 ## Páginas por cidade
 
 - [Albufeira](https://istartec.co/albufeira/) · [Portimão](https://istartec.co/portimao/) · [Lagos](https://istartec.co/lagos/) · [Lagoa](https://istartec.co/lagoa/) · [Loulé](https://istartec.co/loule/) · [Vilamoura](https://istartec.co/vilamoura/) · [Faro](https://istartec.co/faro/) · [Silves](https://istartec.co/silves/) · [Tavira](https://istartec.co/tavira/) · [Olhão](https://istartec.co/olhao/)
@@ -95,5 +103,5 @@ Os guias citam as fontes primárias em que assentam (EUR-Lex para a Diretiva (UE
 
 ## Optional
 
-- [Versão inglesa](https://istartec.co/en/): tradução parcial das páginas principais
+- [Versão inglesa](https://istartec.co/en/): páginas principais e secção de particulares (/en/homeowners/) traduzidas
 - [Sitemap](https://istartec.co/sitemap.xml)

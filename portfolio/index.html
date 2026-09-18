@@ -164,6 +164,13 @@
 </head>
 <body>
   <header id="header">
+    <div class="audience-bar" role="navigation" aria-label="Selector de audiência">
+      <div class="audience-bar__inner">
+        <a href="/?audience=empresa" class="audience-pill audience-pill--active" aria-current="true">Empresas</a>
+        <span class="audience-bar__sep" aria-hidden="true"></span>
+        <a href="/particulares/" class="audience-pill">Particulares</a>
+      </div>
+    </div>
     <nav class="nav container">
       <a href="/" class="nav__logo">
         <span class="nav__logo-mark">
@@ -173,7 +180,10 @@
         </span>
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
-            <ul class="nav__links">
+            <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
         <li><a href="/?audience=empresa" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link">Serviços</a></li>
         <li><a href="/portfolio/" class="nav__link" aria-current="page">Portfolio</a></li>
@@ -377,5 +387,27 @@
     </div>
   </footer>
 
+  <script>
+  /* Mobile nav toggle. These pages do not load script.js, so the
+     header needed its own copy — without it the menu was display:none
+     on phones with no way to open it. */
+  (function () {
+    var t = document.getElementById('navToggle');
+    var l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open);
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        l.classList.remove('open');
+        t.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+  </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://istartec.co/particulares/solar-termico/" />
   <link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/solar-termico/" />
+  <link rel="alternate" hreflang="en" href="https://istartec.co/en/homeowners/solar-thermal/" />
   <link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/solar-termico/" />
 
   <meta property="og:type" content="website" />
@@ -124,7 +125,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "Quanto custa instalar solar térmico numa moradia no Algarve?", "acceptedAnswer": { "@type": "Answer", "text": "Para uma moradia típica T3-T4 com 3-4 pessoas, um sistema solar térmico completo (coletor + depósito 200-300L + acessórios + instalação) custa entre €3.000 e €5.500, com IVA à taxa geral de 23%. O preço final depende do tipo de coletor (plano ou tubos de vácuo), capacidade do depósito e complexidade da instalação na cobertura. Com o programa PRR / Fundo Ambiental e a dedução em IRS para energias renováveis, a fatura líquida pode ser mais baixa." } },
+      { "@type": "Question", "name": "Quanto custa instalar solar térmico numa moradia no Algarve?", "acceptedAnswer": { "@type": "Answer", "text": "O preço de um sistema solar térmico depende de quatro coisas: o tipo de coletor (plano ou tubos de vácuo), a capacidade do depósito, o número de pessoas em casa e a complexidade da instalação na cobertura. Por isso não publicamos tabelas: fazemos visita técnica e damos orçamento detalhado e gratuito, com resposta em 24 horas úteis. Fornecemos fatura discriminada para candidatura ao programa PRR / Fundo Ambiental e dedução em sede de IRS para equipamentos de energias renováveis." } },
       { "@type": "Question", "name": "Vale a pena solar térmico no Algarve em vez de bomba de calor?", "acceptedAnswer": { "@type": "Answer", "text": "Vale a pena se tiver cobertura com boa exposição solar (o Algarve tem 1900 kWh/m²/ano — das mais altas da Europa). Para AQS isolado, o solar térmico tem payback mais rápido (4-7 anos) do que a bomba de calor (7-10 anos). A combinação dos dois (solar como principal + bomba de calor como apoio) é frequentemente a solução técnica ideal." } },
       { "@type": "Question", "name": "Quanto tempo demora a instalação?", "acceptedAnswer": { "@type": "Answer", "text": "Tipicamente 2 a 3 dias úteis: dia 1 montagem dos coletores na cobertura e fixações; dia 2 instalação do depósito e ligações hidráulicas; dia 3 enchimento do circuito, pressurização, comissionamento e ensaios. Trabalhamos sempre em casa habitada — a água sanitária só fica indisponível durante umas horas no segundo dia." } },
       { "@type": "Question", "name": "Termossifão ou circulação forçada — qual escolher?", "acceptedAnswer": { "@type": "Answer", "text": "Termossifão (depósito por cima do coletor, na cobertura) é mais simples e barato, e funciona bem em moradias típicas do Algarve. Circulação forçada (depósito dentro de casa, bomba elétrica) é melhor quando o depósito está em zona técnica interior ou em apartamentos. Na visita técnica recomendamos a melhor solução para a sua casa." } },
@@ -297,6 +298,13 @@
 <body>
 
   <header id="header">
+    <div class="audience-bar" role="navigation" aria-label="Selector de audiência">
+      <div class="audience-bar__inner">
+        <a href="/?audience=empresa" class="audience-pill">Empresas</a>
+        <span class="audience-bar__sep" aria-hidden="true"></span>
+        <a href="/particulares/" class="audience-pill audience-pill--active" aria-current="true">Particulares</a>
+      </div>
+    </div>
     <nav class="nav container">
       <a href="/" class="nav__logo">
         <span class="nav__logo-mark">
@@ -306,7 +314,10 @@
         </span>
         <span class="nav__logo-text">i<span class="nav__logo-star">Star</span>Tec</span>
       </a>
-      <ul class="nav__links">
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
         <li><a href="/particulares/" class="nav__link">Início</a></li>
         <li><a href="/services/" class="nav__link">Serviços</a></li>
         <li><a href="/portfolio/" class="nav__link">Portfolio</a></li>
@@ -317,7 +328,7 @@
             <a class="lang-toggle__btn lang-toggle__btn--active" href="#" aria-current="true" aria-label="Português (atual)">
               <span class="lang-flag">🇵🇹</span><span>PT</span>
             </a>
-            <a class="lang-toggle__btn" href="/en/" hreflang="en" rel="alternate" aria-label="View English version">
+            <a class="lang-toggle__btn" href="/en/homeowners/solar-thermal/" hreflang="en" rel="alternate" aria-label="View English version">
               <span class="lang-flag">🇬🇧</span><span>EN</span>
             </a>
           </div>
@@ -354,13 +365,13 @@
     <div class="container">
       <div class="answer-box">
         <h2 class="answer-box__q">Quanto custa instalar solar térmico numa casa no Algarve?</h2>
-        <p class="answer-box__a">Um sistema solar térmico completo — coletor, depósito de 200 a 300 litros, acessórios e instalação — custa entre 3.000 € e 5.500 €, com IVA à taxa geral de 23 %. Para uma moradia T3-T4 com três a quatro pessoas, a poupança anual situa-se entre 400 € e 700 €, o que coloca o retorno do investimento entre 5 e 8 anos num sistema com vida útil de 20 a 25 anos.</p>
+        <p class="answer-box__a">Depende do tipo de coletor (plano ou tubos de vácuo), da capacidade do depósito, do número de pessoas em casa e da complexidade da cobertura. Em vez de publicar tabelas que raramente correspondem à casa de quem as lê, fazemos visita técnica e damos orçamento detalhado e gratuito, com resposta em 24 horas úteis. Num sistema bem dimensionado no Algarve, o retorno do investimento fica tipicamente entre 5 e 8 anos, com vida útil de 20 a 25 anos.</p>
         <ul class="answer-box__facts">
-          <li><strong>Termossifão simples (T2-T3):</strong> 2.800 € – 3.800 €</li>
-          <li><strong>Sistema standard (T3-T4):</strong> 3.500 € – 4.800 €</li>
-          <li><strong>Sistema premium (tubos de vácuo):</strong> 4.500 € – 6.500 €</li>
-          <li><strong>Poupança anual típica:</strong> 400 € – 700 €</li>
-          <li><strong>Retorno do investimento:</strong> 5 a 8 anos</li>
+          <li><strong>Orçamento:</strong> gratuito, após visita técnica, com resposta em 24 horas úteis</li>
+          <li><strong>O que faz variar o preço:</strong> tipo de coletor, litragem do depósito, acesso e orientação da cobertura</li>
+          <li><strong>Incluído no orçamento:</strong> coletor, depósito, acessórios, instalação e ensaio</li>
+          <li><strong>Retorno do investimento:</strong> tipicamente 5 a 8 anos</li>
+          <li><strong>Vida útil do sistema:</strong> 20 a 25 anos</li>
           <li><strong>IVA:</strong> taxa geral de 23 % (a taxa reduzida de 6 % já não vigora)</li>
         </ul>
       </div>
@@ -371,7 +382,7 @@
     <div class="container">
       <h2>Porquê solar térmico no Algarve</h2>
       <p>O Algarve tem uma das mais elevadas irradiâncias solares de Portugal continental — cerca de 1900 kWh/m² por ano. Isto significa que um sistema solar térmico bem dimensionado consegue cobrir 70 a 80% das necessidades anuais de águas quentes sanitárias (AQS) de uma família, sem custo operacional.</p>
-      <p>Para uma moradia T3-T4 com 3-4 pessoas, isto traduz-se em poupanças anuais entre €400 e €700 (consoante a fonte de aquecimento atual). Com o investimento médio entre €3.000 e €5.500 (IVA 23% incluído), o payback fica entre 5 e 8 anos. O sistema dura tipicamente 20-25 anos.</p>
+      <p>Para uma moradia T3-T4 com 3-4 pessoas, isto traduz-se numa redução significativa da fatura de aquecimento de águas, consoante a fonte de energia atual. O payback de um sistema bem dimensionado fica tipicamente entre 5 e 8 anos, e o sistema dura 20-25 anos.</p>
 
       <div class="brands">
         <span class="brand-pill">Bosch</span>
@@ -394,26 +405,27 @@
   <section class="price-block">
     <div class="container">
       <h2>Quanto custa</h2>
-      <p class="price-lede">Valores indicativos para o Algarve em 2026 — o preço final depende da casa, tipo de coletor e capacidade do depósito. Orçamento detalhado e gratuito após visita técnica.</p>
+      <p class="price-lede">Cada casa tem uma cobertura, uma orientação e um consumo de água quente diferentes — por isso orçamentamos caso a caso, depois de ver a obra. A visita técnica e o orçamento são gratuitos.</p>
       <div class="price-grid">
         <div class="price-card">
           <h3>Termossifão simples</h3>
-          <p class="amount">€2.800 – €3.800</p>
           <p>Moradia T2-T3, 2-3 pessoas, depósito 200L sobre coletor. A solução mais económica e fiável quando há boa cobertura sul.</p>
         </div>
         <div class="price-card">
           <h3>Sistema standard</h3>
-          <p class="amount">€3.500 – €4.800</p>
           <p>Moradia T3-T4, 3-4 pessoas, depósito 250L, circulação forçada ou termossifão. Boa cobertura de AQS anual (~75%).</p>
         </div>
         <div class="price-card">
           <h3>Sistema premium</h3>
-          <p class="amount">€4.500 – €6.500</p>
           <p>Tubos de vácuo, depósito 300L, apoio bomba de calor integrado, central de controlo avançada. Cobertura AQS ~85% + apoio aquecimento.</p>
         </div>
       </div>
       <div class="price-note">
-        Preços <strong>com IVA à taxa geral de 23%</strong> incluído. Fornecemos fatura discriminada para candidatura ao programa PRR / Fundo Ambiental e dedução em sede de IRS para equipamentos de energias renováveis.
+        Dizemos-lhe qual destas soluções serve a sua casa e quanto custa depois da visita técnica — sem compromisso e com resposta em 24 horas úteis. Fornecemos fatura discriminada para candidatura ao programa PRR / Fundo Ambiental e dedução em sede de IRS para equipamentos de energias renováveis.
+        <p class="price-cta">
+          <a href="/#contact" class="price-cta__btn">Pedir orçamento gratuito</a>
+          <a href="tel:+351965445801" class="price-cta__link">ou ligue +351 965 445 801</a>
+        </p>
       </div>
     </div>
   </section>
@@ -505,7 +517,7 @@
       <h2>Perguntas Frequentes — Solar Térmico para Particulares</h2>
       <div class="faq-item">
         <h3>Quanto custa instalar solar térmico numa moradia no Algarve?</h3>
-        <p>Para uma moradia típica T3-T4 com 3-4 pessoas, um sistema solar térmico completo (coletor + depósito 200-300L + acessórios + instalação) custa entre €3.000 e €5.500, com IVA à taxa geral de 23%. O preço final depende do tipo de coletor (plano ou tubos de vácuo), capacidade do depósito e complexidade da instalação na cobertura. Com o programa PRR / Fundo Ambiental e a dedução em IRS para energias renováveis, a fatura líquida pode ser mais baixa.</p>
+        <p>O preço de um sistema solar térmico depende de quatro coisas: o tipo de coletor (plano ou tubos de vácuo), a capacidade do depósito, o número de pessoas em casa e a complexidade da instalação na cobertura. Por isso não publicamos tabelas: fazemos visita técnica e damos orçamento detalhado e gratuito, com resposta em 24 horas úteis. Fornecemos fatura discriminada para candidatura ao programa PRR / Fundo Ambiental e dedução em sede de IRS para equipamentos de energias renováveis.</p>
       </div>
       <div class="faq-item">
         <h3>Vale a pena solar térmico em vez de bomba de calor?</h3>
@@ -669,5 +681,27 @@
     </div>
   </footer>
 
+  <script>
+  /* Mobile nav toggle. These pages do not load script.js, so the
+     header needed its own copy — without it the menu was display:none
+     on phones with no way to open it. */
+  (function () {
+    var t = document.getElementById('navToggle');
+    var l = document.getElementById('navLinks');
+    if (!t || !l) return;
+    t.addEventListener('click', function () {
+      var open = l.classList.toggle('open');
+      t.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open);
+    });
+    l.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        l.classList.remove('open');
+        t.classList.remove('open');
+        t.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
