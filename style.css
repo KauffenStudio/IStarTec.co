@@ -2389,3 +2389,181 @@ input, select, textarea { font: inherit; }
   .answer-box__q { font-size: 1.05rem; }
   .answer-box__a { font-size: .97rem; }
 }
+
+/* ============================================================
+   MOBILE PRESENTATION FIXES
+   Kept at the end of the file on purpose: the mobile rules in the
+   RESPONSIVE section above are declared before the SERVICE CARD
+   GALLERY and LIGHTBOX component blocks, so those later rules of
+   equal specificity were winning the cascade and the mobile
+   layout never applied. Anything that must beat a component
+   block on small screens belongs here.
+   ============================================================ */
+
+/* ── No sideways scroll ──────────────────────────────────────
+   The reveal-left / reveal-right entrance animations park
+   elements 40px outside the viewport until they scroll into
+   view, which let the whole page be swiped sideways on a phone.
+   On small screens the same reveal runs vertically instead. */
+html {
+  overflow-x: hidden;   /* fallback for browsers without clip */
+  overflow-x: clip;     /* clip does not break position: sticky */
+}
+
+@media (max-width: 768px) {
+  .reveal-left,
+  .reveal-right { transform: translateY(28px); }
+  .reveal-left.visible,
+  .reveal-right.visible { transform: none; }
+}
+
+/* ── Service card galleries ───────────────────────────────── */
+@media (max-width: 768px) {
+  /* Featured card stacks, so its gallery is a full-width panel,
+     not the 42% side column used on desktop. */
+  .service-card--featured { flex-direction: column; }
+  .service-card--featured .service-card__gallery {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+  }
+  .service-card--featured .service-card__slides {
+    height: 100%;
+    min-height: 0;
+  }
+  .service-card--featured .service-card__slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* Regular cards: a 210px landscape strip reduced portrait
+     photos to a thin middle band. A taller box keeps the
+     subject of the shot inside the frame. */
+  .service-card:not(.service-card--featured) .service-card__gallery {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+  .service-card:not(.service-card--featured) .service-card__slides img {
+    height: 100%;
+    object-position: center 42%;
+  }
+
+  /* Touch-sized gallery controls */
+  .svc-gallery-prev,
+  .svc-gallery-next { width: 34px; height: 34px; }
+  .svc-gallery-prev svg,
+  .svc-gallery-next svg { width: 15px; height: 15px; }
+  .svc-gallery-dot { width: 6px; height: 6px; }
+  .service-card__gallery-nav { bottom: .85rem; gap: .55rem; }
+}
+
+@media (max-width: 560px) {
+  /* Phones: near-square frame — these galleries mix 9:16 portraits
+     with 2:1 panoramas, and a square crops both the least. */
+  .service-card:not(.service-card--featured) .service-card__gallery {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+/* ── Lightbox: full-screen sheet on phones ────────────────────
+   The desktop two-column panel left the thumbnail strip clipped
+   outside the panel and the project title scrolled out of sight.
+   On small screens it becomes a single column that fills the
+   viewport: image on top, details and thumbnails below. */
+@media (max-width: 768px) {
+  .lightbox {
+    align-items: stretch;
+    justify-content: stretch;
+  }
+  .lightbox__panel {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    max-height: 100vh;
+    max-height: 100dvh;
+    border-radius: 0;
+  }
+  .lightbox__body {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    height: auto;
+    min-height: 0;
+    flex: 1 1 auto;
+    overflow: hidden;
+  }
+  .lightbox__stage {
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+  .lightbox__img-wrap {
+    min-height: 0;
+    height: 100%;
+  }
+  .lightbox__img-wrap img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  /* The sheet's lower half: the text scrolls, the thumbnail rail and
+     counter stay pinned to the bottom so they are always reachable. */
+  .lightbox__sidebar {
+    flex: 0 0 auto;
+    max-height: 46dvh;
+    overflow: hidden;
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,.08);
+  }
+  .lightbox__meta {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1.25rem;
+  }
+
+  /* Thumbnails as a horizontal strip instead of a clipped grid */
+  .lightbox__thumbs-wrap {
+    flex: 0 0 auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: .75rem 1rem;
+    box-shadow: 0 -12px 18px -12px rgba(0,0,0,.65);
+  }
+  .lightbox__thumbs {
+    display: flex;
+    grid-template-columns: none;
+    gap: .4rem;
+  }
+  .lightbox__thumb {
+    flex: 0 0 auto;
+    width: 62px;
+  }
+  .lightbox__counter { flex: 0 0 auto; }
+
+  .lightbox__close { top: .65rem; right: .65rem; }
+  .lightbox__arrow { width: 40px; height: 40px; }
+}
+
+/* ── Wide content scrolls inside its own box ─────────────────
+   The blog price tables are wider than a phone screen. Without
+   their own scroller they were clipped at the edge of the page
+   and the last columns could not be reached. */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+}
+.table-scroll > .price-table { margin: 0; min-width: 32rem; }
+
+@media (max-width: 560px) {
+  .table-scroll > .price-table { font-size: .88rem; }
+  .table-scroll > .price-table th,
+  .table-scroll > .price-table td { padding: .7rem .8rem; }
+}

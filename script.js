@@ -1153,6 +1153,9 @@ function lbOpen(projectKey, startIndex = 0) {
     lightboxThumbs.appendChild(btn);
   });
 
+  const lbSidebar = lightbox.querySelector('.lightbox__sidebar');
+  if (lbSidebar) lbSidebar.scrollTop = 0;
+
   lbShowPhoto(lbIndex);
   lightbox.classList.add('is-open');
   lightbox.setAttribute('aria-hidden', 'false');
@@ -1186,8 +1189,23 @@ function lbShowPhoto(index) {
   // Update thumbs
   lightboxThumbs.querySelectorAll('.lightbox__thumb').forEach((th, i) => {
     th.classList.toggle('active', i === index);
-    if (i === index) th.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    // Scroll the thumbnail rail itself instead of calling scrollIntoView(),
+    // which also scrolls every scrollable ancestor — on mobile that pushed
+    // the project title out of view inside the sidebar.
+    if (i === index) lbScrollThumbIntoRail(th);
   });
+}
+
+function lbScrollThumbIntoRail(thumb) {
+  const rail = thumb.closest('.lightbox__thumbs-wrap');
+  if (!rail) return;
+  const t = thumb.getBoundingClientRect();
+  const r = rail.getBoundingClientRect();
+  if (rail.scrollWidth > rail.clientWidth + 1) {
+    rail.scrollTo({ left: rail.scrollLeft + (t.left - r.left) - (r.width - t.width) / 2, behavior: 'smooth' });
+  } else if (rail.scrollHeight > rail.clientHeight + 1) {
+    rail.scrollTo({ top: rail.scrollTop + (t.top - r.top) - (r.height - t.height) / 2, behavior: 'smooth' });
+  }
 }
 
 function lbGoto(index) {
