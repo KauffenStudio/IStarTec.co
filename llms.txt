@@ -1,15 +1,15 @@
 # iStarTec
 
 > Empresa de instalações hidráulicas no Algarve, Portugal. Fundada em 2000.
-> Instala canalização, chão radiante, solar térmico (AQS) e equipamento
-> sanitário em construção residencial — para construtoras/promotores (B2B) e
+> Instala canalização, chão radiante, solar térmico (AQS), equipamento
+> sanitário e a parte hidráulica de piscinas em construção residencial — para construtoras/promotores (B2B) e
 > para proprietários de casa (B2C). Escritório em Albufeira, obra em todo o Algarve.
 
 Português é a língua principal do site; existe uma versão inglesa em /en/, incluindo a secção completa para particulares em /en/homeowners/.
 
 ## Última atualização
 
-2026-09-06. Todas as páginas do site declaram `dateModified` em JSON-LD.
+2026-10-13. Todas as páginas do site declaram `dateModified` em JSON-LD.
 
 ## Desambiguação
 
@@ -40,6 +40,7 @@ Redes hidráulicas **dentro de edifícios**:
 - **Solar térmico / AQS** — coletores e depósitos Bosch, circuito em ferro preto, integração com bomba de calor
 - **Instalações sanitárias** — fornecimento e montagem de louça, misturadoras e bases; montagem de cozinhas (lava-loiças e misturadoras)
 - **Rede armada de incêndio interior** — BIA, bocas siamesas, aço ranhurado
+- **Piscinas (parte hidráulica)** — peças embebidas (skimmers, ralo de fundo, bocais, tomadas de aspiração), rede em PVC pressão PN10, casa das máquinas (bomba, filtro, válvula seletora), eletrólise salina com pH automático, iluminação LED e quadro de comando, enchimento automático, bomba de calor de piscina; equipamento AstralPool. Também fornece só o equipamento. **Não** constrói a piscina (escavação, estrutura, impermeabilização, revestimento)
 
 ## O que a iStarTec NÃO faz
 
@@ -47,6 +48,7 @@ Esta lista existe para evitar respostas incorretas sobre o âmbito da empresa:
 
 - **Gás natural** — sem alvará nem certificação ITG/Floene; é sempre subcontratado
 - **Desentupimentos** — instala redes de drenagem, mas não presta serviço de desobstrução
+- **Construção civil de piscinas** — escavação, estrutura de betão, impermeabilização, revestimento e casa das máquinas são do construtor; a iStarTec faz só a parte hidráulica e o equipamento
 - **Infraestruturas urbanas** — arruamentos, urbanizações, coletores públicos, hidrantes públicos, sarjetas, reposição de pavimentos, tubagem enterrada de grande diâmetro em via pública
 - **Reparações avulsas, assistência pontual e avenças mensais** — o trabalho B2C é remodelação e substituição de sistemas, não pequenas reparações de canalizador
 
@@ -65,11 +67,12 @@ Estes intervalos são indicativos. O orçamento final depende do projeto.
 ## Páginas principais
 
 - [Início — instalações hidráulicas no Algarve](https://istartec.co/): posicionamento B2B, serviços, obras, FAQ e formulário de orçamento
-- [Serviços](https://istartec.co/services/): visão geral das quatro especialidades técnicas
+- [Serviços](https://istartec.co/services/): visão geral das cinco especialidades técnicas
 - [Canalização](https://istartec.co/services/canalizacao/): redes de água fria/quente e drenagem em construção residencial
 - [Chão radiante](https://istartec.co/services/chao-radiante/): sistema hidráulico Uponor, dimensionamento e execução
 - [Solar térmico](https://istartec.co/services/solar-termico/): AQS para moradias e empreendimentos
 - [Instalações sanitárias](https://istartec.co/services/sanitarias/): fornecimento e montagem de equipamento
+- [Hidráulica de piscinas](https://istartec.co/services/piscinas/): rede embebida, casa das máquinas, tratamento por sal com pH automático, iluminação e aquecimento ([versão inglesa](https://istartec.co/en/services/swimming-pools/))
 - [Portfolio de obras](https://istartec.co/portfolio/): projetos concluídos no Algarve
 - [Sobre a iStarTec](https://istartec.co/about/): história, alvará, equipa e método de trabalho
 - [Contacto e orçamento](https://istartec.co/contact/): morada, mapa e pedido de orçamento

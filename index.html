@@ -223,7 +223,9 @@
     "Águas quentes sanitárias",
     "Drenagem residual e pluvial",
     "Bomba de calor aerotérmica",
-    "Coletores hidráulicos"
+    "Coletores hidráulicos",
+    "Hidráulica de piscinas",
+    "Tratamento de água de piscinas por eletrólise salina"
   ],
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -280,6 +282,23 @@
           "@type": "Service",
           "name": "Instalações Sanitárias",
           "serviceType": "Sanitary installation",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Algarve"
+          },
+          "provider": {
+            "@id": "https://istartec.co/#business"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "@id": "https://istartec.co/services/piscinas/#service",
+          "name": "Hidráulica de Piscinas",
+          "serviceType": "Swimming pool plumbing installation",
+          "url": "https://istartec.co/services/piscinas/",
           "areaServed": {
             "@type": "AdministrativeArea",
             "name": "Algarve"
@@ -812,6 +831,7 @@
             <li><a href="/particulares/chao-radiante/" style="color:#1e293b;text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s;">Instalação de chão radiante hidráulico em moradia →</a></li>
             <li><a href="/particulares/solar-termico/" style="color:#1e293b;text-decoration:none;">Painéis solares térmicos para AQS →</a></li>
             <li><a href="/particulares/remodelacao-canalizacao/" style="color:#1e293b;text-decoration:none;">Remodelação de canalização em casa antiga →</a></li>
+            <li><a href="/services/piscinas/" style="color:#1e293b;text-decoration:none;">Hidráulica de piscina: casa das máquinas e tratamento por sal →</a></li>
           </ul>
         </div>
         <div>
@@ -982,6 +1002,29 @@
             <h3 data-i18n="svc.radiant.title">Sistema de Chão Radiante</h3>
             <p data-i18n="svc.radiant.desc">Instalação completa de chão radiante Uponor — tubagem de aquecimento, coletores de distribuição, bombas de circulação e acumuladores integrados com bomba de calor aerotérmica.</p>
           </div>
+        </div>
+
+        <div class="service-card service-card--wide">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 30V11a4 4 0 018 0M28 30V11a4 4 0 018 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 18h12M16 25h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M6 36c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2 3-2 6-2 3 2 6 2M6 42c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2 3-2 6-2 3 2 6 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="service-card__content">
+            <h3>Hidráulica de Piscinas</h3>
+            <p>Toda a parte hidráulica da piscina, da rede embebida na estrutura à casa das máquinas, ao tratamento automático da água e à iluminação. Para piscinas de moradias e de empreendimentos, com equipamento AstralPool.</p>
+            <a href="/services/piscinas/" class="service-card__more">Ver serviço de piscinas →</a>
+          </div>
+          <ul class="service-card__list">
+            <li>Skimmers, ralo de fundo e bocais</li>
+            <li>Rede embebida em PVC pressão</li>
+            <li>Bomba e filtro na casa das máquinas</li>
+            <li>Eletrólise salina com pH automático</li>
+            <li>Iluminação LED e quadro de comando</li>
+            <li>Bomba de calor de piscina</li>
+          </ul>
         </div>
 
       </div>
@@ -1835,6 +1878,7 @@
           <li><a href="#services" data-i18n="svc.radiant.title">Sistema de Chão Radiante</a></li>
           <li><a href="#services" data-i18n="svc.solar.title">Sistemas Solares Térmicos</a></li>
           <li><a href="#services" data-i18n="svc.sanitary.title">Instalações Sanitárias</a></li>
+          <li><a href="/services/piscinas/">Piscinas</a></li>
         </ul>
       </div>
       <div class="footer__nav">

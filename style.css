@@ -2623,3 +2623,29 @@ body .article-hero {
   .price-cta__btn { width: 100%; }
   .price-cta__link { text-align: center; }
 }
+
+/* ── Wide service card (pool hydraulics) ─────────────────
+   Fourth card under the three photo cards. It has no gallery, so it spans
+   the full row with the list beside the copy instead of leaving an orphan. */
+.service-card--wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1.25rem 2.5rem;
+  align-items: start;
+}
+.service-card--wide .service-card__list { grid-template-columns: 1fr; padding-top: .2rem; }
+.service-card--wide .service-card__list li { color: var(--grey-700); }
+.service-card__more {
+  display: inline-block;
+  margin-top: .9rem;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+}
+.service-card__more:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .service-card--wide { grid-template-columns: 1fr; }
+}

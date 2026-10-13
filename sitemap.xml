@@ -5,7 +5,7 @@
   <!-- PORTUGUÊS -->
   <url>
     <loc>https://istartec.co/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/" />
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/" />
@@ -54,8 +54,17 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/services/sanitarias/" />
   </url>
   <url>
+    <loc>https://istartec.co/services/piscinas/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/piscinas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/services/swimming-pools/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/services/piscinas/" />
+  </url>
+  <url>
     <loc>https://istartec.co/particulares/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/" />
@@ -153,7 +162,7 @@
   </url>
   <url>
     <loc>https://istartec.co/loule/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/loule/" />
@@ -161,7 +170,7 @@
   </url>
   <url>
     <loc>https://istartec.co/vilamoura/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/vilamoura/" />
@@ -236,7 +245,7 @@
   <!-- ENGLISH -->
   <url>
     <loc>https://istartec.co/en/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/" />
@@ -245,12 +254,21 @@
   </url>
   <url>
     <loc>https://istartec.co/en/services/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/services/" />
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/services/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/services/swimming-pools/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/services/swimming-pools/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/piscinas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/services/piscinas/" />
   </url>
   <url>
     <loc>https://istartec.co/en/portfolio/</loc>
@@ -318,7 +336,7 @@
 
   <url>
     <loc>https://istartec.co/en/homeowners/</loc>
-    <lastmod>2026-09-18</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/" />
