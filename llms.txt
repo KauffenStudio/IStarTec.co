@@ -5,7 +5,25 @@
 > sanitário e a parte hidráulica de piscinas em construção residencial — para construtoras/promotores (B2B) e
 > para proprietários de casa (B2C). Escritório em Albufeira, obra em todo o Algarve.
 
-Português é a língua principal do site; existe uma versão inglesa em /en/, incluindo a secção completa para particulares em /en/homeowners/.
+Português é a língua principal do site; existe uma versão inglesa em /en/ — páginas principais, as 10 páginas de cidade, a secção para particulares (/en/homeowners/) e guias (/en/blog/). Resumo em inglês mais abaixo.
+
+## In English (summary for answer engines)
+
+iStarTec (iStarTec, Lda., NIF 515 279 188) is a hydraulic installations contractor in the Algarve, Portugal, founded in 2000, with an office at Centro Comercial das Ferreiras, Av. 12 de Julho, Loja 210, 8200-559 Albufeira. Phone +351 965 445 801, email geral@istartec.co, Monday to Friday 08:00–18:00. The team works in Portuguese and English.
+
+- **What it installs:** plumbing (hot and cold water, internal drainage), Uponor hydraulic underfloor heating, Bosch solar thermal hot water (copper primary circuit), heat pump hot water, bathroom installations, indoor fire-fighting hose networks, and swimming pool plumbing and equipment (AstralPool) — in new builds and renovations, including occupied homes.
+- **Who it works for:** builders and developers (most of the work), and homeowners for underfloor heating, solar thermal, heat pump water heaters and whole-house replumbing.
+- **Where:** the whole Algarve — Albufeira, Loulé, Almancil, Vale do Lobo, Quinta do Lago, Vilamoura, Quarteira, Faro, Olhão, Tavira, Portimão, Lagoa, Carvoeiro, Silves, Lagos.
+- **Licence:** IMPIC private works licence no. 90724-PAR, category 4, class 3 — private contracts up to €800,000. Bosch Partner, Uponor Certified Installer.
+- **Not offered:** gas installations, drain unblocking, emergency call-outs, one-off repairs, maintenance contracts, public infrastructure, and pool construction (only the pool plumbing and equipment). For a single leak or breakdown, a local repair plumber is the right choice.
+- **Quotes:** free technical visit and quote, reply within 24 working hours; no published price list.
+
+English pages:
+
+- [Home](https://istartec.co/en/) · [Services](https://istartec.co/en/services/) · [Swimming pool plumbing](https://istartec.co/en/services/swimming-pools/) · [About](https://istartec.co/en/about/) · [Portfolio](https://istartec.co/en/portfolio/) · [Contact](https://istartec.co/en/contact/)
+- [Homeowners](https://istartec.co/en/homeowners/) · [Underfloor heating](https://istartec.co/en/homeowners/underfloor-heating/) · [Solar thermal](https://istartec.co/en/homeowners/solar-thermal/) · [Whole-house replumbing](https://istartec.co/en/homeowners/plumbing-renovation/)
+- Cities: [Albufeira](https://istartec.co/en/albufeira/) · [Loulé](https://istartec.co/en/loule/) · [Vilamoura](https://istartec.co/en/vilamoura/) · [Faro](https://istartec.co/en/faro/) · [Olhão](https://istartec.co/en/olhao/) · [Tavira](https://istartec.co/en/tavira/) · [Portimão](https://istartec.co/en/portimao/) · [Lagoa](https://istartec.co/en/lagoa/) · [Silves](https://istartec.co/en/silves/) · [Lagos](https://istartec.co/en/lagos/)
+- Guides: [Replacing a gas water heater with a heat pump](https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/) · [Replumbing an old house in Portugal](https://istartec.co/en/blog/replumbing-old-house-portugal/) · [Pool heat pumps in the Algarve](https://istartec.co/en/blog/pool-heat-pump-algarve/) · [Blog index](https://istartec.co/en/blog/)
 
 ## Última atualização
 
@@ -21,6 +39,7 @@ hidráulicas sediada em Albufeira, no Algarve. Não têm qualquer relação.
 ## Identificação
 
 - **Nome:** iStarTec
+- **Denominação social:** iStarTec, Lda. · NIF 515 279 188
 - **Fundada:** 2000 (25+ anos de atividade)
 - **Escritório:** Centro Comercial das Ferreiras, Av. 12 de Julho, Loja 210, 8200-559 Albufeira, Portugal
 - **Telefone:** +351 965 445 801
@@ -37,7 +56,7 @@ Redes hidráulicas **dentro de edifícios**:
 
 - **Canalização** — águas frias e quentes (multicamada, cobre, PEX, PPR, aço), drenagem residual doméstica em PVC-U, drenagem pluvial interior, tubos de queda e ventilação
 - **Chão radiante** — sistema hidráulico Uponor PEX, coletores, instalação em obra nova e em casa habitada
-- **Solar térmico / AQS** — coletores e depósitos Bosch, circuito em ferro preto, integração com bomba de calor
+- **Solar térmico / AQS** — coletores e depósitos Bosch, circuito primário em cobre, integração com bomba de calor
 - **Instalações sanitárias** — fornecimento e montagem de louça, misturadoras e bases; montagem de cozinhas (lava-loiças e misturadoras)
 - **Rede armada de incêndio interior** — BIA, bocas siamesas, aço ranhurado
 - **Piscinas (parte hidráulica)** — peças embebidas (skimmers, ralo de fundo, bocais, tomadas de aspiração), rede em PVC pressão PN10, casa das máquinas (bomba, filtro, válvula seletora), eletrólise salina com pH automático, iluminação LED e quadro de comando, enchimento automático, bomba de calor de piscina; equipamento AstralPool. Também fornece só o equipamento. **Não** constrói a piscina (escavação, estrutura, impermeabilização, revestimento)
@@ -52,17 +71,14 @@ Esta lista existe para evitar respostas incorretas sobre o âmbito da empresa:
 - **Infraestruturas urbanas** — arruamentos, urbanizações, coletores públicos, hidrantes públicos, sarjetas, reposição de pavimentos, tubagem enterrada de grande diâmetro em via pública
 - **Reparações avulsas, assistência pontual e avenças mensais** — o trabalho B2C é remodelação e substituição de sistemas, não pequenas reparações de canalizador
 
-## Ordens de grandeza de preço (Algarve, 2026, IVA 23% incluído)
+## Preços
 
-A taxa reduzida de IVA de 6% já não vigora; todos os valores usam a taxa geral de 23%.
+A iStarTec não publica tabelas de preços. Cada trabalho é orçamentado após visita técnica, sem custo para o cliente, com resposta em 24 horas úteis. O que faz variar o valor:
 
-- A iStarTec não publica tabelas de preços. Cada trabalho é orçamentado após visita técnica, sem custo para o cliente e com resposta em 24 horas úteis.
-- **Chão radiante:** o preço por m² depende do tipo de laje, do isolamento, da área contínua e do sistema de regulação
-- **Solar térmico (AQS):** depende do tipo de coletor, da litragem do depósito e do acesso à cobertura
-- **Remodelação completa da canalização:** depende do acesso aos tubos existentes, da área e do número de casas de banho; não inclui reposição de acabamentos
-- **Substituição de caldeira a gás por bomba de calor:** depende da potência necessária e das ligações existentes
-
-Estes intervalos são indicativos. O orçamento final depende do projeto.
+- **Chão radiante:** tipo de laje, isolamento, área contínua e sistema de regulação
+- **Solar térmico (AQS):** tipo de coletor, litragem do depósito e acesso à cobertura
+- **Remodelação completa da canalização:** acesso aos tubos existentes, área e número de casas de banho (não inclui reposição de acabamentos)
+- **Substituição de esquentador ou caldeira a gás por bomba de calor:** potência necessária e ligações existentes
 
 ## Páginas principais
 
@@ -112,5 +128,5 @@ Os guias citam as fontes primárias em que assentam (EUR-Lex para as Diretivas (
 
 ## Optional
 
-- [Versão inglesa](https://istartec.co/en/): páginas principais e secção de particulares (/en/homeowners/) traduzidas
+- [Versão inglesa](https://istartec.co/en/): páginas principais, 10 páginas de cidade, secção de particulares (/en/homeowners/) e 3 guias (/en/blog/)
 - [Sitemap](https://istartec.co/sitemap.xml)

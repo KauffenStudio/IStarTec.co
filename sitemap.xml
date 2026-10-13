@@ -158,6 +158,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/lagoa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/lagoa/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/lagoa/" />
   </url>
   <url>
@@ -166,6 +167,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/loule/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/loule/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/loule/" />
   </url>
   <url>
@@ -174,6 +176,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/vilamoura/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/vilamoura/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/vilamoura/" />
   </url>
   <url>
@@ -191,6 +194,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/silves/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/silves/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/silves/" />
   </url>
   <url>
@@ -199,6 +203,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/tavira/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/tavira/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/tavira/" />
   </url>
   <url>
@@ -207,6 +212,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/olhao/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/olhao/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/olhao/" />
   </url>
   <url>
@@ -215,6 +221,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/" />
   </url>
   <url>
@@ -247,6 +254,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/trocar-esquentador-gas-bomba-calor/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/trocar-esquentador-gas-bomba-calor/" />
   </url>
   <url>
@@ -255,6 +263,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/substituir-canalizacao-casa-antiga/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/replumbing-old-house-portugal/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/substituir-canalizacao-casa-antiga/" />
   </url>
   <url>
@@ -263,6 +272,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/bomba-calor-piscina-algarve/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/pool-heat-pump-algarve/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/bomba-calor-piscina-algarve/" />
   </url>
   <url>
@@ -417,5 +427,95 @@
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/homeowners/plumbing-renovation/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/loule/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/loule/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/loule/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/loule/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/vilamoura/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/vilamoura/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/vilamoura/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/vilamoura/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/lagoa/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/lagoa/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/lagoa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/lagoa/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/silves/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/silves/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/silves/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/silves/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/tavira/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/tavira/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/tavira/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/tavira/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/olhao/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/olhao/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/olhao/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/olhao/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/blog/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/trocar-esquentador-gas-bomba-calor/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/trocar-esquentador-gas-bomba-calor/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/blog/replumbing-old-house-portugal/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/replumbing-old-house-portugal/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/substituir-canalizacao-casa-antiga/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/substituir-canalizacao-casa-antiga/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/blog/pool-heat-pump-algarve/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/pool-heat-pump-algarve/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/bomba-calor-piscina-algarve/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/bomba-calor-piscina-algarve/" />
   </url>
 </urlset>

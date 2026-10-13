@@ -1,0 +1,63 @@
+# Tell Bing (and through it ChatGPT search and Copilot) about changed pages
+# as soon as they are live, instead of waiting for the next crawl.
+# IndexNow also feeds Yandex, Seznam, Naver and Yep. Google ignores it.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ["**.html", "llms.txt", "sitemap.xml"]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Submit every URL in sitemap.xml"
+        type: boolean
+        default: false
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Collect changed URLs
+        id: urls
+        env:
+          ALL: ${{ github.event.inputs.all }}
+        run: |
+          if [ "$ALL" = "true" ] || ! git rev-parse -q --verify HEAD^ >/dev/null; then
+            grep -o '<loc>[^<]*' sitemap.xml | sed 's/<loc>//' > urls.txt
+          else
+            git diff --name-only HEAD^ HEAD -- '*.html' \
+              | grep -v '^404\.html$' \
+              | sed -e 's#index\.html$##' -e 's#^#https://istartec.co/#' > urls.txt || true
+            # A sitemap or llms.txt change usually means new pages: resubmit those files too.
+            git diff --name-only HEAD^ HEAD -- sitemap.xml llms.txt \
+              | sed 's#^#https://istartec.co/#' >> urls.txt || true
+          fi
+          sort -u urls.txt -o urls.txt
+          echo "count=$(wc -l < urls.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          cat urls.txt
+
+      - name: Wait for GitHub Pages to publish
+        if: steps.urls.outputs.count != '0'
+        run: sleep 90
+
+      - name: Submit to IndexNow
+        if: steps.urls.outputs.count != '0'
+        env:
+          KEY: eeb9cbe7a2bdffc5cd701dd643f835e3576febe8909f58f6f26b7c0423769cd0
+        run: |
+          jq -n --arg key "$KEY" --rawfile urls urls.txt '{
+            host: "istartec.co",
+            key: $key,
+            keyLocation: ("https://istartec.co/" + $key + ".txt"),
+            urlList: ($urls | split("\n") | map(select(length > 0)))
+          }' > payload.json
+          code=$(curl -s -o resp.txt -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' --data @payload.json)
+          echo "IndexNow HTTP $code"; cat resp.txt
+          # 200 = accepted, 202 = accepted, key validation pending
+          [ "$code" = "200" ] || [ "$code" = "202" ]

@@ -203,7 +203,7 @@ const translations = {
     'footer.nav':     'Navegação',
     'footer.bosch':   'Parceiro Bosch',
     'footer.uponor':  'Certificado Uponor',
-    'footer.copy':    '© 2025 iStarTec. Todos os direitos reservados.',
+    'footer.copy':    '© 2026 iStarTec, Lda. · NIF 515 279 188 · Todos os direitos reservados.',
     'footer.tagline': 'Instalações Técnicas · Algarve, Portugal',
     // Success message
     'success.title': 'Pedido de Orçamento Enviado',
@@ -405,7 +405,7 @@ const translations = {
     'footer.nav':     'Navigation',
     'footer.bosch':   'Bosch Partner',
     'footer.uponor':  'Uponor Certified',
-    'footer.copy':    '© 2025 iStarTec. All rights reserved.',
+    'footer.copy':    '© 2026 iStarTec, Lda. · NIF 515 279 188 · All rights reserved.',
     'footer.tagline': 'Technical Installations · Algarve, Portugal',
     // Success message
     'success.title': 'Quote Request Sent',
