@@ -36,6 +36,19 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Consent Mode v2: denied until the visitor accepts in the cookie banner
+    // (assets/consent.js). A saved choice is applied here, before any tag fires.
+    (function () {
+      var c = null;
+      try { c = localStorage.getItem('istar_consent'); } catch (e) {}
+      var v = c === 'granted' ? 'granted' : 'denied';
+      gtag('consent', 'default', {
+        ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v,
+        wait_for_update: 500
+      });
+      gtag('set', 'ads_data_redaction', v === 'denied');
+      gtag('set', 'url_passthrough', true);
+    })();
     gtag('js', new Date());
     gtag('config', 'AW-18074242840');
   </script>
@@ -254,7 +267,7 @@
       </ul>
 
       <h2>7. Cookies and browser storage</h2>
-      <p>The website uses the Google tag (Google Ads) to measure which ads lead to enquiries. You can block or delete cookies in your browser settings. We also store two technical preferences in your browser, with no personal data: whether you are a homeowner or a business, and whether you closed the WhatsApp message.</p>
+      <p>The website uses the Google tag (Google Ads) to measure which ads lead to enquiries. These cookies are only set if you accept them in the notice shown on your first visit; if you reject them, Google only receives cookieless, non-identifying signals. You can change your choice at any time in <button type="button" class="link-btn" data-cookie-settings>cookie preferences</button> or via the "Cookies" link in the footer. We also store two technical preferences in your browser, with no personal data: whether you are a homeowner or a business, and whether you closed the WhatsApp message.</p>
 
       <h2>8. Your rights</h2>
       <p>You may at any time ask to access, correct or erase your data, restrict its processing, receive it in a portable format, or object to its processing. Where processing is based on consent, you may withdraw it without affecting what was done before. Just write to <a href="mailto:geral@istartec.co">geral@istartec.co</a>; we reply within one month at the latest.</p>
@@ -333,7 +346,7 @@
     </div>
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p>&copy; 2026 iStarTec, Lda. · NIF 515 279 188 · All rights reserved. · <a href="/en/privacy/">Privacy Policy</a></p>
+        <p>&copy; 2026 iStarTec, Lda. · NIF 515 279 188 · All rights reserved. · <a href="/en/privacy/">Privacy Policy</a> · <button type="button" class="link-btn" data-cookie-settings>Cookies</button></p>
         <p>Technical Installations · Algarve, Portugal · IMPIC private works licence 90724-PAR</p>
       </div>
     </div>
@@ -381,5 +394,6 @@
       });
     })();
   </script>
+  <script src="/assets/consent.js" defer></script>
 </body>
 </html>

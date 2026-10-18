@@ -38,6 +38,19 @@
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Consent Mode v2: denied until the visitor accepts in the cookie banner
+    // (assets/consent.js). A saved choice is applied here, before any tag fires.
+    (function () {
+      var c = null;
+      try { c = localStorage.getItem('istar_consent'); } catch (e) {}
+      var v = c === 'granted' ? 'granted' : 'denied';
+      gtag('consent', 'default', {
+        ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v,
+        wait_for_update: 500
+      });
+      gtag('set', 'ads_data_redaction', v === 'denied');
+      gtag('set', 'url_passthrough', true);
+    })();
     gtag('js', new Date());
     gtag('config', 'AW-18074242840');
   </script>
@@ -642,7 +655,7 @@
     </div>
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <p>&copy; 2026 iStarTec, Lda. · NIF 515 279 188 · All rights reserved. · <a href="/en/privacy/">Privacy Policy</a></p>
+        <p>&copy; 2026 iStarTec, Lda. · NIF 515 279 188 · All rights reserved. · <a href="/en/privacy/">Privacy Policy</a> · <button type="button" class="link-btn" data-cookie-settings>Cookies</button></p>
         <p>Technical Installations · Algarve, Portugal · IMPIC private works licence 90724-PAR</p>
       </div>
     </div>
@@ -690,5 +703,6 @@
       });
     })();
   </script>
+  <script src="/assets/consent.js" defer></script>
 </body>
 </html>

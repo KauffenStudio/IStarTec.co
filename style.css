@@ -2770,3 +2770,49 @@ body .article-hero {
 @media (max-width: 359px) {
   .wa-bubble { white-space: normal; max-width: 170px; }
 }
+
+/* ─────────────────────────────────────────────────────────
+   COOKIE BANNER (assets/consent.js)
+   Bottom-left so it never covers the WhatsApp button on desktop;
+   full width on phones, above it.
+   ───────────────────────────────────────────────────────── */
+.cookie-banner {
+  position: fixed;
+  left: max(1.25rem, env(safe-area-inset-left));
+  bottom: max(1.25rem, env(safe-area-inset-bottom));
+  z-index: 1000;
+  max-width: 420px;
+  padding: 1.1rem 1.25rem;
+  background: var(--white);
+  color: var(--grey-800);
+  border: 1px solid var(--grey-200);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-body);
+}
+.cookie-banner[hidden] { display: none; }
+.cookie-banner__text { margin: 0 0 .9rem; font-size: .88rem; line-height: 1.55; color: var(--grey-600); }
+.cookie-banner__text a { color: var(--blue); }
+.cookie-banner__actions { display: flex; gap: .6rem; justify-content: flex-end; }
+.cookie-banner__btn {
+  min-height: 44px;
+  padding: 0 1.15rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--grey-300);
+  background: var(--white);
+  color: var(--grey-800);
+  font: 600 .9rem var(--font-body);
+  cursor: pointer;
+}
+.cookie-banner__btn:hover { background: var(--grey-50); }
+.cookie-banner__btn--primary { background: var(--blue); border-color: var(--blue); color: var(--white); }
+.cookie-banner__btn--primary:hover { background: var(--blue-dark); }
+.cookie-banner__btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+@media (max-width: 600px) {
+  .cookie-banner { left: 1rem; right: 1rem; bottom: max(1rem, env(safe-area-inset-bottom)); max-width: none; }
+  .cookie-banner__btn { flex: 1; }
+}
+.link-btn { background: none; border: 0; padding: 0; font: inherit; color: inherit; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.link-btn:hover { color: var(--white); }
+.prose .link-btn { color: #2563eb; }
+.prose .link-btn:hover { color: var(--blue-dark); }
