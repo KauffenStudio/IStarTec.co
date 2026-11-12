@@ -1,0 +1,12 @@
+{
+  "name": "istartec-equipamentos-3d",
+  "private": true,
+  "description": "Build of the interactive 3D equipment scene (/equipamentos/). Output: assets/equipamentos/equipamentos.js",
+  "scripts": {
+    "build": "esbuild tour.js --bundle --minify --format=esm --target=es2020 --legal-comments=none --outfile=../../assets/equipamentos/equipamentos.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0",
+    "three": "0.170.0"
+  }
+}

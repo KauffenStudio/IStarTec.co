@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/canalizacao/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/canalizacao/" />
@@ -31,7 +31,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/chao-radiante/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/chao-radiante/" />
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/solar-termico/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/solar-termico/" />
@@ -55,7 +55,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/piscinas/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/piscinas/" />
@@ -73,7 +73,7 @@
   </url>
   <url>
     <loc>https://istartec.co/particulares/solar-termico/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/solar-termico/" />
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://istartec.co/particulares/chao-radiante/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/chao-radiante/" />
@@ -91,7 +91,7 @@
   </url>
   <url>
     <loc>https://istartec.co/particulares/remodelacao-canalizacao/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
@@ -321,7 +321,7 @@
   </url>
   <url>
     <loc>https://istartec.co/en/services/swimming-pools/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/services/swimming-pools/" />
@@ -403,7 +403,7 @@
   </url>
   <url>
     <loc>https://istartec.co/en/homeowners/solar-thermal/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/solar-termico/" />
@@ -412,7 +412,7 @@
   </url>
   <url>
     <loc>https://istartec.co/en/homeowners/underfloor-heating/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/chao-radiante/" />
@@ -421,7 +421,7 @@
   </url>
   <url>
     <loc>https://istartec.co/en/homeowners/plumbing-renovation/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/particulares/remodelacao-canalizacao/" />
@@ -535,5 +535,23 @@
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/privacidade/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/privacy/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/privacidade/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/equipamentos/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/equipamentos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/equipment/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/equipamentos/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/equipment/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/equipamentos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/equipment/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/equipamentos/" />
   </url>
 </urlset>

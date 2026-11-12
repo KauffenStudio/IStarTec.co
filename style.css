@@ -2816,3 +2816,34 @@ body .article-hero {
 .link-btn:hover { color: var(--white); }
 .prose .link-btn { color: #2563eb; }
 .prose .link-btn:hover { color: var(--blue-dark); }
+
+/* ── Quick nav (SEO link directory above the footer) ── */
+.quick-nav a { color: #1e293b; text-decoration: none; transition: color .15s ease; }
+.quick-nav a:hover, .quick-nav a:focus-visible { color: #2563eb; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Wide answer box (homepages and homeowner hubs, right after the 3D tour):
+   uses the full content width, two columns on desktop, and keeps clear of the
+   dark band that follows. */
+.answer-box-wrap--wide { padding: 3rem 0 3.5rem; }
+.answer-box-wrap--wide .answer-box {
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  column-gap: 3rem;
+  padding: 2rem 2.25rem;
+}
+.answer-box-wrap--wide .answer-box__q { grid-column: 1 / -1; font-size: 1.3rem; margin-bottom: 1rem; }
+.answer-box-wrap--wide .answer-box__a { align-self: start; }
+.answer-box-wrap--wide .answer-box__facts {
+  margin: 0;
+  padding: 0 0 0 2rem;
+  border-top: 0;
+  border-left: 1px solid #e2e8f0;
+  align-self: start;
+}
+@media (max-width: 860px) {
+  .answer-box-wrap--wide { padding: 2.25rem 0 2.75rem; }
+  .answer-box-wrap--wide .answer-box { grid-template-columns: 1fr; padding: 1.5rem 1.35rem; }
+  .answer-box-wrap--wide .answer-box__q { font-size: 1.1rem; margin-bottom: .75rem; }
+  .answer-box-wrap--wide .answer-box__facts { margin-top: 1.15rem; padding: 1.15rem 0 0; border-left: 0; border-top: 1px solid #e2e8f0; }
+}

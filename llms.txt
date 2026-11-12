@@ -20,14 +20,14 @@ iStarTec (iStarTec, Lda., NIF 515 279 188) is a hydraulic installations contract
 
 English pages:
 
-- [Home](https://istartec.co/en/) · [Services](https://istartec.co/en/services/) · [Swimming pool plumbing](https://istartec.co/en/services/swimming-pools/) · [About](https://istartec.co/en/about/) · [Portfolio](https://istartec.co/en/portfolio/) · [Contact](https://istartec.co/en/contact/)
+- [Home](https://istartec.co/en/) · [Services](https://istartec.co/en/services/) · [Swimming pool plumbing](https://istartec.co/en/services/swimming-pools/) · [Equipment in 3D](https://istartec.co/en/equipment/) · [About](https://istartec.co/en/about/) · [Portfolio](https://istartec.co/en/portfolio/) · [Contact](https://istartec.co/en/contact/)
 - [Homeowners](https://istartec.co/en/homeowners/) · [Underfloor heating](https://istartec.co/en/homeowners/underfloor-heating/) · [Solar thermal](https://istartec.co/en/homeowners/solar-thermal/) · [Whole-house replumbing](https://istartec.co/en/homeowners/plumbing-renovation/)
 - Cities: [Albufeira](https://istartec.co/en/albufeira/) · [Loulé](https://istartec.co/en/loule/) · [Vilamoura](https://istartec.co/en/vilamoura/) · [Faro](https://istartec.co/en/faro/) · [Olhão](https://istartec.co/en/olhao/) · [Tavira](https://istartec.co/en/tavira/) · [Portimão](https://istartec.co/en/portimao/) · [Lagoa](https://istartec.co/en/lagoa/) · [Silves](https://istartec.co/en/silves/) · [Lagos](https://istartec.co/en/lagos/)
 - Guides: [Replacing a gas water heater with a heat pump](https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/) · [Replumbing an old house in Portugal](https://istartec.co/en/blog/replumbing-old-house-portugal/) · [Pool heat pumps in the Algarve](https://istartec.co/en/blog/pool-heat-pump-algarve/) · [Blog index](https://istartec.co/en/blog/)
 
 ## Última atualização
 
-2026-10-13. Todas as páginas do site declaram `dateModified` em JSON-LD.
+2026-11-12. Todas as páginas do site declaram `dateModified` em JSON-LD.
 
 ## Desambiguação
 
@@ -89,6 +89,7 @@ A iStarTec não publica tabelas de preços. Cada trabalho é orçamentado após 
 - [Solar térmico](https://istartec.co/services/solar-termico/): AQS para moradias e empreendimentos
 - [Instalações sanitárias](https://istartec.co/services/sanitarias/): fornecimento e montagem de equipamento
 - [Hidráulica de piscinas](https://istartec.co/services/piscinas/): rede embebida, casa das máquinas, tratamento por sal com pH automático, iluminação e aquecimento ([versão inglesa](https://istartec.co/en/services/swimming-pools/))
+- [Equipamentos em 3D](https://istartec.co/equipamentos/): moradia em 3D com o equipamento que a iStarTec instala — solar térmico Bosch (kits termossifão F1 e F2, coletores FCC220-2V, grupos AGS10-2, depósitos Stora WS), bombas de calor Bosch Compress 2000 AWF (4–30 kW) e Compress 5800i AW (4–12 kW), piso radiante Uponor (Comfort Pipe PLUS, painel Klett, coletor Vario), canalização em multicamada PEX-AL-PEX e piscina AstralPool (bomba de calor Eco Elyo), com fotografias oficiais e características de cada modelo ([versão inglesa](https://istartec.co/en/equipment/))
 - [Portfolio de obras](https://istartec.co/portfolio/): projetos concluídos no Algarve
 - [Sobre a iStarTec](https://istartec.co/about/): história, alvará, equipa e método de trabalho
 - [Contacto e orçamento](https://istartec.co/contact/): morada, mapa e pedido de orçamento
