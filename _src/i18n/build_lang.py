@@ -33,7 +33,7 @@ SHORT_EN = {'to', 'or', 'of', 'in', 'on', 'at', 'by', 'up', 'no', 'is', 'an', 'a
 FORMS = json.load(open(os.path.join(HERE, 'forms.json'), encoding='utf-8'))
 SERVICE_LINKS = {'Solar Thermal Systems': 'solar', 'Underfloor Heating System': 'piso',
                  'Plumbing Installations': 'canal', 'Bathroom Installations': 'canal'}
-SKIP_CLASSES = {'lang-switch', 'nav__logo-text', 'lang-flag'}
+SKIP_CLASSES = {'lang-switch', 'lang-dd', 'nav__logo-text', 'lang-flag'}
 # words that stay as they are in every language (brands, product lines, places, units)
 KEEP = set('''iStarTec iStar Tec Bosch Uponor AstralPool WhatsApp Algarve Portugal Albufeira Faro Lagos Lagoa Loulé Vilamoura Portimão
 Silves Tavira Olhão Quarteira Almancil Carvoeiro Ferragudo Alvor Armação Pêra Praia Rocha Luz Montenegro Estoi Quinta Lago Vale Lobo
@@ -128,6 +128,8 @@ def collect(src_html):
     for kind, n in units(soup):
         add(n.decode_contents() if kind == 'inner' else str(n))
     for el in soup.find_all(True):
+        if any(skipped(x) for x in [el, *el.parents] if isinstance(x, Tag) and x.name):
+            continue
         for a in ATTRS:
             if el.has_attr(a):
                 add(el[a])
@@ -197,6 +199,8 @@ def build_page(g, lang, tr):
         slug = svc.get(norm(a.get_text()))
         a['href'] = next(x['en'] for x in GROUPS if x['slug'] == slug) if slug else '/en/homeowners/#services'
     for el in soup.find_all(True):
+        if any(skipped(x) for x in [el, *el.parents] if isinstance(x, Tag) and x.name):
+            continue
         for a in ATTRS:
             if el.has_attr(a) and has_text(el[a]):
                 el[a] = get(el[a])
