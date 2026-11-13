@@ -117,9 +117,14 @@ def json_strings(obj, ld, key=None):
                 yield from json_strings(v, ld, key)
 
 
+# Links that exist only in English and are left out of the FR/DE pages
+# (the careers page is for job applicants, not for the homeowners these pages serve)
+EN_ONLY = re.compile(r'\s*<li><a href="/en/careers/"[^>]*>Careers</a></li>')
+
+
 def collect(src_html):
     """ordered unique English strings of a page"""
-    soup = BeautifulSoup(src_html, 'html.parser')
+    soup = BeautifulSoup(EN_ONLY.sub('', src_html), 'html.parser')
     out = []
     def add(s):
         s = norm(s)
@@ -161,7 +166,7 @@ def url_map(lang):
 
 
 def build_page(g, lang, tr):
-    src = open(os.path.join(REPO, g['src']), encoding='utf-8').read()
+    src = EN_ONLY.sub('', open(os.path.join(REPO, g['src']), encoding='utf-8').read())
     soup = BeautifulSoup(src, 'html.parser')
     T = lambda s: tr.get(norm(s), None)
     missing = []

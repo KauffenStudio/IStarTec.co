@@ -608,7 +608,7 @@
   </url>
   <url>
     <loc>https://istartec.co/privacidade/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/privacidade/" />
@@ -617,7 +617,7 @@
   </url>
   <url>
     <loc>https://istartec.co/en/privacy/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/privacidade/" />
@@ -827,4 +827,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/contact/" />
   </url>
 
+  <url>
+    <loc>https://istartec.co/trabalhe-connosco/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/trabalhe-connosco/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/careers/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/trabalhe-connosco/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/careers/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/trabalhe-connosco/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/careers/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/trabalhe-connosco/" />
+  </url>
 </urlset>
