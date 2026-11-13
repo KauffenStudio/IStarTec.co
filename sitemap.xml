@@ -231,12 +231,46 @@
   </url>
   <url>
     <loc>https://istartec.co/blog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/blog/chao-radiante-casa-habitada/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/chao-radiante-casa-habitada/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/underfloor-heating-existing-home/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/chao-radiante-casa-habitada/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/blog/substituir-solar-termico-antigo/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/substituir-solar-termico-antigo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/substituir-solar-termico-antigo/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/blog/casa-ferias-agua-quente-bomba-calor/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/casa-ferias-agua-quente-bomba-calor/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/holiday-home-hot-water-algarve/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/casa-ferias-agua-quente-bomba-calor/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/blog/subempreitada-canalizacao-construtora/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/subempreitada-canalizacao-construtora/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/subempreitada-canalizacao-construtora/" />
   </url>
   <url>
     <loc>https://istartec.co/blog/piso-radiante-arrefecimento-verao/</loc>
@@ -291,7 +325,7 @@
   </url>
   <url>
     <loc>https://istartec.co/blog/chao-radiante-preco-m2-algarve/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/chao-radiante-preco-m2-algarve/" />
@@ -512,12 +546,38 @@
   </url>
   <url>
     <loc>https://istartec.co/en/blog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/" />
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/blog/underfloor-heating-existing-home/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/underfloor-heating-existing-home/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/chao-radiante-casa-habitada/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/chao-radiante-casa-habitada/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/blog/holiday-home-hot-water-algarve/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/holiday-home-hot-water-algarve/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/blog/casa-ferias-agua-quente-bomba-calor/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/blog/casa-ferias-agua-quente-bomba-calor/" />
+  </url>
+  <url>
+    <loc>https://istartec.co/en/blog/hiring-plumbing-contractor-portugal/</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/blog/hiring-plumbing-contractor-portugal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://istartec.co/en/blog/hiring-plumbing-contractor-portugal/" />
   </url>
   <url>
     <loc>https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/</loc>
