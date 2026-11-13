@@ -364,3 +364,84 @@
 .eq-split { z-index: 5; touch-action: none; }
 .eq-viewer.is-splitting, .eq-viewer.is-splitting canvas { cursor: ew-resize; }
 .eq-viewer.has-split canvas { cursor: ew-resize; }
+
+/* ═════════ catalogue: filters, cards, product sheet ═════════ */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.eq-filters { position: sticky; top: calc(var(--header-height) + .5rem); z-index: 20; display: grid; gap: .7rem; margin: 0 0 1.5rem; padding: 1rem 1.1rem; border-radius: 18px; background: rgba(255, 255, 255, .92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: inset 0 0 0 1px var(--eq-line), 0 12px 30px -24px rgba(15, 23, 42, .4); }
+.eq-filters__top { display: flex; align-items: center; gap: .75rem 1rem; flex-wrap: wrap; }
+.eq-search { flex: 1 1 320px; display: flex; align-items: center; gap: .55rem; min-height: 46px; padding: 0 .9rem; border-radius: 12px; background: var(--grey-50, #f7f8f9); box-shadow: inset 0 0 0 1px var(--eq-line); transition: box-shadow .18s ease; }
+.eq-search:focus-within { box-shadow: inset 0 0 0 2px var(--eq-accent); background: #fff; }
+.eq-search svg { flex: none; width: 18px; height: 18px; fill: none; stroke: var(--eq-ink-3); stroke-width: 2; stroke-linecap: round; }
+.eq-search input { flex: 1; min-width: 0; height: 44px; border: 0; outline: none; background: transparent; font: 500 .95rem/1 var(--font-body); color: var(--eq-ink); }
+.eq-search input::placeholder { color: var(--eq-ink-3); font-weight: 400; }
+.eq-filters__count { margin: 0; font-size: .85rem; font-weight: 600; color: var(--eq-ink-2); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.eq-filters__reset { min-height: 40px; padding: .4rem .8rem; border: 0; border-radius: 10px; background: none; color: var(--eq-accent); font: 600 .85rem/1 var(--font-body); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.eq-fgroup { display: flex; align-items: center; gap: .6rem; min-width: 0; }
+.eq-fgroup__label { flex: none; width: 8.5rem; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--eq-ink-3); }
+.eq-fchips { display: flex; gap: .4rem; overflow-x: auto; scrollbar-width: none; padding: .1rem; }
+.eq-fchips::-webkit-scrollbar { display: none; }
+.eq-fchip { flex: none; min-height: 38px; padding: .4rem .85rem; border: 1px solid var(--eq-line); border-radius: 999px; background: #fff; color: var(--eq-ink-2); font: 600 .84rem/1 var(--font-body); cursor: pointer; transition: border-color .15s ease, background .15s ease, color .15s ease; }
+.eq-fchip:hover { border-color: #93c5fd; color: var(--eq-ink); }
+.eq-fchip.is-on { border-color: var(--eq-ink); background: var(--eq-ink); color: #fff; }
+.eq-fchip:focus-visible, .eq-card__more:focus-visible, .eq-filters__reset:focus-visible, .eq-pdf:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+.eq-empty { margin: 2rem 0; padding: 2rem; border-radius: 16px; background: var(--grey-50, #f7f8f9); text-align: center; color: var(--eq-ink-2); }
+.eq-line[hidden], .eq-card[hidden] { display: none !important; }
+
+.eq-card__actions { margin-top: auto; display: flex; align-items: center; gap: .5rem; padding-top: .35rem; }
+.eq-card__more { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: .45rem; min-height: 44px; padding: .55rem .9rem; border: 0; border-radius: 11px; background: var(--eq-ink); color: #fff; font: 600 .86rem/1 var(--font-body); cursor: pointer; transition: background .18s ease; }
+.eq-card__more svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .18s ease; }
+.eq-card__more:hover { background: var(--eq-accent); }
+.eq-card__more:hover svg { transform: translateX(2px); }
+.eq-card__actions .eq-card__3d { flex: none; width: 44px; justify-content: center; padding: 0; margin: 0; }
+.eq-card .eq-card__img img { object-fit: contain; background: #fff; }
+
+/* product sheet dialog */
+html.eq-dialog-open { overflow: hidden; }
+.eq-dialog { width: min(980px, calc(100% - 2rem)); max-height: min(88vh, 900px); padding: 0; border: 0; border-radius: 22px; background: #fff; color: var(--eq-ink); box-shadow: 0 40px 90px -30px rgba(15, 23, 42, .55); overflow: hidden; }
+.eq-dialog[open] { display: flex; flex-direction: column; animation: eq-in .28s var(--eq-ease); }
+.eq-dialog::backdrop { background: rgba(15, 23, 42, .55); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.eq-dialog__head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding: 1.15rem 1.15rem .75rem 1.5rem; border-bottom: 1px solid var(--eq-line); }
+.eq-dialog__brand { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--eq-accent); }
+.eq-dialog__title { margin: .2rem 0 0; font-family: var(--font-head); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.2; letter-spacing: -.015em; }
+.eq-dialog__close { flex: none; background: rgba(15, 23, 42, .06); }
+.eq-dialog__content { overflow-y: auto; overscroll-behavior: contain; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.25fr); gap: 1.75rem; padding: 1.5rem; }
+.eq-ficha__media { margin: 0; position: sticky; top: 0; align-self: start; border-radius: 16px; background: #fff; box-shadow: inset 0 0 0 1px var(--eq-line); overflow: hidden; }
+.eq-ficha__media img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; }
+.eq-ficha__body { display: grid; gap: .9rem; align-content: start; min-width: 0; }
+.eq-ficha__body h4 { margin: .4rem 0 -.2rem; font-family: var(--font-head); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--eq-ink-3); }
+.eq-ficha__lead { margin: 0; font-size: 1rem; line-height: 1.6; color: var(--eq-ink-2); }
+.eq-ficha__facts { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem; }
+.eq-ficha__facts li { padding: .35rem .7rem; border-radius: 999px; background: var(--eq-accent-soft); color: var(--eq-accent-ink); font-size: .82rem; font-weight: 600; }
+.eq-ficha__tags { margin: 0; font-size: .88rem; color: var(--eq-ink-2); }
+.eq-ficha__cta { display: flex; flex-wrap: wrap; gap: .5rem; padding-top: .25rem; }
+.eq-table-wrap { overflow-x: auto; border-radius: 12px; box-shadow: inset 0 0 0 1px var(--eq-line); }
+.eq-table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+.eq-table th, .eq-table td { padding: .55rem .75rem; text-align: left; border-top: 1px solid var(--eq-line); white-space: nowrap; }
+.eq-table thead th { border-top: 0; background: var(--grey-50, #f7f8f9); font-size: .74rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--eq-ink-3); }
+.eq-table tbody th { font-weight: 600; color: var(--eq-ink); }
+.eq-table tbody tr:hover { background: #fafbfd; }
+.eq-pdf { display: inline-flex; align-items: center; gap: .3rem; padding: .25rem .5rem; border-radius: 8px; color: var(--eq-accent); font-weight: 600; text-decoration: none; }
+.eq-pdf:hover { background: var(--eq-accent-soft); }
+.eq-pdf svg { width: 15px; height: 15px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.eq-btn--sm { min-height: 42px; padding: .55rem .85rem; font-size: .86rem; }
+.eq-btn--dark { background: var(--eq-ink); color: #fff; }
+.eq-btn--dark:hover { background: var(--eq-accent); }
+
+@media (max-width: 860px) {
+  .eq-filters { position: static; padding: .9rem; }
+  .eq-fgroup { flex-direction: column; align-items: stretch; gap: .35rem; }
+  .eq-fgroup__label { width: auto; }
+  .eq-dialog { width: 100%; max-height: 92vh; margin: auto 0 0; border-radius: 22px 22px 0 0; }
+  .eq-dialog__content { grid-template-columns: 1fr; gap: 1.1rem; padding: 1.1rem; }
+  .eq-ficha__media { position: static; max-width: 420px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .eq-dialog[open] { animation: none; }
+}
+/* the site reset (* { margin: 0 }) cancels the UA centring of modal dialogs */
+.eq-dialog { margin: auto; max-width: calc(100% - 2rem); }
+@media (max-width: 860px) {
+  .eq-dialog { width: 100%; max-width: 100%; margin: auto 0 0; }
+}
+/* keep grid rows at their content height inside the scrolling sheet (no overlap) */
+.eq-dialog__content { flex: 1 1 auto; min-height: 0; grid-auto-rows: max-content; align-content: start; }

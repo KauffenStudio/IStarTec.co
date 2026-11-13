@@ -1,0 +1,88 @@
+{
+ "fr": {
+  "wa": "Bonjour%20iStarTec%2C%20je%20souhaiterais%20des%20informations%20/%20un%20devis.",
+  "subject": "Demande de devis (FR) — particulier — iStarTec",
+  "h2": "Demande de devis",
+  "intro": "Dites-nous ce que vous voulez faire chez vous : vous pouvez nous écrire en français. Nous répondons sous 24 heures ouvrées et la visite technique est gratuite.",
+  "name": "Nom *",
+  "name_ph": "Marie Dupont",
+  "email": "E-mail *",
+  "phone": "Téléphone",
+  "location": "Où se trouve la maison ?",
+  "location_ph": "ex. Lagos, Albufeira, Tavira…",
+  "services": "Ce qui vous intéresse",
+  "svc": [
+   [
+    "solar",
+    "Chauffe-eau solaire"
+   ],
+   [
+    "piso",
+    "Plancher chauffant"
+   ],
+   [
+    "canal",
+    "Rénovation de plomberie"
+   ],
+   [
+    "bomba",
+    "Pompe à chaleur pour l'eau chaude"
+   ],
+   [
+    "piscina",
+    "Hydraulique de piscine"
+   ]
+  ],
+  "message": "Votre projet *",
+  "message_ph": "Type de maison, travaux envisagés, délai souhaité…",
+  "submit": "Envoyer la demande",
+  "note": "Réponse sous 24 heures ouvrées. Vos données servent uniquement à répondre à votre demande.",
+  "sending": "Envoi…",
+  "ok_title": "Demande envoyée",
+  "ok_desc": "Merci. Nous vous répondons sous 24 heures ouvrées.",
+  "error": "Erreur d'envoi. Réessayez ou écrivez à geral@istartec.co."
+ },
+ "de": {
+  "wa": "Hallo%20iStarTec%2C%20ich%20h%C3%A4tte%20gerne%20Informationen%20/%20ein%20Angebot.",
+  "subject": "Angebotsanfrage (DE) — Privatkunde — iStarTec",
+  "h2": "Angebot anfordern",
+  "intro": "Sagen Sie uns, was Sie an Ihrem Haus vorhaben: Sie können uns gern auf Deutsch schreiben. Wir antworten innerhalb von 24 Stunden an Werktagen, und die Besichtigung ist kostenlos.",
+  "name": "Name *",
+  "name_ph": "Anna Müller",
+  "email": "E-Mail *",
+  "phone": "Telefon",
+  "location": "Wo steht das Haus?",
+  "location_ph": "z. B. Lagos, Albufeira, Tavira…",
+  "services": "Was Sie interessiert",
+  "svc": [
+   [
+    "solar",
+    "Solarthermie"
+   ],
+   [
+    "piso",
+    "Fußbodenheizung"
+   ],
+   [
+    "canal",
+    "Rohrsanierung"
+   ],
+   [
+    "bomba",
+    "Wärmepumpe für Warmwasser"
+   ],
+   [
+    "piscina",
+    "Poolhydraulik"
+   ]
+  ],
+  "message": "Ihr Vorhaben *",
+  "message_ph": "Art des Hauses, geplante Arbeiten, gewünschter Zeitraum…",
+  "submit": "Anfrage senden",
+  "note": "Antwort innerhalb von 24 Stunden an Werktagen. Ihre Daten werden nur zur Beantwortung Ihrer Anfrage verwendet.",
+  "sending": "Wird gesendet…",
+  "ok_title": "Anfrage gesendet",
+  "ok_desc": "Vielen Dank. Wir antworten innerhalb von 24 Stunden an Werktagen.",
+  "error": "Senden fehlgeschlagen. Bitte erneut versuchen oder an geral@istartec.co schreiben."
+ }
+}

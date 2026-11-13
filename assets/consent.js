@@ -5,16 +5,30 @@
    Any element with [data-cookie-settings] reopens the banner. */
 (function () {
   var KEY = 'istar_consent';
-  var en = (document.documentElement.lang || '').indexOf('en') === 0;
-  var T = en ? {
-    text: 'We use cookies to measure which Google ads bring us enquiries. You can accept or reject them; the site works either way.',
-    more: 'Privacy Policy', href: '/en/privacy/',
-    accept: 'Accept', reject: 'Reject', label: 'Cookie consent'
-  } : {
-    text: 'Usamos cookies para medir que anúncios Google nos trazem contactos. Pode aceitar ou recusar; o site funciona da mesma forma.',
-    more: 'Política de Privacidade', href: '/privacidade/',
-    accept: 'Aceitar', reject: 'Recusar', label: 'Consentimento de cookies'
+  var lang = (document.documentElement.lang || 'pt').slice(0, 2).toLowerCase();
+  var ALL = {
+    en: {
+      text: 'We use cookies to measure which Google ads bring us enquiries. You can accept or reject them; the site works either way.',
+      more: 'Privacy Policy', href: '/en/privacy/',
+      accept: 'Accept', reject: 'Reject', label: 'Cookie consent'
+    },
+    fr: {
+      text: 'Nous utilisons des cookies pour savoir quelles annonces Google nous amènent des demandes. Vous pouvez les accepter ou les refuser ; le site fonctionne dans les deux cas.',
+      more: 'Politique de confidentialité (EN)', href: '/en/privacy/',
+      accept: 'Accepter', reject: 'Refuser', label: 'Consentement aux cookies'
+    },
+    de: {
+      text: 'Wir verwenden Cookies, um zu messen, welche Google-Anzeigen uns Anfragen bringen. Sie können sie annehmen oder ablehnen; die Website funktioniert in beiden Fällen.',
+      more: 'Datenschutzerklärung (EN)', href: '/en/privacy/',
+      accept: 'Annehmen', reject: 'Ablehnen', label: 'Cookie-Einwilligung'
+    },
+    pt: {
+      text: 'Usamos cookies para medir que anúncios Google nos trazem contactos. Pode aceitar ou recusar; o site funciona da mesma forma.',
+      more: 'Política de Privacidade', href: '/privacidade/',
+      accept: 'Aceitar', reject: 'Recusar', label: 'Consentimento de cookies'
+    }
   };
+  var T = ALL[lang] || ALL.pt;
 
   function saved() {
     try { return localStorage.getItem(KEY); } catch (e) { return null; }

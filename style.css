@@ -2847,3 +2847,53 @@ body .article-hero {
   .answer-box-wrap--wide .answer-box__q { font-size: 1.1rem; margin-bottom: .75rem; }
   .answer-box-wrap--wide .answer-box__facts { margin-top: 1.15rem; padding: 1.15rem 0 0; border-left: 0; border-top: 1px solid #e2e8f0; }
 }
+
+/* ── Language switcher: PT · EN · FR · DE ─────────────────── */
+.lang-switch { display: inline-flex; align-items: center; gap: 0; font-family: var(--font-body); }
+.lang-switch__a {
+  position: relative; display: inline-flex; align-items: center; justify-content: center;
+  min-width: 34px; min-height: 44px; padding: 0 .4rem;
+  font-size: .78rem; font-weight: 600; letter-spacing: .06em;
+  color: var(--grey-500); text-decoration: none; transition: color var(--transition);
+}
+.lang-switch__a + .lang-switch__a::before {
+  content: ""; position: absolute; left: -2px; top: 50%; width: 3px; height: 3px; margin-top: -1.5px;
+  border-radius: 50%; background: var(--grey-300);
+}
+.lang-switch__a:hover { color: var(--grey-900); }
+.lang-switch__a.is-current { color: var(--grey-900); }
+.lang-switch__a.is-current::after {
+  content: ""; position: absolute; left: .55rem; right: .55rem; bottom: 9px; height: 2px;
+  border-radius: 2px; background: var(--blue);
+}
+.lang-switch__a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 6px; }
+@media (max-width: 900px) {
+  .nav__lang-item { padding: .25rem 0; }
+  .lang-switch { gap: .25rem; }
+  .lang-switch__a { min-width: 44px; font-size: .85rem; }
+}
+
+/* FR/DE homeowner quote form: thank-you state */
+.lead-ok { text-align: center; padding: 2rem 1rem; }
+.lead-ok h3 { font-family: var(--font-head); font-size: 1.25rem; font-weight: 700; color: var(--grey-900); margin-bottom: .5rem; }
+.lead-ok p { color: var(--grey-500); line-height: 1.65; }
+
+/* Header fit: link labels never wrap; on mid-width screens the in-menu audience toggle is hidden
+   (the dark audience bar above the header offers the same switch) so longer FR/DE labels fit */
+.nav__link, .nav__link--cta { white-space: nowrap; }
+@media (min-width: 769px) and (max-width: 1399px) {
+  .nav__audience-item { display: none; }
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+  .nav__link { padding-left: .5rem; padding-right: .5rem; font-size: .82rem; }
+  .nav__link--cta { padding-left: .9rem; padding-right: .9rem; margin-left: .25rem; }
+  .lang-switch__a { min-width: 28px; padding: 0 .25rem; }
+}
+@media (min-width: 769px) and (max-width: 899px) {
+  .nav__links > li:first-child { display: none; } /* "Home": the logo already links there */
+}
+@media (min-width: 769px) {
+  html[lang="de"] .nav__audience-item { display: none; } /* German labels are longer; the audience bar above has the switch */
+}
+.form__legend { font-size: .8rem; font-weight: 600; color: var(--grey-700); letter-spacing: .02em; padding: 0; margin-bottom: .5rem; }
+#devis { scroll-margin-top: calc(var(--header-height, 72px) + 56px); }

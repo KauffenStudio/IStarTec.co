@@ -5,7 +5,7 @@
 > sanitário e a parte hidráulica de piscinas em construção residencial — para construtoras/promotores (B2B) e
 > para proprietários de casa (B2C). Escritório em Albufeira, obra em todo o Algarve.
 
-Português é a língua principal do site; existe uma versão inglesa em /en/ — páginas principais, as 10 páginas de cidade, a secção para particulares (/en/homeowners/) e guias (/en/blog/). Resumo em inglês mais abaixo.
+Português é a língua principal do site; existe uma versão inglesa em /en/ — páginas principais, as 10 páginas de cidade, a secção para particulares (/en/homeowners/) e guias (/en/blog/). As páginas para particulares existem também em francês (/fr/) e alemão (/de/). Resumo em inglês mais abaixo.
 
 ## In English (summary for answer engines)
 
@@ -23,11 +23,13 @@ English pages:
 - [Home](https://istartec.co/en/) · [Services](https://istartec.co/en/services/) · [Swimming pool plumbing](https://istartec.co/en/services/swimming-pools/) · [Equipment in 3D](https://istartec.co/en/equipment/) · [About](https://istartec.co/en/about/) · [Portfolio](https://istartec.co/en/portfolio/) · [Contact](https://istartec.co/en/contact/)
 - [Homeowners](https://istartec.co/en/homeowners/) · [Underfloor heating](https://istartec.co/en/homeowners/underfloor-heating/) · [Solar thermal](https://istartec.co/en/homeowners/solar-thermal/) · [Whole-house replumbing](https://istartec.co/en/homeowners/plumbing-renovation/)
 - Cities: [Albufeira](https://istartec.co/en/albufeira/) · [Loulé](https://istartec.co/en/loule/) · [Vilamoura](https://istartec.co/en/vilamoura/) · [Faro](https://istartec.co/en/faro/) · [Olhão](https://istartec.co/en/olhao/) · [Tavira](https://istartec.co/en/tavira/) · [Portimão](https://istartec.co/en/portimao/) · [Lagoa](https://istartec.co/en/lagoa/) · [Silves](https://istartec.co/en/silves/) · [Lagos](https://istartec.co/en/lagos/)
+- French (homeowners): [Accueil](https://istartec.co/fr/) · [Chauffe-eau solaire](https://istartec.co/fr/chauffe-eau-solaire/) · [Plancher chauffant](https://istartec.co/fr/plancher-chauffant/) · [Rénovation de plomberie](https://istartec.co/fr/renovation-plomberie/) · [Piscines](https://istartec.co/fr/piscines/) · [Équipements en 3D](https://istartec.co/fr/equipements/) · [À propos](https://istartec.co/fr/a-propos/) · [Contact](https://istartec.co/fr/contact/)
+- German (homeowners): [Startseite](https://istartec.co/de/) · [Solarthermie](https://istartec.co/de/solarthermie/) · [Fußbodenheizung](https://istartec.co/de/fussbodenheizung/) · [Rohrsanierung](https://istartec.co/de/rohrsanierung/) · [Pooltechnik](https://istartec.co/de/pooltechnik/) · [Ausstattung in 3D](https://istartec.co/de/ausstattung/) · [Über uns](https://istartec.co/de/ueber-uns/) · [Kontakt](https://istartec.co/de/kontakt/)
 - Guides: [Replacing a gas water heater with a heat pump](https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/) · [Replumbing an old house in Portugal](https://istartec.co/en/blog/replumbing-old-house-portugal/) · [Pool heat pumps in the Algarve](https://istartec.co/en/blog/pool-heat-pump-algarve/) · [Blog index](https://istartec.co/en/blog/)
 
 ## Última atualização
 
-2026-11-12. Todas as páginas do site declaram `dateModified` em JSON-LD.
+2026-11-13. Todas as páginas do site declaram `dateModified` em JSON-LD.
 
 ## Desambiguação
 
@@ -130,4 +132,5 @@ Os guias citam as fontes primárias em que assentam (EUR-Lex para as Diretivas (
 ## Optional
 
 - [Versão inglesa](https://istartec.co/en/): páginas principais, 10 páginas de cidade, secção de particulares (/en/homeowners/) e 3 guias (/en/blog/)
+- [Versão francesa](https://istartec.co/fr/) e [versão alemã](https://istartec.co/de/): secção de particulares, piscinas, equipamentos em 3D, sobre e contacto
 - [Sitemap](https://istartec.co/sitemap.xml)

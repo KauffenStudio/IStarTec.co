@@ -1,0 +1,10 @@
+[
+ {"pt": "/particulares/", "en": "/en/homeowners/", "fr": "/fr/", "de": "/de/", "src": "en/homeowners/index.html", "slug": "home"},
+ {"pt": "/particulares/solar-termico/", "en": "/en/homeowners/solar-thermal/", "fr": "/fr/chauffe-eau-solaire/", "de": "/de/solarthermie/", "src": "en/homeowners/solar-thermal/index.html", "slug": "solar"},
+ {"pt": "/particulares/chao-radiante/", "en": "/en/homeowners/underfloor-heating/", "fr": "/fr/plancher-chauffant/", "de": "/de/fussbodenheizung/", "src": "en/homeowners/underfloor-heating/index.html", "slug": "piso"},
+ {"pt": "/particulares/remodelacao-canalizacao/", "en": "/en/homeowners/plumbing-renovation/", "fr": "/fr/renovation-plomberie/", "de": "/de/rohrsanierung/", "src": "en/homeowners/plumbing-renovation/index.html", "slug": "canal"},
+ {"pt": "/services/piscinas/", "en": "/en/services/swimming-pools/", "fr": "/fr/piscines/", "de": "/de/pooltechnik/", "src": "en/services/swimming-pools/index.html", "slug": "piscina"},
+ {"pt": "/equipamentos/", "en": "/en/equipment/", "fr": "/fr/equipements/", "de": "/de/ausstattung/", "src": "en/equipment/index.html", "slug": "equipamentos"},
+ {"pt": "/about/", "en": "/en/about/", "fr": "/fr/a-propos/", "de": "/de/ueber-uns/", "src": "en/about/index.html", "slug": "sobre"},
+ {"pt": "/contact/", "en": "/en/contact/", "fr": "/fr/contact/", "de": "/de/kontakt/", "src": "en/contact/index.html", "slug": "contacto"}
+]

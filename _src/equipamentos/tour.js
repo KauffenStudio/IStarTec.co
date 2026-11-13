@@ -317,15 +317,27 @@ viewer.querySelector('[data-eq-tool="full"]')?.addEventListener('click', (e) => 
   btn.setAttribute('aria-pressed', on);
 });
 viewer.querySelectorAll('[data-eq-step]').forEach((b) => b.addEventListener('click', () => goScene(state.scene + Number(b.dataset.eqStep))));
-document.querySelectorAll('[data-eq-show]').forEach((b) => {
-  b.addEventListener('click', () => {
-    state.lastTrigger = b;
-    const id = b.dataset.eqShow, v = b.dataset.eqVariant;
-    if (v && DATA.systems[id]?.variants) state.variant[id] = v;
-    viewer.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
-    openSystem(id);
-  });
+/* catalogue buttons ("Ver na visita" / "Ver em 3D"), also inside the product sheet dialog */
+function showFromCatalogue(id, v, model3d, trigger) {
+  if (!DATA.systems[id]) return;
+  if (trigger) state.lastTrigger = trigger;
+  if (v && DATA.systems[id].variants) state.variant[id] = v;
+  viewer.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+  openSystem(id);
+  if (model3d && api && modelFor(id)) setTimeout(() => api.openProduct(id), reduceMotion ? 0 : 500);
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest && e.target.closest('[data-eq-show]');
+  if (!b) return;
+  showFromCatalogue(b.dataset.eqShow, b.dataset.eqVariant, b.hasAttribute('data-eq-3d'), b);
 });
+window.__eqTour = true;
+function runPending() {
+  const p = window.__eqPending;
+  if (!p) return;
+  window.__eqPending = null;
+  showFromCatalogue(p.id, p.v, p.model3d, null);
+}
 
 /* before/after slider (pointer + keyboard) */
 let setSplit = () => {};
@@ -430,6 +442,7 @@ if (!hasWebGL()) {
   new ResizeObserver(fallbackPlace).observe(viewer);
   fallbackShow();
   bootHash();
+  runPending();
 } else {
   initWebGL();
 }
@@ -748,6 +761,7 @@ function initWebGL() {
     loop();
     ensure(1 % scenes.length);
     bootHash();
+    runPending();
     window.addEventListener('hashchange', () => {
       const h = location.hash.replace('#', '');
       if (DATA.systems[h] && h !== state.focus) openSystem(h);

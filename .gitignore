@@ -1,1 +1,5 @@
 _src/**/node_modules/
+__pycache__/
+_src/i18n/todo_*.json
+_src/i18n/add_*.json
+_src/i18n/parts/

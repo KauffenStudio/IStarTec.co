@@ -415,9 +415,10 @@ const translations = {
 };
 
 /* ── Language engine ─────────────────────────────────────── */
-let currentLang = window.location.pathname.startsWith('/en/') ? 'en' : 'pt';
+let currentLang = (window.location.pathname.match(/^\/(en|fr|de)\//) || [null, 'pt'])[1];
 
 function setLanguage(lang) {
+  if (!translations[lang]) { renderUnitsBadges(); return; } // FR/DE pages ship already translated
   currentLang = lang;
   document.documentElement.lang = lang;
 
@@ -1062,7 +1063,7 @@ const projectData = {
 
 /* ── Units badges ─────────────────────────────────────────── */
 function renderUnitsBadges() {
-  const label = translations[currentLang]['units.label'];
+  const label = (translations[currentLang] || {})['units.label'] || ({ fr: 'logements', de: 'Wohnungen' })[currentLang] || 'units';
   document.querySelectorAll('.portfolio-card[data-project]').forEach(card => {
     const proj = projectData[card.dataset.project];
     if (!proj || !proj.units) return;
@@ -1246,6 +1247,14 @@ lightbox.addEventListener('touchend', e => {
 
 /* ── Contact form ─────────────────────────────────────────── */
 const contactForm = document.getElementById('contactForm');
+// FR/DE pages ship translated HTML; the form only needs its status messages here
+const FORM_T = {
+  fr: { 'form.sending': 'Envoi…', 'form.submit': 'Envoyer la demande', 'success.title': 'Demande envoyée',
+        'success.desc': 'Merci. Nous vous répondons sous 24 heures ouvrées.', 'form.error': "Erreur d'envoi. Réessayez ou écrivez à geral@istartec.co." },
+  de: { 'form.sending': 'Wird gesendet…', 'form.submit': 'Anfrage senden', 'success.title': 'Anfrage gesendet',
+        'success.desc': 'Vielen Dank. Wir antworten innerhalb von 24 Stunden an Werktagen.', 'form.error': 'Senden fehlgeschlagen. Bitte erneut versuchen oder an geral@istartec.co schreiben.' }
+};
+const formT = (k) => ((translations[currentLang] || FORM_T[currentLang] || translations.en)[k]);
 
 if (contactForm) contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -1261,7 +1270,7 @@ if (contactForm) contactForm.addEventListener('submit', (e) => {
   if (!valid) return;
 
   const submitBtn = contactForm.querySelector('button[type="submit"]');
-  submitBtn.textContent = translations[currentLang]['form.sending'];
+  submitBtn.textContent = formT('form.sending');
   submitBtn.disabled = true;
 
   const formData = new FormData(contactForm);
@@ -1290,23 +1299,23 @@ if (contactForm) contactForm.addEventListener('submit', (e) => {
           </svg>
         </div>
         <h3 style="font-family:var(--font-head);font-size:1.25rem;font-weight:700;color:var(--grey-900);">
-          ${translations[currentLang]['success.title']}
+          ${formT('success.title')}
         </h3>
         <p style="font-size:.9rem;color:var(--grey-500);max-width:320px;line-height:1.65;">
-          ${translations[currentLang]['success.desc']}
+          ${formT('success.desc')}
         </p>
       `;
       contactForm.classList.add('submitted');
     } else {
-      submitBtn.textContent = translations[currentLang]['form.submit'];
+      submitBtn.textContent = formT('form.submit');
       submitBtn.disabled = false;
-      alert(currentLang === 'pt' ? 'Erro ao enviar. Tente novamente.' : 'Error sending. Please try again.');
+      alert(FORM_T[currentLang] ? formT('form.error') : currentLang === 'pt' ? 'Erro ao enviar. Tente novamente.' : 'Error sending. Please try again.');
     }
   })
   .catch(() => {
-    submitBtn.textContent = translations[currentLang]['form.submit'];
+    submitBtn.textContent = formT('form.submit');
     submitBtn.disabled = false;
-    alert(currentLang === 'pt' ? 'Erro ao enviar. Tente novamente.' : 'Error sending. Please try again.');
+    alert(FORM_T[currentLang] ? formT('form.error') : currentLang === 'pt' ? 'Erro ao enviar. Tente novamente.' : 'Error sending. Please try again.');
   });
 });
 
