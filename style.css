@@ -2657,6 +2657,101 @@ body .article-hero {
   .service-card--wide { grid-template-columns: 1fr; }
 }
 
+/* Wide card with real job photos: gallery bleeds to the card's left edge */
+.service-card--wide-photo {
+  --card-pad: clamp(1.75rem, 3vw, 2.5rem);
+  grid-template-columns: minmax(0, 280px) auto minmax(0, 1fr) minmax(0, 1fr);
+}
+.service-card.service-card--wide-photo .service-card__gallery {
+  order: 0;
+  height: auto;
+  min-height: 340px;
+  align-self: stretch;
+  margin: calc(-1 * var(--card-pad)) 0 calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad));
+}
+.service-card.service-card--wide-photo .service-card__slides img { height: 100%; }
+
+@media (min-width: 769px) and (max-width: 1100px) {
+  .service-card--wide-photo { grid-template-columns: minmax(0, 260px) auto minmax(0, 1fr); }
+  .service-card.service-card--wide-photo .service-card__gallery { grid-row: span 2; }
+  .service-card--wide-photo .service-card__list { grid-column: 3; }
+}
+@media (max-width: 768px) {
+  .service-card--wide-photo { grid-template-columns: 1fr; }
+  .service-card.service-card--wide-photo .service-card__gallery {
+    min-height: 0;
+    height: auto; /* the regular-card aspect-ratio (4:3, 1:1 on phones) sets the height */
+    margin: calc(-1 * var(--card-pad)) calc(-1 * var(--card-pad)) 0;
+  }
+}
+
+/* ── Real job photos (obra) ──────────────────────────────── */
+.obra-fotos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 1rem;
+  margin: 2rem 0;
+}
+.obra-fotos--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 1100px;
+  margin: 2.5rem auto 0;
+}
+.obra-fotos__lead {
+  text-align: center;
+  color: var(--grey-500);
+  font-size: .95rem;
+  margin: 2.5rem 0 0;
+}
+.obra-foto { margin: 0; min-width: 0; }
+.obra-foto__media { position: relative; }
+.obra-foto img,
+.obra-foto video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--grey-200);
+}
+.obra-foto figcaption {
+  margin-top: .65rem;
+  font-size: .86rem;
+  line-height: 1.55;
+  color: var(--grey-500);
+}
+.obra-foto figcaption strong { color: var(--grey-700); font-weight: 600; }
+.obra-video-toggle {
+  position: absolute;
+  right: .65rem;
+  bottom: .65rem;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background .2s ease;
+}
+.obra-video-toggle:hover { background: rgba(37,99,235,.9); }
+.obra-video-toggle:focus-visible { outline: 2px solid #fff; outline-offset: 2px; box-shadow: 0 0 0 4px var(--blue); }
+.obra-video-toggle svg { width: 14px; height: 14px; }
+.obra-video-toggle .i-play { display: none; }
+.obra-video-toggle.is-paused .i-play { display: block; }
+.obra-video-toggle.is-paused .i-pause { display: none; }
+
+@media (max-width: 768px) {
+  .obra-fotos--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .obra-fotos:not(.obra-fotos--4) { grid-template-columns: 1fr; }
+}
+
 /* ── WHATSAPP FLOAT ──────────────────────────────────────── */
 .wa-widget {
   position: fixed;

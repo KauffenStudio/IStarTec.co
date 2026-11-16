@@ -5,7 +5,7 @@
   <!-- PORTUGUÊS -->
   <url>
     <loc>https://istartec.co/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/" />
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/canalizacao/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/canalizacao/" />
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/solar-termico/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/solar-termico/" />
@@ -47,7 +47,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/sanitarias/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/sanitarias/" />
@@ -55,7 +55,7 @@
   </url>
   <url>
     <loc>https://istartec.co/services/piscinas/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/piscinas/" />
@@ -141,7 +141,7 @@
   </url>
   <url>
     <loc>https://istartec.co/albufeira/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/albufeira/" />
@@ -351,7 +351,7 @@
   <!-- ENGLISH -->
   <url>
     <loc>https://istartec.co/en/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/" />
@@ -369,7 +369,7 @@
   </url>
   <url>
     <loc>https://istartec.co/en/services/swimming-pools/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/piscinas/" />
@@ -420,7 +420,7 @@
   </url>
   <url>
     <loc>https://istartec.co/en/albufeira/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://istartec.co/en/albufeira/" />
@@ -694,7 +694,7 @@
   </url>
   <url>
     <loc>https://istartec.co/fr/piscines/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/piscinas/" />
@@ -784,7 +784,7 @@
   </url>
   <url>
     <loc>https://istartec.co/de/pooltechnik/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="pt-PT" href="https://istartec.co/services/piscinas/" />
