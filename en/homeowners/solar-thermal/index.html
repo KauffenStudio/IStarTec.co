@@ -310,6 +310,20 @@
   "dateModified": "2026-11-12"
 }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Bosch thermosiphon solar kits on a roof in Albufeira",
+    "description": "Bosch thermosiphon solar kits, each with a flat collector and horizontal tank, installed by iStarTec on the roof of a residential building in Albufeira.",
+    "thumbnailUrl": ["https://istartec.co/assets/obras/solar-termico-bosch-albufeira-video.jpg"],
+    "uploadDate": "2026-11-16T12:00:00+00:00",
+    "duration": "PT4.7S",
+    "contentUrl": "https://istartec.co/assets/obras/solar-termico-bosch-albufeira.mp4",
+    "contentLocation": { "@type": "City", "name": "Albufeira" },
+    "publisher": { "@id": "https://istartec.co/#organization" }
+  }
+  </script>
 </head>
 <body>
 
@@ -447,7 +461,7 @@
         </div>
         <div class="feature-card">
           <h3>Forced circulation</h3>
-          <p>Cylinder inside the house (utility room, plant room), with an electric pump moving the fluid. More flexible on siting. Necessary in apartments.</p>
+          <p>Cylinder inside the house (utility room, plant room), with an electric pump moving the fluid. More flexible on siting. Common in apartments with no room on the roof.</p>
         </div>
         <div class="feature-card">
           <h3>Flat plate vs evacuated tube</h3>
@@ -457,6 +471,21 @@
           <h3>Heat pump backup</h3>
           <p>Solar plus a heat pump covers 95-100% of demand. Ideal if you want to drop gas altogether and keep the electricity bill very low.</p>
         </div>
+      </div>
+
+      <p>On a recent job in Albufeira, thermosiphon also served an apartment building, with several Bosch kits on the roof.</p>
+      <div class="obra-fotos">
+        <figure class="obra-foto">
+          <div class="obra-foto__media">
+            <video data-obra-video src="/assets/obras/solar-termico-bosch-albufeira.mp4" poster="/assets/obras/solar-termico-bosch-albufeira-video.webp" width="720" height="1280" muted loop playsinline preload="none" aria-label="Video of Bosch thermosiphon solar kits on the roof of a building in Albufeira"></video>
+            <button type="button" class="obra-video-toggle is-paused" aria-label="Play video"><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg><svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></button>
+          </div>
+          <figcaption><strong>Albufeira, November 2026.</strong> Bosch thermosiphon kits installed by iStarTec on the roof of a residential building.</figcaption>
+        </figure>
+        <figure class="obra-foto">
+          <picture><source type="image/webp" srcset="/assets/obras/solar-termico-bosch-albufeira-800.webp 600w, /assets/obras/solar-termico-bosch-albufeira.webp 1200w" sizes="(max-width: 560px) 100vw, 380px" /><img src="/assets/obras/solar-termico-bosch-albufeira.jpg" alt="Row of Bosch thermosiphon solar kits, each with a flat collector and horizontal tank, on the roof of a residential building in Albufeira" width="1200" height="1600" loading="lazy" decoding="async" /></picture>
+          <figcaption><strong>The same roof.</strong> On a villa the kit is the same: a flat collector with the cylinder above it, no pump.</figcaption>
+        </figure>
       </div>
 
       <div class="blog-link-box">
@@ -768,5 +797,6 @@
     })();
   </script>
   <script src="/assets/consent.js" defer></script>
+  <script src="/assets/obra-video.js?v=2" defer></script>
 </body>
 </html>

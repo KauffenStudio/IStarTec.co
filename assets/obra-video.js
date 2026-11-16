@@ -4,6 +4,10 @@
   var videos = document.querySelectorAll('video[data-obra-video]');
   if (!videos.length) return;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Button labels follow the page language (FR/DE pages are generated and keep no data-* text)
+  var LABELS = { pt: ['Pausar vídeo', 'Reproduzir vídeo'], en: ['Pause video', 'Play video'],
+                 fr: ['Mettre la vidéo en pause', 'Lire la vidéo'], de: ['Video pausieren', 'Video abspielen'] };
+  var lab = LABELS[(document.documentElement.lang || 'pt').slice(0, 2).toLowerCase()] || LABELS.pt;
 
   videos.forEach(function (video) {
     var btn = video.parentNode.querySelector('.obra-video-toggle');
@@ -14,7 +18,7 @@
       if (!btn) return;
       var paused = video.paused;
       btn.classList.toggle('is-paused', paused);
-      btn.setAttribute('aria-label', paused ? btn.dataset.labelPlay : btn.dataset.labelPause);
+      btn.setAttribute('aria-label', paused ? lab[1] : lab[0]);
     }
     function play() {
       var p = video.play();
