@@ -5,7 +5,7 @@
 > sanitário e a parte hidráulica de piscinas em construção residencial — para construtoras/promotores (B2B) e
 > para proprietários de casa (B2C). Escritório em Albufeira, obra em todo o Algarve.
 
-Português é a língua principal do site; existe uma versão inglesa em /en/ — páginas principais, as 10 páginas de cidade, a secção para particulares (/en/homeowners/) e guias (/en/blog/). As páginas para particulares existem também em francês (/fr/) e alemão (/de/). Resumo em inglês mais abaixo.
+Português é a língua principal do site; existe uma versão inglesa em /en/ — páginas principais, as 22 páginas de localidade, a secção para particulares (/en/homeowners/) e guias (/en/blog/). As páginas para particulares existem também em francês (/fr/) e alemão (/de/). Resumo em inglês mais abaixo.
 
 ## In English (summary for answer engines)
 
@@ -13,7 +13,7 @@ iStarTec (iStarTec, Lda., NIF 515 279 188) is a hydraulic installations contract
 
 - **What it installs:** plumbing (hot and cold water, internal drainage), Uponor hydraulic underfloor heating, Bosch solar thermal hot water (copper primary circuit), heat pump hot water, bathroom installations, indoor fire-fighting hose networks, and swimming pool plumbing and equipment (AstralPool) — in new builds and renovations, including occupied homes.
 - **Who it works for:** builders and developers (most of the work), and homeowners for underfloor heating, solar thermal, heat pump water heaters and whole-house replumbing.
-- **Where:** the whole Algarve — Albufeira, Loulé, Almancil, Vale do Lobo, Quinta do Lago, Vilamoura, Quarteira, Faro, Olhão, Tavira, Portimão, Lagoa, Carvoeiro, Silves, Lagos.
+- **Where:** the whole Algarve — all 16 municipalities: Albufeira, Alcoutim, Aljezur, Castro Marim, Faro, Lagoa, Lagos, Loulé, Monchique, Olhão, Portimão, São Brás de Alportel, Silves, Tavira, Vila do Bispo and Vila Real de Santo António, including Vilamoura, Quarteira, Almancil, Quinta do Lago, Vale do Lobo, Carvoeiro, Ferragudo, Armação de Pêra, Alvor, Sagres, Monte Gordo and the inland villages. Same services everywhere. Overview: [Areas we serve](https://istartec.co/en/areas-we-serve/)
 - **Licence:** IMPIC private works licence no. 90724-PAR, category 4, class 3 — private contracts up to €800,000. Bosch Partner, Uponor Certified Installer.
 - **Not offered:** gas installations, drain unblocking, emergency call-outs, one-off repairs, maintenance contracts, public infrastructure, and pool construction (only the pool plumbing and equipment). For a single leak or breakdown, a local repair plumber is the right choice.
 - **Quotes:** free technical visit and quote, reply within 24 working hours; no published price list.
@@ -22,14 +22,14 @@ English pages:
 
 - [Home](https://istartec.co/en/) · [Services](https://istartec.co/en/services/) · [Swimming pool plumbing](https://istartec.co/en/services/swimming-pools/) · [Equipment in 3D](https://istartec.co/en/equipment/) · [About](https://istartec.co/en/about/) · [Portfolio](https://istartec.co/en/portfolio/) · [Contact](https://istartec.co/en/contact/) · [Careers](https://istartec.co/en/careers/)
 - [Homeowners](https://istartec.co/en/homeowners/) · [Underfloor heating](https://istartec.co/en/homeowners/underfloor-heating/) · [Solar thermal](https://istartec.co/en/homeowners/solar-thermal/) · [Whole-house replumbing](https://istartec.co/en/homeowners/plumbing-renovation/)
-- Cities: [Albufeira](https://istartec.co/en/albufeira/) · [Loulé](https://istartec.co/en/loule/) · [Vilamoura](https://istartec.co/en/vilamoura/) · [Faro](https://istartec.co/en/faro/) · [Olhão](https://istartec.co/en/olhao/) · [Tavira](https://istartec.co/en/tavira/) · [Portimão](https://istartec.co/en/portimao/) · [Lagoa](https://istartec.co/en/lagoa/) · [Silves](https://istartec.co/en/silves/) · [Lagos](https://istartec.co/en/lagos/)
+- Towns: [All areas we serve](https://istartec.co/en/areas-we-serve/) · [Aljezur](https://istartec.co/en/aljezur/) · [Vila do Bispo · Sagres](https://istartec.co/en/vila-do-bispo/) · [Lagos](https://istartec.co/en/lagos/) · [Monchique](https://istartec.co/en/monchique/) · [Alvor](https://istartec.co/en/alvor/) · [Portimão](https://istartec.co/en/portimao/) · [Lagoa](https://istartec.co/en/lagoa/) · [Carvoeiro · Ferragudo](https://istartec.co/en/carvoeiro/) · [Silves](https://istartec.co/en/silves/) · [Armação de Pêra](https://istartec.co/en/armacao-de-pera/) · [Albufeira](https://istartec.co/en/albufeira/) · [Vilamoura](https://istartec.co/en/vilamoura/) · [Quarteira](https://istartec.co/en/quarteira/) · [Loulé](https://istartec.co/en/loule/) · [Almancil · Quinta do Lago](https://istartec.co/en/almancil/) · [Faro](https://istartec.co/en/faro/) · [São Brás de Alportel](https://istartec.co/en/sao-bras-de-alportel/) · [Olhão](https://istartec.co/en/olhao/) · [Tavira](https://istartec.co/en/tavira/) · [Castro Marim](https://istartec.co/en/castro-marim/) · [Vila Real de Santo António](https://istartec.co/en/vila-real-de-santo-antonio/) · [Alcoutim](https://istartec.co/en/alcoutim/)
 - French (homeowners): [Accueil](https://istartec.co/fr/) · [Chauffe-eau solaire](https://istartec.co/fr/chauffe-eau-solaire/) · [Plancher chauffant](https://istartec.co/fr/plancher-chauffant/) · [Rénovation de plomberie](https://istartec.co/fr/renovation-plomberie/) · [Piscines](https://istartec.co/fr/piscines/) · [Équipements en 3D](https://istartec.co/fr/equipements/) · [À propos](https://istartec.co/fr/a-propos/) · [Contact](https://istartec.co/fr/contact/)
 - German (homeowners): [Startseite](https://istartec.co/de/) · [Solarthermie](https://istartec.co/de/solarthermie/) · [Fußbodenheizung](https://istartec.co/de/fussbodenheizung/) · [Rohrsanierung](https://istartec.co/de/rohrsanierung/) · [Pooltechnik](https://istartec.co/de/pooltechnik/) · [Ausstattung in 3D](https://istartec.co/de/ausstattung/) · [Über uns](https://istartec.co/de/ueber-uns/) · [Kontakt](https://istartec.co/de/kontakt/)
 - Guides: [Replacing a gas water heater with a heat pump](https://istartec.co/en/blog/replace-gas-water-heater-heat-pump/) · [Replumbing an old house in Portugal](https://istartec.co/en/blog/replumbing-old-house-portugal/) · [Pool heat pumps in the Algarve](https://istartec.co/en/blog/pool-heat-pump-algarve/) · [Underfloor heating in an existing home](https://istartec.co/en/blog/underfloor-heating-existing-home/) · [Hot water in an Algarve holiday home](https://istartec.co/en/blog/holiday-home-hot-water-algarve/) · [Hiring a plumbing contractor in Portugal](https://istartec.co/en/blog/hiring-plumbing-contractor-portugal/) · [Blog index](https://istartec.co/en/blog/)
 
 ## Última atualização
 
-2026-11-13. Todas as páginas do site declaram `dateModified` em JSON-LD.
+2026-11-24. Todas as páginas do site declaram `dateModified` em JSON-LD.
 
 ## Desambiguação
 
@@ -47,7 +47,7 @@ hidráulicas sediada em Albufeira, no Algarve. Não têm qualquer relação.
 - **Telefone:** +351 965 445 801
 - **Email:** geral@istartec.co
 - **Horário:** segunda a sexta, 08:00–18:00
-- **Área servida:** todo o Algarve (distrito de Faro) — Albufeira, Portimão, Lagos, Lagoa, Loulé, Vilamoura, Faro, Silves, Almancil, Quarteira, Carvoeiro, Tavira, Olhão e restantes concelhos
+- **Área servida:** todo o Algarve — os 16 concelhos do distrito de Faro (Albufeira, Alcoutim, Aljezur, Castro Marim, Faro, Lagoa, Lagos, Loulé, Monchique, Olhão, Portimão, São Brás de Alportel, Silves, Tavira, Vila do Bispo, Vila Real de Santo António), do litoral às aldeias do interior e da serra, com os mesmos serviços em todas as zonas. Lista completa: https://istartec.co/onde-trabalhamos/
 - **Alvará IMPIC:** n.º 90724-PAR, de obras particulares — categoria 4ª (instalações elétricas e mecânicas), classe 3; habilita obras particulares até 800.000 € por contrato
 - **Certificações:** Parceiro Bosch, Instalador Certificado Uponor
 - **Entidade Google:** https://www.google.com/search?kgmid=/g/11z5pdfqmr
@@ -113,7 +113,8 @@ A iStarTec não publica tabelas de preços. Cada trabalho é orçamentado após 
 
 ## Páginas por cidade
 
-- [Albufeira](https://istartec.co/albufeira/) · [Portimão](https://istartec.co/portimao/) · [Lagos](https://istartec.co/lagos/) · [Lagoa](https://istartec.co/lagoa/) · [Loulé](https://istartec.co/loule/) · [Vilamoura](https://istartec.co/vilamoura/) · [Faro](https://istartec.co/faro/) · [Silves](https://istartec.co/silves/) · [Tavira](https://istartec.co/tavira/) · [Olhão](https://istartec.co/olhao/)
+- [Onde trabalhamos — todas as zonas do Algarve](https://istartec.co/onde-trabalhamos/)
+- [Aljezur](https://istartec.co/aljezur/) · [Vila do Bispo · Sagres](https://istartec.co/vila-do-bispo/) · [Lagos](https://istartec.co/lagos/) · [Monchique](https://istartec.co/monchique/) · [Alvor](https://istartec.co/alvor/) · [Portimão](https://istartec.co/portimao/) · [Lagoa](https://istartec.co/lagoa/) · [Carvoeiro · Ferragudo](https://istartec.co/carvoeiro/) · [Silves](https://istartec.co/silves/) · [Armação de Pêra](https://istartec.co/armacao-de-pera/) · [Albufeira](https://istartec.co/albufeira/) · [Vilamoura](https://istartec.co/vilamoura/) · [Quarteira](https://istartec.co/quarteira/) · [Loulé](https://istartec.co/loule/) · [Almancil · Quinta do Lago](https://istartec.co/almancil/) · [Faro](https://istartec.co/faro/) · [São Brás de Alportel](https://istartec.co/sao-bras-de-alportel/) · [Olhão](https://istartec.co/olhao/) · [Tavira](https://istartec.co/tavira/) · [Castro Marim](https://istartec.co/castro-marim/) · [Vila Real de Santo António](https://istartec.co/vila-real-de-santo-antonio/) · [Alcoutim](https://istartec.co/alcoutim/)
 
 ## Guias técnicos
 
@@ -136,6 +137,6 @@ Os guias citam as fontes primárias em que assentam (EUR-Lex para as Diretivas (
 
 ## Optional
 
-- [Versão inglesa](https://istartec.co/en/): páginas principais, 10 páginas de cidade, secção de particulares (/en/homeowners/) e 6 guias (/en/blog/)
+- [Versão inglesa](https://istartec.co/en/): páginas principais, 22 páginas de localidade e a página de zonas (/en/areas-we-serve/), secção de particulares (/en/homeowners/) e 6 guias (/en/blog/)
 - [Versão francesa](https://istartec.co/fr/) e [versão alemã](https://istartec.co/de/): secção de particulares, piscinas, equipamentos em 3D, sobre e contacto
 - [Sitemap](https://istartec.co/sitemap.xml)
